@@ -1,0 +1,46 @@
+.menu{
+    display: block;
+    background-color: rgb(245, 245, 245, 0.9);
+    justify-content: space-around;
+    padding: 20px;
+    border-style: solid;
+    border-color: khaki;
+}
+
+    
+
+.plat, .boisson{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: #ffffff !important;
+    border-style: solid;
+    border-color: khaki;
+}
+
+.listePlat,.listeBoisson{
+    padding: 25px;
+    border-style: solid;
+    border-color: khaki;
+}
+
+.prixPlat, .prixBoisson{
+    border-style: solid;
+    padding: 25px;
+}
+
+.listeMenu{
+    font-size: 2rem;
+    padding: 50px;
+    text-decoration:underline;
+}
+
+@media screen and (min-width: 1100px){
+    .menu{
+        display: flex; 
+    }
+
+    
+}
