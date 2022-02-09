@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="header">
-      <nav class="ferme" id="topbar">
+      <nav @click="showMenu = false" :class="{hide_smallscreen: !showMenu, topbar: true}">
         <div class="nav_topbar">
           <NuxtLink to="/" id="acceuil">
             <img src="@/assets/img/acceuil.png" alt="bouton acceuil" />
@@ -31,15 +31,26 @@
         </NuxtLink>
         </div>
       </nav>
-      <div id="topbar_phone" class="open">
+      <div v-if="!showMenu" @click="showMenu = true" class="hide_fullscreen"  id="topbar_phone">
         <div id="button_phone"><img src="@/assets/img/button.png" alt="button top bar phone" /></div>
       </div>
-      <span id="croix" class="ferme">
+      <div v-if="showMenu" @click="showMenu = false" id="croix">
         <img src="@/assets/img/croix.png" alt="boutton croix" />
-      </span>
+      </div>
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Acceuil',
+  data() {
+      return {
+        showMenu: false
+      }
+    },
+}
+</script>
 
 <style scoped>
 #croix {
@@ -66,10 +77,6 @@
   z-index: 100;
 }
 
-.open {
-  display: block;
-}
-
 #button_phone {
   height: 50px;
   width: 50px;
@@ -79,12 +86,8 @@
   left: 15px;
 }
 
-.ferme {
-  display: none;
-}
-
-.ouvre {
-  left: 0;
+.topbar {
+      left: 0;
   display: block;
   position: fixed;
   background-color: rgba(243, 243, 243, 0.85);
@@ -118,34 +121,26 @@
   color: black;
 }
 
+.hide_fullscreen {
+  display: block;
+}
+
+.hide_smallscreen{
+  display: none;
+}
+
 @media screen and (min-width: 1285px) {
-  .ouvre {
-    display: none;
-  }
 
-  .open {
-    display: none;
-  }
+  .topbar {
+      display: flex;
+  width: 100%;
+  height: 66px;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  z-index: 100;
 
-  #croix {
-    display: none;
-  }
-
-  #topbar_phone {
-    display: none;
-  }
-
-  #topbar {
-    display: flex;
-    position: fixed;
-    background-color: rgba(243, 243, 243, 0.85);
-    width: 100%;
-    height: 66px;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    z-index: 100;
   }
 
   .nav_topbar {
@@ -158,6 +153,10 @@
     text-transform: uppercase;
     white-space: nowrap;
     vertical-align: middle;
+  }
+
+  .hide_fullscreen {
+    display: none;
   }
 }
 </style>
