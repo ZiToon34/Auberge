@@ -1,12 +1,22 @@
-body{
-    background-color: rgba(238, 238, 238, 0.45);
-    height: 1000px;
+<template>
+<div class="welcome">
+        <span  class="auberge"><strong>Auberge de la Cascade | Hameau de Navacelles</strong></span>
+   </div>
+  
+</template>
+
+<script>
+export default {
+  name: 'Acceuil'
 }
+</script>
+
+<style scoped>
 
 .welcome{
     position: relative;
     text-align: center;
-    background: url(/img/navacelles1.jpg) center center / cover no-repeat;
+    background: url("~/assets/img/navacelles1.jpg") center center / cover no-repeat;
     background-position: center;
     justify-content: center;
     width: 100%;
@@ -17,7 +27,7 @@ body{
     background-color: rgba(238, 238, 238, 0.45);
     position: absolute;
     text-shadow: 4px 4px 0 #141008;
-    font-family: 'Playfair Display', Arial, Tahoma, sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     color: #af8842;
     top: 50%;
     display: block;
@@ -26,6 +36,8 @@ body{
     border: solid 4px;
     animation-name: arrive, apparait;
     animation-duration: 2s;
+    font-size: 50px;
+
 }
 
 
@@ -46,3 +58,4 @@ body{
         top: 50%;  
     }
 }
+</style>

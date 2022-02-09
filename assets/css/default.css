@@ -7,6 +7,7 @@
 
 html{
     box-sizing: border-box;
+    width: 100%;
 }
 
 button{
@@ -21,9 +22,11 @@ a{
 }
 
 body{
-    background: url(../img/auberge.jpg) center center / cover no-repeat;
+    background: url(@/assets/img/auberge.jpg) center center / cover no-repeat;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+    background-color: rgba(238, 238, 238, 0.45);
+    
 }
 
 
@@ -46,8 +49,7 @@ div{
     padding-top: 5%;
     padding-bottom: 5%;
     border-style: solid;
-    border-color: khaki;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-color: khaki
 }
 
 .conteneur1{
@@ -56,15 +58,15 @@ div{
     padding-top: 5%;
     padding-bottom: 5%;
     border-style: solid;
-    border-color: khaki;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-color: khaki
 }
 
 .img{
     background-position: center center;
     justify-content: center;
+    border-style: solid;
+    border-color: khaki;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .text{
@@ -77,7 +79,6 @@ div{
     border-style: solid;
     border-color: khaki;
     justify-content: space-evenly;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .nom{
@@ -117,7 +118,7 @@ th, td{
         height: 400px;
         background-position: 30% 7%;
         width: 100%;
-        background-image: url(../img/navacelles1.jpg);
+        background-image: url(@/assets/img/navacelles1.jpg);
         background-size: 100%;
         background-position: 50%;
     }
@@ -137,6 +138,7 @@ th, td{
     .img{    
         display: flex;
         background-position: center center;
+        height: 300px;
         width: auto;
     }
 
