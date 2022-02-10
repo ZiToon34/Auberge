@@ -1,5 +1,5 @@
 {
-  "name": "Auberge",
+  "name": "auberge",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,5 +16,17 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiToon34/Auberge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiToon34/Auberge/issues"
+  },
+  "homepage": "https://github.com/ZiToon34/Auberge#readme"
 }

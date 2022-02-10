@@ -2,84 +2,46 @@
     <div>
         <div id="container-nava"><img class="nava" alt="photo navacelles" src="@/assets/img/navacelles1.jpg"></div>
 <div class="conteneur">
-    <div class="box1">
+    <div class="box1" style="display: block;">
 
+        <form method="post" action=".netlify/functions/Email.js">
+            <label for="from_name">Prénom</label>
+            <input id="form_name" type="text" name="name" v-model="name" class="form-control" placeholder="Entrez vôtre Nom *" required="required" data-error="Nom Obligatoire.">
+            <label for="from_lastname">Nom</label>
+            <input id="form_lastname" type="text" name="surname" v-model="lastname" class="form-control" placeholder="Entrez vôtre Prénom *" required="required" data-error="Prénom obligatoire.">
+            <label for="form_email">Email (obligatoire)</label>
+            <input id="form_email" type="email" name="email" v-model="data" class="form-control" placeholder="Entrez vôtre Email *" required="required" data-error="email valide obligatoire.">
+            <label for="form_phone">Numéro de téléphone</label>
+            <input id="form_phone" type="tel" name="phone" v-model="data" class="form-control" placeholder="Entrez vôtre Numéro de Téléphone">
+            <label for="form_message">Votre Message</label>
+            <textarea id="form_message" name="message" v-model="data" class="form-control" placeholder="Entrez vôtre Message *" rows="4" required="required" data-error="S'il vous plait, laissez nous un message."></textarea>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-2">
-                    <form id="contact-form" action="https://formspree.io/f/xpzbqykn" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LdrYGoeAAAAAC57ityHOtXfx_fmjEEakWD77WRw"></div>
+            <br />
+            <input type="submit" id="submitBtn" value="Envoyer message">
 
-                        <div class="messages"></div>
+        
 
-                        <div class="controls">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Nom *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control"
-                                            placeholder="Entrez vôtre Nom *" required="required"
-                                            data-error="Nom Obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Prénom *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control"
-                                            placeholder="Entrez vôtre Prénom *" required="required"
-                                            data-error="Prénom obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="Entrez vôtre Email *" required="required"
-                                            data-error="email valide obligatoire.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Numéro</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control"
-                                            placeholder="Entrez vôtre Numéro de Téléphone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form_message">Message *</label>
-                                <textarea id="form_message" name="message" class="form-control"
-                                    placeholder="Entrez vôtre Message *" rows="4" required="required"
-                                    data-error="S'il vous plait, laissez nous un message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="g-recaptcha" data-sitekey="6Lc5vVgeAAAAAAxKLV3EoFEnzzvpZ9bgq3o8pYAc"></div>
-                            <br />
-                            <input type="submit" class="btn btn-success btn-send" value="Envoyer message">
-
-                        </div>
-
-                    </form>
-
-                </div>
-                <!-- /.8 -->
-
-            </div>
-            <!-- /.row-->
-
-        </div>
-        <!-- /.container-->
+        </form>
 
     </div>
 </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'Reservation',
+    setUp(){
+        window.onload = function () {
+        var el = document.getElementById('g-recaptcha-response');
+        if (el) {
+            el.setAttribute('required', 'required');
+        }
+    }
+    }
+}
+</script>
 
 
 
@@ -92,5 +54,33 @@
             z-index: -999999;
             opacity: 0;
         }
+
+.form-control {
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+
+#submitBtn{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 </style>
