@@ -49,10 +49,7 @@
             data-error="S'il vous plait, laissez nous un message."
           ></textarea>
 
-          <div
-            class="g-recaptcha"
-            data-sitekey="6LdrYGoeAAAAAC57ityHOtXfx_fmjEEakWD77WRw"
-          ></div>
+          <recaptcha />
           <br />
           <input type="submit" id="submitBtn" value="Envoyer message" />
         </form>
@@ -66,8 +63,24 @@ import emailjs from "emailjs-com";
 
 export default {
   name: "Reservation",
+  data() {
+    return {
+      siteKey: process.env.siteKey,
+    };
+  },
   methods: {
-    sendEmail() {
+    async sendEmail() {
+      try {
+        const token = await this.$recaptcha.getResponse();
+        console.log("ReCaptcha token:", token);
+
+        // send token to server alongside your form data
+
+        // at the end you need to reset recaptcha
+        await this.$recaptcha.reset();
+      } catch (error) {
+        console.log("Login error:", error);
+      }
       emailjs
         .sendForm(
           process.env.serviceId,
@@ -92,14 +105,6 @@ export default {
 
 <style scoped>
 /* CSS */
-#g-recaptcha-response {
-  display: block !important;
-  position: absolute;
-  margin: -50px 0 0 0 !important;
-  z-index: -999999;
-  opacity: 0;
-}
-
 .form-control {
   display: block;
   margin-bottom: 1rem;

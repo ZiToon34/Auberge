@@ -43,7 +43,15 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
+    '@nuxtjs/recaptcha'
   ],
+  recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    language: 'fr',   // Recaptcha language (v2)
+    siteKey: process.env.RECAPTCHA_SITE_KEY,    // Site key for requests
+    version: 'v2',     // Version
+    size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -51,6 +59,7 @@ export default {
   env: {
     serviceId: process.env.YOUR_SERVICE_ID,
     templateId: process.env.YOUR_TEMPLATE_ID,
-    userId: process.env.YOUR_USER_ID
+    userId: process.env.YOUR_USER_ID,
+    siteKey: process.env.SITE_KEY
   }
 }
