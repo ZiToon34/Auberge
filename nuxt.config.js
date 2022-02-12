@@ -10,10 +10,7 @@ export default {
         src: "https://www.google.com/recaptcha/api.js",
         async: true,
         defer: true,
-      },
-      {src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"},
-      {src: "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.cjs.js"}
-
+      }
     ],
 
     title: 'Auberge',
@@ -59,5 +56,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  env: {
+    serviceId: process.env.YOUR_SERVICE_ID,
+    templateId: process.env.YOUR_TEMPLATE_ID,
+    userId: process.env.YOUR_USER_ID
   }
 }
