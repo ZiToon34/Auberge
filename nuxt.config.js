@@ -4,15 +4,6 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-
-    script: [
-      {
-        src: "https://www.google.com/recaptcha/api.js",
-        async: true,
-        defer: true,
-      }
-    ],
-
     title: 'Auberge',
     htmlAttrs: {
       lang: 'fr'
