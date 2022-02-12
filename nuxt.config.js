@@ -11,6 +11,9 @@ export default {
         async: true,
         defer: true,
       },
+      {src: "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"},
+      {src: "https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.30/vue.cjs.js"}
+
     ],
 
     title: 'Auberge',

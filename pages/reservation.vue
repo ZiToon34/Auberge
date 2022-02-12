@@ -4,7 +4,7 @@
 <div class="conteneur">
     <div class="box1" style="display: block;">
 
-        <form>
+        <form id="myForm">
             <label for="from_name">Nom et Prénom</label>
             <input id="form_name" type="text" name="name" v-model="name" class="form-control" placeholder="Entrez vôtre Nom et prénom *" required="required" data-error="Nom Obligatoire.">
             <label for="form_email">Email (obligatoire)</label>
@@ -16,7 +16,7 @@
 
             <div class="g-recaptcha" data-sitekey="6LdrYGoeAAAAAC57ityHOtXfx_fmjEEakWD77WRw"></div>
             <br />
-            <input type="submit" id="submitBtn" value="Envoyer message">
+            <input type="submit" id="submitBtn" @click="send()" value="Envoyer message">
 
         
 
@@ -28,10 +28,9 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com'
-
 export default {
     name: 'Reservation',
+  
     setUp(){
         window.onload = function () {
         var el = document.getElementById('g-recaptcha-response');
@@ -40,32 +39,19 @@ export default {
         }
     }
     },
-    data() {
-    return {
-      name: '',
-      email: '',
-      message: ''
-    }
-  },
-  methods: {
-    sendEmail(e) {
-      try {
-        emailjs.sendForm('service_txou49c', 'template_751vyee', e.target,
-        'user_apZeCzVOpcDPHBbbvLyfy', {
-          name: this.name,
-          email: this.email,
-          message: this.message
-        })
-
-      } catch(error) {
-          console.log({error})
-      }
-      // Reset form field
-      this.name = ''
-      this.email = ''
-      this.message = ''
-    },
+    
+ data(){
+     return { send(){
+emailjs.init("user_apZeCzVOpcDPHBbbvLyfy");
+emailjs.sendForm('service_txou49c', 'template_751vyee', '#myForm')
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
   }
+     }
+ }
 }
 </script>
 
