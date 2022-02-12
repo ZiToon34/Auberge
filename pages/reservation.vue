@@ -4,11 +4,9 @@
 <div class="conteneur">
     <div class="box1" style="display: block;">
 
-        <form method="post" action=".netlify/functions/Email.js">
-            <label for="from_name">Prénom</label>
-            <input id="form_name" type="text" name="name" v-model="name" class="form-control" placeholder="Entrez vôtre Nom *" required="required" data-error="Nom Obligatoire.">
-            <label for="from_lastname">Nom</label>
-            <input id="form_lastname" type="text" name="surname" v-model="lastname" class="form-control" placeholder="Entrez vôtre Prénom *" required="required" data-error="Prénom obligatoire.">
+        <form>
+            <label for="from_name">Nom et Prénom</label>
+            <input id="form_name" type="text" name="name" v-model="name" class="form-control" placeholder="Entrez vôtre Nom et prénom *" required="required" data-error="Nom Obligatoire.">
             <label for="form_email">Email (obligatoire)</label>
             <input id="form_email" type="email" name="email" v-model="data" class="form-control" placeholder="Entrez vôtre Email *" required="required" data-error="email valide obligatoire.">
             <label for="form_phone">Numéro de téléphone</label>
@@ -30,6 +28,8 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
+
 export default {
     name: 'Reservation',
     setUp(){
@@ -39,7 +39,33 @@ export default {
             el.setAttribute('required', 'required');
         }
     }
+    },
+    data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
     }
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_txou49c', 'template_751vyee', e.target,
+        'user_apZeCzVOpcDPHBbbvLyfy', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+  }
 }
 </script>
 
