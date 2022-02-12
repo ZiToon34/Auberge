@@ -5,7 +5,7 @@
     <div class="box1" style="display: block;">
 
         <form id="myForm">
-            <label for="from_name">Nom et Prénom</label>
+            <label for="form_name">Nom et Prénom</label>
             <input id="form_name" type="text" name="name" v-model="name" class="form-control" placeholder="Entrez vôtre Nom et prénom *" required="required" data-error="Nom Obligatoire.">
             <label for="form_email">Email (obligatoire)</label>
             <input id="form_email" type="email" name="email" v-model="data" class="form-control" placeholder="Entrez vôtre Email *" required="required" data-error="email valide obligatoire.">
