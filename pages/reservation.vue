@@ -79,7 +79,7 @@ export default {
         // at the end you need to reset recaptcha
         await this.$recaptcha.reset();
       } catch (error) {
-        console.log("Login error:", error);
+        window.alert("Il y a un problème de connection", error);
       }
       emailjs
         .sendForm(
@@ -90,10 +90,10 @@ export default {
         )
         .then(
           (result) => {
-            console.log("SUCCESS!", result.text);
+            window.alert("L'email a bien été envoyé", result.text);
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            window.alert("Problème d'envoi, veuillez réesayer", error.text);
           }
         );
     },

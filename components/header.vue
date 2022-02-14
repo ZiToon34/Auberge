@@ -8,7 +8,7 @@
           </NuxtLink>
         </div>
         <div class="nav_topbar">
-          <NuxtLink to="/hotel"> L'Hôtel </NuxtLink>
+          <NuxtLink to="/hotel"> {{$t('hotel')}} </NuxtLink>
         </div>
         <div class="nav_topbar">
           <NuxtLink to="/restaurant">

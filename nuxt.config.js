@@ -1,3 +1,7 @@
+import fr from './langs/fr.json'
+import nl from './langs/nl.json'
+import en from './langs/en.json'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -43,7 +47,21 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    '@nuxtjs/recaptcha'
+    '@nuxtjs/recaptcha',
+    [
+      '@nuxtjs/i18n',
+      { locales: ['en', 'fr', 'nl'],
+      defaultLocale: 'fr',
+      vueI18n: {
+        fallbackLocale: 'fr',
+        messages: {
+          en,
+          fr,
+          nl
+        }
+      }}
+    ]
+
   ],
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
