@@ -22,7 +22,7 @@ export default {
         imgPlace: String,
         namePlace: String,
         descriptionPlace: String,
-        Km: Number, String,
+        Km: String,
     }
 }
 </script>
