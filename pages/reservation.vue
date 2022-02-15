@@ -108,6 +108,14 @@ export default {
 .form-control {
   display: block;
   margin-bottom: 1rem;
+  width: 100%;
+}
+
+#myForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #submitBtn {
@@ -131,5 +139,13 @@ export default {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media screen and (min-width: 1100px){
+
+.form-control{
+  width: 50%;
+}
+
 }
 </style>
