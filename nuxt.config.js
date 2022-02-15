@@ -9,6 +9,9 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Auberge',
+    script:[{
+     src: "https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"
+    }],
     htmlAttrs: {
       lang: 'fr'
     },

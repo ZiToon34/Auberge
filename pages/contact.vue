@@ -1,9 +1,9 @@
 <template>
 <div>
-    <div id="container-nava"><img class="nava" alt="Photo de navacelles" src="@/assets/img/navacelles1.jpg"></div>
+<div id="container-nava"><img class="nava" alt="Photo de navacelles" src="@/assets/img/navacelles1.jpg"></div>
 <div class="conteneur">
         <div class="box">
-        <div class="text">
+        <div class="text" style="max-height: none;">
             <h2 class="nom">Contact</h2>
             <h3 class="description">Pour une demande par courrier électronique, vous pouvez remplir le formulaire sur la page <NuxtLink to="/reservation" style="border-style: solid; border-color: black; color: #af8842;"> RESERVATION </NuxtLink>.</h3>
             <p class="info"><u><strong>Pour nous contacter par courrier ou par téléphone, merci de vous adresser à:</strong></u><br> Auberge de la cascade navacelles<br><br>
