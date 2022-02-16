@@ -112,6 +112,8 @@ th, td{
     border: 0;
 }
 
+
+
 @media screen and (min-width: 1100px){
 
     .nava
@@ -119,16 +121,6 @@ th, td{
 
     .text{
         max-height: 300px;
-    }
-
-    #container-nava{
-        overflow: hidden;
-        height: 400px;
-        background-position: 30% 7%;
-        width: 100%;
-        background-image: url(@/assets/img/navacelles1.jpg);
-        background-size: 100%;
-        background-position: 50%;
     }
     
 
@@ -149,6 +141,17 @@ th, td{
         height: 300px;
         width: auto;
     }
+
+    #container-nava{
+        overflow: hidden;
+        height: 400px;
+        background-position: 30% 7%;
+        width: 100%;
+        background-image: url(@/assets/img/navacelles1.jpg);
+        background-size: 100%;
+        background-position: 50%;
+    }
+
 
     .ggMap{
         width: 800px;    }

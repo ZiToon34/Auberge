@@ -1,9 +1,9 @@
 <template>
 <div>
-    <div id="container-nava"><img class="nava" alt="photo Navacelles" src="/img/navacelles1.jpg"></div>
+    <div id="container-nava"><img class="nava" alt="photo Navacelles" src="@/assets/img/navacelles1.jpg"></div>
+    <div></div>
 
-    <!-- Ajouter Caroussel ici -->
-
+    
   <!-- Contenue page-->
 
   <div class="text" style="opacity: 1; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
@@ -14,6 +14,21 @@
           Tout les jours en haute saison. Le midi uniquement ( demi pension le soir pour les clients de l’hôtel )
         </strong></u> <br> Ps: pour les groupes nous pouvons à la demande faire des menus spéciaux</p>
   </div>
+
+  <!-- Ajouter Caroussel ici -->
+
+     <div class="conteneur">
+       <div class="carousel-wrapper">
+    <client-only>
+      <carousel v-bind="options">
+        <slide v-for="i in 6" :key="i" class="img-wrapper">
+          <img :src="`./${i}eat.jpg`" />
+        </slide>
+      </carousel>
+    </client-only>
+  </div>
+     </div>
+    
 
   <div class="menu">
 
@@ -89,6 +104,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      options: {
+        loop: true,
+        perPage: 3.5,
+        paginationEnabled: false
+      }
+    }
+  }
+}
+</script>
+
 <style scoped>
 .menu{
     display: block;
@@ -129,12 +158,30 @@
     text-decoration:underline;
 }
 
+.carousel-wrapper {
+  padding: 40px;
+  height: 100%;
+}
+
+.img-wrapper {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(gray 100%, 0.8);
+}
+
 
 
 @media screen and (min-width: 1100px){
+  
     .menu{
         display: flex; 
     }
+
+  
    
 }
+
+
+
 </style>
