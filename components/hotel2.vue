@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <div class="conteneur">
-            <div class="box">
-            <img class="img"  alt="Photo Chambre" style="height: 300px;">
-            <div class="text" style="max-height: none">
-                <h2 class="nom">{{nameRoom}}</h2>
-                <h3 class="description">Comprend Salle de Bain, WiFi et WC</h3>
-                <div><u><strong>Tarifs:</strong></u></div>
-                <table>
-                    <tr>
+  <div class="conteneur1">
+    <div class="box1">
+      <img class="img" v-bind:src=imgRoom alt="Photo de la Chambre" />
+      <div class="textRoom">
+        <h2 class="nom">{{nameRoom}}</h2>
+        <h3 class="description">
+            {{ descriptionRoom }}
+        </h3>
+        <p><u><strong>Tarifs:</strong></u></p>
+        <div class="tableTarifs">
+            <table>
+                <tr>
                         <td style="border: none;"></td>
                         <th>Prix</th>
                     </tr>
@@ -36,22 +38,44 @@
                         <th>Taxe de Séjour non-incluse</th>
                         <th>0.80€/personne</th>
                     </tr>
-                </table>
-                <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>
-            </div>
-            </div>
+            </table>
+        </div>
+        <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>
+      </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-
-    props:{
+    props: {
         imgRoom: String,
         nameRoom: String,
+        descriptionRoom: String,
         maxPeople: String,
-
     }
 }
 </script>
+
+<style scoped>
+
+.textRoom{
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff !important;
+    border-style: solid;
+    border-color: khaki;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.tableTarifs{
+    display: flex;
+    justify-content: center;
+}
+
+
+</style>
