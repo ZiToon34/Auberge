@@ -1,3 +1,20 @@
 {
-    "hotel": "Hostel"
+    "hotel": "Hostel",
+    "restaurant": "The Restaurant",
+    "navaAndAround": "Navacelles and Around",
+    "contact": "Contact",
+    "reservation": "Reservation",
+    "timetable": "Timetable",
+    "openFooter": "The restaurant is open every day",
+    "openFooter2": "contact us for precision.",
+    "locate": "Locate us",
+    "distance": "Distance:",
+    "price": "Prices:",
+    "priceRoom": "Price",
+    "half": "half-pension (person alone)",
+    "half2": "half-pension (from 2)",
+    "half3": "half-pension (-12 years old)",
+    "breakfast": "Breakfast / Person",
+    "supPet": "Extra for pet",
+    "tax": "tourist tax / person "
 }

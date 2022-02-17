@@ -8,7 +8,7 @@
             {{ descriptionPlace }}
         </h3>
         <p class="info">
-          <u><strong>Distance:</strong></u> <br />
+          <u><strong>{{$t('distance')}}</strong></u> <br />
           {{Km}}
         </p>
       </div>

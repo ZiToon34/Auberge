@@ -7,36 +7,36 @@
         <h3 class="description">
             {{ descriptionRoom }}
         </h3>
-        <p><u><strong>Tarifs:</strong></u></p>
+        <p><u><strong>{{$t('prices')}}</strong></u></p>
         <div class="tableTarifs">
             <table>
                 <tr>
                         <td style="border: none;"></td>
-                        <th>Prix</th>
+                        <th>{{$t('priceRoom')}}</th>
                     </tr>
                     <tr>
-                        <td>Demi-pension (personne seule)</td>
+                        <td>{{$t('half')}}</td>
                         <td>78€</td>
                     </tr>
                     <tr>
-                        <td>Demi-pension (à partir de 2)</td>
+                        <td>{{$t('half2')}}</td>
                         <td>60€/personne</td>
                     </tr>
                     <tr>
-                        <td>Demi-pension (-12ans)</td>
+                        <td>{{$t('half3')}}</td>
                         <td>35€</td>
                     </tr>
                     <tr>
-                        <td>Petit Déjeuner/personne</td>
+                        <td>{{$t('breakfast')}}</td>
                         <td>8€</td>
                     </tr>
                     <tr>
-                        <td>Suplléments animaux</td>
+                        <td>{{$t('supPet')}}</td>
                         <td>5€/jour</td>
                     </tr>
                     <tr>
-                        <th>Taxe de Séjour non-incluse</th>
-                        <th>0.80€/personne</th>
+                        <th>{{$t('tax')}}</th>
+                        <th>0.80€</th>
                     </tr>
             </table>
         </div>
