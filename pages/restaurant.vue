@@ -19,13 +19,11 @@
 
      <div class="conteneur">
        <div class="carousel-wrapper">
-    <client-only>
       <carousel v-bind="options">
         <slide v-for="i in 6" :key="i" class="img-wrapper">
           <img v-bind:src="`./${i}eat.jpg`" />
         </slide>
       </carousel>
-    </client-only>
   </div>
      </div>
     
@@ -35,6 +33,7 @@
     <div class="plat" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
       <div class="listeMenu"> <strong> 3 Choix de chaque au moins</strong></div>
       <table>
+        <tbody>
         <tr>
           <td class="listePlat">Entrée + Plat (ou Plat + Dessert)</td>
           <td class="prixPlat">18.50€</td>
@@ -43,9 +42,11 @@
           <td class="listePlat">Entrée + Plat + Dessert</td>
           <td class="prixPlat">22.50€</td>
         </tr>
+        </tbody>
       </table>
       <div class="listeMenu"> <strong> A l'ardoise</strong></div>
       <table>
+        <tbody>
         <tr>
           <td class="listePlat">Burger du Larzac</td>
           <td class="prixPlat">16€</td>
@@ -58,6 +59,7 @@
           <td class="listePlat">Dessert Maison</td>
           <td class="prixPlat">5.50€</td>
         </tr>
+        </tbody>
       </table>
     </div>
 
@@ -65,6 +67,7 @@
       <div class="listeMenu"> <strong> Boissons</strong>
       </div>
       <table>
+        <tbody>
         <tr>
           <td class="listeBoisson">Vin Rosé/ Blanc "Domaine de la Perdrix" <br> La coule douce</td>
           <td class="prixBoisson">16€</td>
@@ -97,6 +100,7 @@
           <td class="listeBoisson">Eaux Minérales</td>
           <td class="prixBoisson">6.50€</td>
         </tr>
+        </tbody>
       </table>
     </div>
 
@@ -106,11 +110,13 @@
 
 <script>
 export default {
+  name: "Restaurant",
   data() {
     return {
       options: {
         loop: true,
-        perPage: 3.5,
+        perPageCustom: [[1, 1.5], [700, 2.5],  [1268, 4]],
+        scrollPerPage: true,
         paginationEnabled: false
       }
     }
@@ -158,17 +164,6 @@ export default {
     text-decoration:underline;
 }
 
-.carousel-wrapper {
-  padding: 40px;
-  height: 100%;
-}
-
-.img-wrapper {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(gray 100%, 0.8);
-}
 
 
 

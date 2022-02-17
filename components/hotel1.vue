@@ -7,7 +7,7 @@
         <h3 class="description">
             {{ descriptionRoom }}
         </h3>
-        <p><u><strong>{{$t('prices')}}</strong></u></p>
+        <p><u><strong>{{$t('price')}}</strong></u></p>
         <div class="tableTarifs">
             <table>
                 <tr>

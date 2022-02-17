@@ -1,7 +1,6 @@
 <template>
   <div class="conteneur">
-    <div class="box">
-      <img class="img" v-bind:src=imgPlace alt="Photo du lieux"/>
+      <img class="img" :src="require(`@/assets/img/${imgPlace}`)" alt="Photo du lieux" />
       <div class="text">
         <h2 class="nom">{{namePlace}}</h2>
         <h3 class="description">
@@ -12,7 +11,6 @@
           {{Km}}
         </p>
       </div>
-    </div>
   </div>
 </template>
 

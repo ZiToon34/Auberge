@@ -1,17 +1,15 @@
 <template>
-  <div class="conteneur1">
-    <div class="box1">
-      <img class="img"  v-bind:src=imgPlace alt="Photo du lieux"/>
-      <div class="text">
-        <h2 class="nom">{{namePlace}}</h2>
-        <h3 class="description">
-            {{ descriptionPlace }}
-        </h3>
-        <p class="info">
-          <u><strong>{{$t('distance')}}</strong></u> <br />
-          {{Km}}
-        </p>
-      </div>
+  <div>
+    <img class="img"  v-bind:src=imgPlace alt="Photo du lieux"/>
+    <div class="text">
+      <h2 class="nom">{{namePlace}}</h2>
+      <h3 class="description">
+          {{ descriptionPlace }}
+      </h3>
+      <p class="info">
+        <u><strong>{{$t('distance')}}</strong></u> <br />
+        {{Km}}
+      </p>
     </div>
   </div>
 </template>

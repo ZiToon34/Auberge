@@ -17,7 +17,19 @@
     "breakfast": "Petit-Déjeuner / Personne",
     "supPet": "Supplément / Animal",
     "tax": "Taxe de Séjour par personne",
-    "navaD": "Cirque naturel formé par un méandre recoupé de la rivière la Vis dans l'impressionnantes gorges entre le causse du Larzac (Hérault, au sud) et le causse de Blandas (Gard, au nord)."
+    "arounds": {
+        "navacelle": {
+            "namePlace": "Cirque de Navacelles",
+            "decription_place": "Cirque naturel formé par un méandre recoupé de la rivière la Vis dans l'impressionnantes gorges entre le causse du Larzac (Hérault, au sud) et le causse de Blandas (Gard, au nord).",
+            "unite_dist": "0 Km"
+        },
+        "foux": {
+            "namePlace": "La Foux",
+            "decription_place": "Résurgence de la rivière la Vis après un parcours souterrain, dans le calcaire des Causses. Le moulin de la Foux est situé sur le parcours des randonnées dans la Vallée de la Vis.",
+            "unite_dist": "(à pied) 4,5Km - 59min (Allé)"
+        }
+
+    }
 
 
 }
