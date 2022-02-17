@@ -22,7 +22,7 @@
     <client-only>
       <carousel v-bind="options">
         <slide v-for="i in 6" :key="i" class="img-wrapper">
-          <img v-bind:src="`./${i}eat.jpg`" />
+          <img v-bind:src="`../${i}eat.jpg`" />
         </slide>
       </carousel>
     </client-only>
