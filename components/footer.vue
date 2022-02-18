@@ -2,12 +2,12 @@
         <footer>
         <div class="footer">
         <div class="horaires" >
-            <h2 class="h2_horaires">Horaires</h2>
+            <h2 class="h2_horaires">{{$t('timetable')}}</h2>
             <hr class="barre barre_horaire" style="width: 30%; height: 1px; background: #b2b2b2;">
-            <p class="info_footer">L'auberge est ouverte tous les jours de la semaine <br> contactez-Nous pour plus de précisions.</p>
+            <p class="info_footer">{{$t('openFooter')}} <br> {{$t('openFooter2')}} </p>
         </div>
         <div class="adresse">
-            <h2 class="h2_adresse">Nous Situer</h2>
+            <h2 class="h2_adresse">{{$t('locate')}}</h2>
             <hr class="barre barre_adresse" style="width: 30%; height: 1px; background: #b2b2b2;">
             <a href="https://www.google.com/maps/place/Auberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles/@43.8863591,3.5430335,14z/data=!4m6!1m3!3m2!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4!2sAuberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles!3m1!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4?hl=fr&gl=FR" class="info_footer info_adresse" style="text-decoration: underline;">Auberge de la cascade <br> Hameau de Navacelles <br> 34520 Saint Maurice-Navacelles</a>
         </div>

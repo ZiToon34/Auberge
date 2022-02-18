@@ -1,0 +1,12 @@
+{
+  "arounds" : [
+        {
+            "id": "navacelle",
+            "img": "navacelles.jpg"
+        },
+        {
+            "id": "foux",
+            "img": "foux.jpg"
+        }
+    ]
+}

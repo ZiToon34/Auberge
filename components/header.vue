@@ -12,22 +12,22 @@
         </div>
         <div class="nav_topbar">
           <NuxtLink to="/restaurant">
-          Le Restaurant
+          {{$t('restaurant')}}
         </NuxtLink>
         </div>
         <div class="nav_topbar">
           <NuxtLink to="/alentour">
-          Navacelles & Alentours
+          {{$t('navaAndAround')}}
         </NuxtLink>
         </div>
         <div class="nav_topbar">
           <NuxtLink to="/contact">
-          Contact
+          {{$t('contact')}}
         </NuxtLink>
         </div>
         <div class="nav_topbar">
           <NuxtLink to="/reservation" id="reservation">
-          Reservation
+          {{$t('reservation')}}
         </NuxtLink>
         </div>
       </nav>
