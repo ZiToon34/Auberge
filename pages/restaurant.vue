@@ -133,9 +133,7 @@ export default {
     border-style: solid;
     border-color: khaki;
 }
-
     
-
 .plat, .boisson{
     display: flex;
     flex-direction: column;
@@ -146,37 +144,26 @@ export default {
     border-style: solid;
     border-color: khaki;
 }
-
 .listePlat,.listeBoisson{
     padding: 25px;
     border-style: solid;
     border-color: khaki;
 }
-
 .prixPlat, .prixBoisson{
     border-style: solid;
     padding: 25px;
 }
-
 .listeMenu{
     font-size: 2rem;
     padding: 50px;
     text-decoration:underline;
 }
-
-
-
-
 @media screen and (min-width: 1100px){
   
     .menu{
         display: flex; 
     }
-
   
    
 }
-
-
-
 </style>
