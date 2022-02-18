@@ -1,11 +1,10 @@
 <template>
   <div class="conteneur1">
-    <div class="box1">
-      <img class="img" v-bind:src=imgRoom alt="Photo de la Chambre" />
-      <div class="textRoom">
+      <img class="img" :src="require(`@/assets/img/${imgRoom}`)" alt="Photo de la Chambre" />
+            <div class="textRoom">
         <h2 class="nom">{{nameRoom}}</h2>
         <h3 class="description">
-            {{ descriptionRoom }}
+            {{$t('descriptionRoom')}}
         </h3>
         <p><u><strong>{{$t('price')}}</strong></u></p>
         <div class="tableTarifs">
@@ -43,11 +42,11 @@
         <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
+    name: "Hotel",
     props: {
         imgRoom: String,
         nameRoom: String,

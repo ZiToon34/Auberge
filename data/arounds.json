@@ -7,6 +7,31 @@
         {
             "id": "foux",
             "img": "foux.jpg"
+        },
+        {
+            "id": "aigoual",
+            "img": "aigoual.jpg"
+        },
+        {
+            "id": "couvertoirade",
+            "img": "couvertoirade.jpg"
+        },
+        {
+            "id": "salagou",
+            "img": "salagou.jpg"
+        },
+        {
+            "id": "stguilhem",
+            "img": "stguilhem.jpg"
+        },
+        {
+            "id": "lodeve",
+            "img": "lodeve.jpg"
+        },
+        {
+            "id": "levigan",
+            "img": "levigan.jpg"
         }
+        
     ]
 }

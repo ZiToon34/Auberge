@@ -1,0 +1,36 @@
+{
+    "rooms" : [
+          {
+              "id": "chambre1",
+              "img": "chambre1.jpg"
+          },
+          {
+              "id": "chambre2",
+              "img": "chambre2.jpg"
+          },
+          {
+            "id": "chambre3",
+            "img": "chambre4.jpg"
+            },
+        {
+            "id": "chambre4",
+            "img": "chambre5.jpg"
+        },
+        {
+            "id": "chambre5",
+            "img": "chambrersp1.jpg"
+        },
+        {
+            "id": "chambre6",
+            "img": "chambrersp2.jpg"
+        },
+        {
+            "id": "chambre7",
+            "img": "chambrersp3.jpg"
+        },
+        {
+            "id": "chambre8",
+            "img": "chambrersp4.jpg"
+        }
+      ]
+  }

@@ -10,7 +10,7 @@
     <div class="conteneur">
       <div class="box1" style="display: block">
         <form id="myForm" ref="form" @submit.prevent="sendEmail">
-          <label for="form_name">Nom et Prénom</label>
+          <label for="form_name">{{$t('nameandsur')}}</label>
           <input
             id="form_name"
             type="text"
@@ -20,7 +20,7 @@
             required="required"
             data-error="Nom Obligatoire."
           />
-          <label for="form_email">Email (obligatoire)</label>
+          <label for="form_email">{{$t('formemail')}}</label>
           <input
             id="form_email"
             type="email"
@@ -30,7 +30,7 @@
             required="required"
             data-error="email valide obligatoire."
           />
-          <label for="form_phone">Numéro de téléphone</label>
+          <label for="form_phone">{{$t('formphone')}}</label>
           <input
             id="form_phone"
             type="tel"
@@ -38,7 +38,7 @@
             class="form-control"
             placeholder="Entrez vôtre Numéro de Téléphone"
           />
-          <label for="form_message">Votre Message</label>
+          <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
             id="form_message"
             name="message"

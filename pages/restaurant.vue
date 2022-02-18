@@ -7,12 +7,9 @@
   <!-- Contenue page-->
 
   <div class="text" style="opacity: 1; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-    <h2 class="nom">Le Restaurant</h2>
-    <h3 class="description">« Située au cœur du cirque de Navacelles , l’auberge de la cascade vous propose une
-      restauration simple et de qualitée dans un cadre hors du commun »</h3>
-    <p class="info"><u><strong> Restaurant ouvert le samedi, dimanche et lundi en basse saison.
-          Tout les jours en haute saison. Le midi uniquement ( demi pension le soir pour les clients de l’hôtel )
-        </strong></u> <br> Ps: pour les groupes nous pouvons à la demande faire des menus spéciaux</p>
+    <h2 class="nom">{{$t('restaurant')}}</h2>
+    <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
+    <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
   </div>
 
   <!-- Ajouter Caroussel ici -->
@@ -31,32 +28,32 @@
   <div class="menu">
 
     <div class="plat" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-      <div class="listeMenu"> <strong> 3 Choix de chaque au moins</strong></div>
+      <div class="listeMenu"> <strong>{{$t('listemenu')}}</strong></div>
       <table>
         <tbody>
         <tr>
-          <td class="listePlat">Entrée + Plat (ou Plat + Dessert)</td>
+          <td class="listePlat">{{$t('listeplat1')}}</td>
           <td class="prixPlat">18.50€</td>
         </tr>
         <tr>
-          <td class="listePlat">Entrée + Plat + Dessert</td>
+          <td class="listePlat">{{$t('listeplat2')}}</td>
           <td class="prixPlat">22.50€</td>
         </tr>
         </tbody>
       </table>
-      <div class="listeMenu"> <strong> A l'ardoise</strong></div>
+      <div class="listeMenu"> <strong>{{$t('ardoise')}}</strong></div>
       <table>
         <tbody>
         <tr>
-          <td class="listePlat">Burger du Larzac</td>
+          <td class="listePlat">{{$t('burger')}}</td>
           <td class="prixPlat">16€</td>
         </tr>
         <tr>
-          <td class="listePlat">Salade Repas</td>
+          <td class="listePlat">{{$t('salade')}}</td>
           <td class="prixPlat">14€</td>
         </tr>
         <tr>
-          <td class="listePlat">Dessert Maison</td>
+          <td class="listePlat">{{$t('dessert')}}</td>
           <td class="prixPlat">5.50€</td>
         </tr>
         </tbody>
@@ -64,7 +61,7 @@
     </div>
 
     <div class="boisson" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
-      <div class="listeMenu"> <strong> Boissons</strong>
+      <div class="listeMenu"> <strong>{{$t('drink')}}</strong>
       </div>
       <table>
         <tbody>
@@ -93,11 +90,11 @@
           <td class="prixBoisson">23€</td>
         </tr>
         <tr>
-          <td class="listeBoisson">Pïchet Rouge/ Blanc/ Rosé <br> 0.25L - 0.5L - 1L</td>
+          <td class="listeBoisson">{{$t('wine')}} <br> 0.25L - 0.5L - 1L</td>
           <td class="prixBoisson">5€ - 8€ - 11€</td>
         </tr>
         <tr>
-          <td class="listeBoisson">Eaux Minérales</td>
+          <td class="listeBoisson">{{$t('water')}}</td>
           <td class="prixBoisson">6.50€</td>
         </tr>
         </tbody>
