@@ -30,6 +30,13 @@
           {{$t('reservation')}}
         </NuxtLink>
         </div>
+          <div class="locale-changer nav_topbar">
+    <select class="selectlang" v-model="$i18n.locale">
+      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
+        {{ lang }}
+      </option>
+    </select>
+        </div>
       </nav>
       <div v-if="!showMenu" @click="showMenu = true" class="hide_fullscreen"  id="topbar_phone">
         <div id="button_phone"><img src="@/assets/img/button.png" alt="button top bar phone" /></div>
@@ -46,13 +53,30 @@ export default {
   name: 'Acceuil',
   data() {
       return {
-        showMenu: false
+        showMenu: false,
+        langs: ['fr', 'en', 'nl']
       }
-    },
+    }
 }
 </script>
 
 <style scoped>
+.selectlang{  
+  background-color: rgba(243, 243, 243, 0.5);
+  height: 46px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.25rem;
+  padding: 5px;
+  position: relative;
+  margin: 30px 2.5%;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: Arial "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 #croix {
   top: 0;
   left: 175px;
