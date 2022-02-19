@@ -9,6 +9,7 @@
         <p><u><strong>{{$t('price')}}</strong></u></p>
         <div class="tableTarifs">
             <table>
+                <tbody>
                 <tr>
                         <td style="border: none;"></td>
                         <th>{{$t('priceRoom')}}</th>
@@ -37,6 +38,7 @@
                         <th>{{$t('tax')}}</th>
                         <th>0.80€</th>
                     </tr>
+                    </tbody>
             </table>
         </div>
         <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>

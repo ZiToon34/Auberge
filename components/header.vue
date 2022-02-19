@@ -1,45 +1,61 @@
 <template>
   <div>
     <header class="header">
-      <nav @click="showMenu = false" :class="{hide_smallscreen: !showMenu, topbar: true}">
-        <div class="nav_topbar">
+      <nav :class="{ hide_smallscreen: !showMenu, topbar: true }">
+        <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink to="/" id="acceuil">
             <img src="@/assets/img/acceuil.png" alt="bouton acceuil" />
           </NuxtLink>
         </div>
-        <div class="nav_topbar">
-          <NuxtLink to="/hotel"> {{$t('hotel')}} </NuxtLink>
+        <div class="nav_topbar" @click="showMenu = false">
+          <NuxtLink to="/hotel"> {{ $t("hotel") }} </NuxtLink>
         </div>
-        <div class="nav_topbar">
+        <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink to="/restaurant">
-          {{$t('restaurant')}}
-        </NuxtLink>
+            {{ $t("restaurant") }}
+          </NuxtLink>
         </div>
-        <div class="nav_topbar">
+        <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink to="/alentour">
-          {{$t('navaAndAround')}}
-        </NuxtLink>
+            {{ $t("navaAndAround") }}
+          </NuxtLink>
         </div>
-        <div class="nav_topbar">
+        <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink to="/contact">
-          {{$t('contact')}}
-        </NuxtLink>
+            {{ $t("contact") }}
+          </NuxtLink>
         </div>
-        <div class="nav_topbar">
+        <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink to="/reservation" id="reservation">
-          {{$t('reservation')}}
-        </NuxtLink>
+            {{ $t("reservation") }}
+          </NuxtLink>
+        </div>
+        <div id="selectLang">
+          <button id="buttonLang" @click="showLang = !showLang">
+            <country-flag :country="findCurrentFlag($i18n.locale)" size="normal" />
+          </button>
+          <ul id="listLang" v-if="showLang">
+            <li
+              v-for="lang in langs"
+              :key="lang.i18n"
+              @click="
+                showLang = false;
+                $i18n.locale = lang.i18n;
+              "
+            >
+              <country-flag :country="lang.flag" size="normal" />
+            </li>
+          </ul>
         </div>
       </nav>
-      <div class="locale-changer">
-    <select class="selectlang" v-model="$i18n.locale">
-      <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
-        {{ lang }}
-      </option>
-    </select>
+      <div id="topbar_phone" v-if="!showMenu" class="hide_fullscreen">
+        <div id="button_phone">
+          <img
+            @click="showMenu = true"
+            src="@/assets/img/button.png"
+            alt="button top bar phone"
+          />
         </div>
-      <div v-if="!showMenu" @click="showMenu = true" class="hide_fullscreen"  id="topbar_phone">
-        <div id="button_phone"><img src="@/assets/img/button.png" alt="button top bar phone" /></div>
       </div>
       <div v-if="showMenu" @click="showMenu = false" id="croix">
         <img src="@/assets/img/croix.png" alt="boutton croix" />
@@ -50,21 +66,53 @@
 
 <script>
 export default {
-  name: 'Acceuil',
+  name: "Acceuil",
   data() {
-      return {
-        showMenu: false,
-        langs: ['fr', 'en', 'nl']
+    return {
+      showMenu: false,
+      langs: [
+        { i18n: "fr", flag: "fr" },
+        { i18n: "en", flag: "gb" },
+        { i18n: "nl", flag: "nl" },
+        { i18n: "de", flag: "de" },
+      ],
+      showLang: false,
+    };
+  },
+  methods: {
+    findCurrentFlag(i18n) {
+      for (const lang of this.langs) {
+        if(i18n === lang.i18n ){
+          return lang.flag
+        }
       }
-    }
-}
+      return null
+    },
+  },
+};
 </script>
 
 <style scoped>
-.selectlang{ 
-  position: fixed;
-  z-index: 9999;
-  background-color: rgba(243, 243, 243, 0.5);
+#selectLang {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#buttonLang {
+  border-style: none;
+}
+
+#listLang {
+  top: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#listLang li {
+  height: 30px;
 }
 
 #croix {
@@ -101,7 +149,7 @@ export default {
 }
 
 .topbar {
-      left: 0;
+  left: 0;
   display: block;
   position: fixed;
   background-color: rgba(243, 243, 243, 0.85);
@@ -139,24 +187,20 @@ export default {
   display: block;
 }
 
-.hide_smallscreen{
+.hide_smallscreen {
   display: none;
 }
 
 @media screen and (min-width: 1285px) {
-
-
-
   .topbar {
     display: flex;
-  width: 100%;
-  height: 66px;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  z-index: 100;
-
+    width: 100%;
+    height: 66px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    z-index: 100;
   }
 
   .nav_topbar {

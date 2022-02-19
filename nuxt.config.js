@@ -37,7 +37,8 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: './plugins/vue-carousel.js', mode: 'client' }],
+  plugins: [{ src: './plugins/vue-carousel.js', mode: 'client'},
+  { src: './plugins/vue-country-flag.js' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -53,9 +54,7 @@ export default {
     [
       '@nuxtjs/i18n',
       { locales: ['en', 'fr', 'nl'],
-      defaultLocale: 'fr',
       vueI18n: {
-        fallbackLocale: 'fr',
         messages: {
           en,
           fr,
@@ -81,5 +80,13 @@ export default {
     templateId: process.env.YOUR_TEMPLATE_ID,
     userId: process.env.YOUR_USER_ID,
     siteKey: process.env.SITE_KEY
+  },
+  i18n: {
+    // ...
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',  // recommended
+    }
   }
 }
