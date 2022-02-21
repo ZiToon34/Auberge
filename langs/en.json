@@ -1,20 +1,118 @@
 {
+    "linkform": "If you wanna contact us buy E-mail, go on the page :",
+    "formail": "For contact us buy mail or phone, thanks to ask at:",
+    "nameandsur": "Name and surname",
+    "formemail": "Email (required)",
+    "formphone": "Phone number",
+    "formmessage": "Our Message",
+    "descriptionrestaurant": "<< Située au cœur du cirque de Navacelles , l’auberge de la cascade vous propose une restauration simple et de qualitée dans un cadre hors du commun >> ",
+    "inforestaurant": "Restaurant ouvert le samedi, dimanche et lundi en basse saison. Tout les jours en haute saison. Le midi uniquement ( demi pension le soir pour les clients de l’hôtel )",
+    "ps": " Ps: pour les groupes nous pouvons à la demande faire des menus spéciaux",
+    "listemenu": "3 Choice of starter, dish and dessert ",
+    "listeplat1": "Starter + Dish (ou Dish + Dessert)",
+    "listeplat2": "Starter + Dish + Dessert",
+    "ardoise": "To the ardoise",
+    "burger": "Burger from Larzac",
+    "salade": "Meal Salade",
+    "dessert": "Home made dessert",
+    "drink": "Beverage",
+    "wine": "Jug of wine Red/ White/ Rose",
+    "water": "Mineral waters",
     "hotel": "Hostel",
     "restaurant": "The Restaurant",
-    "navaAndAround": "Navacelles and Around",
+    "navaAndAround": "Navacelles and surroundings",
     "contact": "Contact",
     "reservation": "Reservation",
-    "timetable": "Timetable",
+    "timetable": "Time schedule",
     "openFooter": "The restaurant is open every day",
-    "openFooter2": "contact us for precision.",
+    "openFooter2": "contact us for more info.",
     "locate": "Locate us",
     "distance": "Distance:",
     "price": "Prices:",
     "priceRoom": "Price",
-    "half": "half-pension (person alone)",
-    "half2": "half-pension (from 2)",
-    "half3": "half-pension (-12 years old)",
+    "descriptionRoom": "With bathroom, toilet and wifi",
+    "half": "half-board (single person)",
+    "half2": "half-board (from 2)",
+    "half3": "half-board (-12 years old)",
     "breakfast": "Breakfast / Person",
     "supPet": "Extra for pet",
-    "tax": "tourist tax / person "
+    "tax": "tourist tax / person ",
+    "arounds": {
+        "navacelle": {
+            "namePlace": "Cirque of Navacelles",
+            "decription_place": "Natural feature created by a short cut in a meander of the river Vis,the cirque of Navacelles is situated in the midst of impressive gorges cut through the Causse of Larzac , Herault, to the south, and the Causse of Blandas, north.",
+            "unite_dist": "0 Km"
+        },
+        "foux": {
+            "namePlace": "The Foux",
+            "decription_place": "Resurgence of the river Vis after it's underground travel through the chalk of the Causse, the mill of La Foux is situated along the walking trails in the gorges of the river Vis.",
+            "unite_dist": "(à pied) 4,5Km - 59min (Allé)"
+        },
+        "aigoual": {
+            "namePlace": "Mount Aigoual",
+            "decription_place": "Mount Aigoual is located in the south of the Massif central, at the limit of the Gard and the Lozere. It is 1565 meters above sea level - 5052 feet- It's  the highest mountain in the Gard and the second in Lozere. You will enjoy a remarkable and endless view of the region.",
+            "unite_dist": "60Km - 1h30min"
+        },
+        "couvertoirade": {
+            "namePlace": "The Couvertoirade",
+            "decription_place": " One of the loveliest villages in France, part of the World heritage, La Couvertroirade, in the heart of the Larzac, welcomes you with a thousand years history. Push open the gates in the walls and dare get lost in the secrets and memories of the place.",
+            "unite_dist": "35Km - 45min"
+        },
+        "salagou": {
+            "namePlace": "Salagou Lake",
+            "decription_place": "Salagou lake is above salagou dam. The valley of the river is special for the 'ruffes' of red earth, treating the visitor with a sight out of this world, a genuine ' mineral choc'. Higher up on the mountain, the red ruffe gives way to black volcanic rock and to the strange white cliffs of the cirque de Moureze.",
+            "unite_dist": "43Km - 47min"
+        },
+        "stguilhem": {
+            "namePlace": "Saint Guilhem-le-Désert",
+            "decription_place": "Known as one of the loveliest villages in France, part of the world heritage , Saint Guilhem le desert was built around the abbey of Gellone, in the gorges of the river Herault. Visit this model of  Roman art in Languedoc, making Saint Guilhem one of the most famous cultural and spiritual landmarks in the region.",
+            "unite_dist": "43Km - 1h"
+        },
+        "lodeve": {
+            "namePlace": "Lodève",
+            "decription_place": "Between Larzac and Salagou, capital  of the Highlands of Herault, Lodeve mingles the architecture of an ancient and influential Episcopal city adorned by  Saint Fulcran cathedral, with an important textile industry - making of carpets at the 'Savonnerie'. Lodeve is also a leading center for the development of the region, based on great cultural events and the promotion of the region and it's skills",
+            "unite_dist": "35Km - 41min"
+        },
+        "levigan": {
+            "namePlace": "The Vigan",
+            "decription_place": "Sous Prefecture of the Gard, open on the Cevennes, Le Vigan will welcome you through its historical features - onion, chestnut, the growing of silkworm and silk industry- and with it's architecture. Four features are registered and protected by the 'monuments historiques': The old bridge, from 1938, the hospice,in 1993,Assas castle from 2002 and Mareilles castle, in 2015.",
+            "unite_dist": "26Km - 39min"
+        }
+
+    },
+    "rooms": {
+        "chambre1": {
+            "nameRoom": "Room n°1",
+            "maxPeople": "Max 4 person"
+        },
+        "chambre2": {
+            "nameRoom": "Room n°2",
+            "maxPeople": "Max 2 person"
+        },
+        "chambre3": {
+            "nameRoom": "Room n°4",
+            "maxPeople": "Max 3 person"
+        },
+        "chambre4": {
+            "nameRoom": "Room n°5",
+            "maxPeople": "Max 2 person"
+        },
+        "chambre5": {
+            "nameRoom": "Room Stage n°1",
+            "maxPeople": "Max 2 person"
+        },
+        "chambre6": {
+            "nameRoom": "Room Stage n°2",
+            "maxPeople": "Max 2 person"
+        },
+        "chambre7": {
+            "nameRoom": "Room Stage n°3",
+            "maxPeople": "Max 2 person"
+        },
+        "chambre8": {
+            "nameRoom": "Room Stage n°4",
+            "maxPeople": "Max 2 person"
+        }
+    }
+
 }

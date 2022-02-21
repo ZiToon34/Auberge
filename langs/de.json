@@ -1,0 +1,120 @@
+{
+    "linkform": "If you wanna contact us buy E-mail, go on the page :",
+    "formail": "For contact us buy mail or phone, thanks to ask at:",
+    "nameandsur": "Name and surname",
+    "formemail": "Email (required)",
+    "formphone": "Phone number",
+    "formmessage": "Our Message",
+    "descriptionrestaurant": "<< Située au cœur du cirque de Navacelles , l’auberge de la cascade vous propose une restauration simple et de qualitée dans un cadre hors du commun >> ",
+    "inforestaurant": "Restaurant ouvert le samedi, dimanche et lundi en basse saison. Tout les jours en haute saison. Le midi uniquement ( demi pension le soir pour les clients de l’hôtel )",
+    "ps": " Ps: pour les groupes nous pouvons à la demande faire des menus spéciaux",
+    "listemenu": "3 Choice of starter, dish and dessert ",
+    "listeplat1": "Starter + Dish (ou Dish + Dessert)",
+    "listeplat2": "Starter + Dish + Dessert",
+    "ardoise": "To the ardoise",
+    "burger": "Burger from Larzac",
+    "salade": "Meal Salade",
+
+
+    "dessert": "hausgemachter Nachtisch",
+    "drink": "Getränke",
+    "wine": "Karaffe Wein Rot/Weiss/Rosé",
+    "water": "Mineralwasser",
+    "hotel": "Hotel",
+    "restaurant": "Das Restaurant",
+    "navaAndAround": "Navacelles und die Umgebung",
+    "contact": "Kontakt",
+    "reservation": "Reservierung",
+    "timetable": "Uhrzeiten",
+    "openFooter": "die Herberge ist jeden Tage der Woche geöffnet",
+    "openFooter2": " Kontaktieren Sie uns für weitere Informationen",
+    "locate": "wo sind wir.",
+    "distance": "Distanz:",
+    "price": "Preise:",
+    "priceRoom": "Preises",
+    "descriptionRoom": "dazu gehören Bad, Wifi und Toilette",
+    "half": " Halbperson (für eine Person)",
+    "half2": "Halbpension (ab zwei Personen)",
+    "half3": "Halbpension (Kidderen -12 Jahr)",
+    "breakfast": "Frühstück / Person",
+    "supPet": "Aufpreis für Haustier",
+    "tax": "Kurtaxe / person ",
+    "arounds": {
+        "navacelle": {
+            "namePlace": "Cirque of Navacelles",
+            "decription_place": "Einzigartiger Flusslauf der Vis in beeindruckendem Karsttal, zwischen dem Hochplateau des Larzc (im Herault, im Süden) und dem Hochplateau von Blandas (im Norden) gelegen",
+            "unite_dist": "0 Km"
+        },
+        "foux": {
+            "namePlace": "The Foux",
+            "decription_place": "Der Fluss Vis legt eine grosse Distanz unterirdisch im Kalkgestein zurück und erscheint wieder am Moulin de la Foux (der Mühle) oberhalb von Navacelles. Diese Mühle kann durch eine schöne Wanderung von Navacelles aus erreicht werden",
+            "unite_dist": "(à pied) 4,5Km - 59min (Allé)"
+        },
+        "aigoual": {
+            "namePlace": "Mount Aigoual",
+            "decription_place": "der Mont Aigual ist ein Berg im Süden des Massif Central, zwischen den Departements Gard und Lozère. Sein Gipfel liegt bei 1565m Höhe  und ist der höchste Punkt vom Gard, sowie der zweithöchste Punkt von der Lozère. Er bietet Ihnen ein unglaubliches Panorama mit einer tollen Weitsicht.",
+            "unite_dist": "60Km - 1h30min"
+        },
+        "couvertoirade": {
+            "namePlace": "The Couvertoirade",
+            "decription_place": " eines der anerkannt schönsten Dörfern Frankreichs, Weltkulturerbe, ist das Dorf La Couvertoirade. Inmitten des Larzacs heisst es Sie willkommen mit seiner tausendjährigen Geschichte. Durchdringen Sie die Festungsmauern und verlieren Sie sich in den von Geheimnissen und Erinnenrungen durchdrungenen Örtlichkeiten.",
+            "unite_dist": "35Km - 45min"
+        },
+        "salagou": {
+            "namePlace": "Salagou Lake",
+            "decription_place": "Der Lac du Salagou ist ein Stausee. Die rote Erde bietet Ihnen ein mineralisches Erlebnis. Zwischen diesen roten« Ruffes » und denschwarzen Vulkangestein in den Höhen gibt es auch die weissen Felsen des « Cirque de Mourèze » zu entdecken.",
+            "unite_dist": "43Km - 47min"
+        },
+        "stguilhem": {
+            "namePlace": "Saint Guilhem-le-Désert",
+            "decription_place": "Bekannt als eines der schönsten Dörfer Frankreichs, Weltkulturerbe, Abteidorf, ist Saint-Guilhem le Desert um die Abtei von Gellone gebaut, alles inmitten des Tales vom Hérault. Erkunden Sie dieses Symbol romanischer Bauweise des Languedoc. Saint-Guilhelm stellt einen Höhepunkt geistlicher und kultureller Natur im Languedoc dar.",
+            "unite_dist": "43Km - 1h"
+        },
+        "lodeve": {
+            "namePlace": "Lodève",
+            "decription_place": "Zwischen Larzac und Salagou gelegen ist Lodève eine Hochburg der hochgelegenen Gegenden des Héraults.  Lodève bietet sowohl historische Bauwerke einer ehemals einflussreichen erzbischöflichen Stadt (mit seiner Kathedrale Saint-Fulcran), als auch einen bedeutendee Textilstandort (là j’ai du mal à traduire savonnerie…), des Weiteren ein sich stark entwickelnder kultureller Standort in jeder Hinsicht.",
+            "unite_dist": "35Km - 41min"
+        },
+        "levigan": {
+            "namePlace": "The Vigan",
+            "decription_place": "Sous-préfecture des Departements Gard, Eintrittspforte der Cevennen, stellt Le Vigan einen sehr historisch geprägten Ort dar: Seidenraupenzucht, Apfel-, Kastanien- und Zwiebelanbau, sowie diverser geschützer Bauwerke (là, je ne donne pas le détail de tous les batiments classés…)",
+            "unite_dist": "26Km - 39min"
+        }
+
+    },
+    "rooms": {
+        "chambre1": {
+            "nameRoom": "Hotelzimmer n°1",
+            "maxPeople": "für 4 Personen"
+        },
+        "chambre2": {
+            "nameRoom": "Hotelzimmer n°2",
+            "maxPeople": "für 2 Personen"
+        },
+        "chambre3": {
+            "nameRoom": "Hotelzimmer n°4",
+            "maxPeople": "für 3 Personen"
+        },
+        "chambre4": {
+            "nameRoom": "Hotelzimmer n°5",
+            "maxPeople": "für 2  Personen"
+        },
+        "chambre5": {
+            "nameRoom": "Hotelzimmer Gästezimmer n°1",
+            "maxPeople": "für 2  Personen"
+        },
+        "chambre6": {
+            "nameRoom": "Hotelzimmer Gästezimmer n°2",
+            "maxPeople": "für 2  Personen"
+        },
+        "chambre7": {
+            "nameRoom": "Hotelzimmer Gästezimmer n°3",
+            "maxPeople": " für 2  Personen"
+        },
+        "chambre8": {
+            "nameRoom": "Hotelzimmer Gästezimmer n°4",
+            "maxPeople": "für 2  Personen"
+        }
+    }
+
+}

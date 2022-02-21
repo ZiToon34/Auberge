@@ -54,7 +54,9 @@ export default {
     [
       '@nuxtjs/i18n',
       { locales: ['en', 'fr', 'nl'],
+      defaultLocale: 'fr',
       vueI18n: {
+        fallbackLocale: 'fr',
         messages: {
           en,
           fr,

@@ -100,19 +100,40 @@ export default {
 }
 
 #buttonLang {
-  border-style: none;
+  background-color: rgba(243, 243, 243, 0);
+  border-style: solid;
+  padding: 5px;
+  border-color: black;
 }
 
 #listLang {
-  top: 25px;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 45px;
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   list-style-type: none;
 }
 
 #listLang li {
+   background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: #af8842;
+  padding: 10px;
   height: 30px;
+  width: 100%;
+}
+
+#listLang li span {
+  justify-content: center;
+  margin-bottom: 3px;
 }
 
 #croix {
@@ -154,7 +175,7 @@ export default {
   position: fixed;
   background-color: rgba(243, 243, 243, 0.85);
   height: 100%;
-  width: 286px;
+  width: 300px;
   z-index: 100;
 }
 
@@ -192,6 +213,32 @@ export default {
 }
 
 @media screen and (min-width: 1285px) {
+  #listLang {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+#listLang li {
+  width: auto;
+  margin: 2.5px;
+}
+
+#listLang li span {
+  width: 52px;
+  height: 39px;
+  margin-bottom: 3px;
+}
+
+
+  #croix{
+    display: none;
+  }
+
   .topbar {
     display: flex;
     width: 100%;
