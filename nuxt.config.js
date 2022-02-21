@@ -61,7 +61,8 @@ export default {
         messages: {
           en,
           fr,
-          nl
+          nl,
+          de
         }
       }}
     ]
