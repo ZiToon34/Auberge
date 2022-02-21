@@ -1,6 +1,7 @@
 import fr from './langs/fr.json'
 import nl from './langs/nl.json'
 import en from './langs/en.json'
+import de from './langs/de.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -53,7 +54,7 @@ export default {
     '@nuxtjs/recaptcha',
     [
       '@nuxtjs/i18n',
-      { locales: ['en', 'fr', 'nl'],
+      { locales: ['en', 'fr', 'nl', 'de'],
       defaultLocale: 'fr',
       vueI18n: {
         fallbackLocale: 'fr',
