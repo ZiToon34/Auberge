@@ -175,7 +175,7 @@ export default {
   position: fixed;
   background-color: rgba(243, 243, 243, 0.85);
   height: 100%;
-  width: 300px;
+  width: 356px;
   z-index: 100;
 }
 

@@ -18,7 +18,7 @@
        <div class="carousel-wrapper">
       <carousel v-bind="options">
         <slide v-for="i in 6" :key="i" class="img-wrapper">
-          <img v-bind:src="`../${i}eat.jpg`" />
+          <img v-bind:src="`../${i}eat.jpg`" type="jpeg" />
         </slide>
       </carousel>
   </div>
