@@ -16,7 +16,7 @@
             type="text"
             name="name"
             class="form-control"
-            placeholder="Entrez vôtre Nom et prénom *"
+            :placeholder="$t('nameandsur')"
             required="required"
             data-error="Nom Obligatoire."
           />
@@ -26,7 +26,7 @@
             type="email"
             name="email"
             class="form-control"
-            placeholder="Entrez vôtre Email *"
+            :placeholder="$t('formemail')"
             required="required"
             data-error="email valide obligatoire."
           />
@@ -36,14 +36,14 @@
             type="tel"
             name="phone"
             class="form-control"
-            placeholder="Entrez vôtre Numéro de Téléphone"
+            :placeholder="$t('formphone')"
           />
           <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
             id="form_message"
             name="message"
             class="form-control"
-            placeholder="Entrez vôtre Message *"
+            :placeholder="$t('formmessage')"
             rows="4"
             required="required"
             data-error="S'il vous plait, laissez nous un message."
@@ -51,7 +51,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer message" />
+          <input type="submit" id="submitBtn" value="Envoyer" />
         </form>
       </div>
     </div>

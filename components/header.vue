@@ -3,30 +3,30 @@
     <header class="header">
       <nav :class="{ hide_smallscreen: !showMenu, topbar: true }">
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/" id="acceuil">
+          <NuxtLink :to="localePath('/')" id="acceuil">
             <img src="@/assets/img/acceuil.png" alt="bouton acceuil" />
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/hotel"> {{ $t("hotel") }} </NuxtLink>
+          <NuxtLink :to="localePath('/hotel')"> {{ $t("hotel") }} </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/restaurant">
+          <NuxtLink :to="localePath('/restaurant')">
             {{ $t("restaurant") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/alentour">
+          <NuxtLink :to="localePath('/alentour')">
             {{ $t("navaAndAround") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/contact">
+          <NuxtLink :to="localePath('/contact')">
             {{ $t("contact") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink to="/reservation" id="reservation">
+          <NuxtLink :to="localePath('/reservation')" id="reservation">
             {{ $t("reservation") }}
           </NuxtLink>
         </div>

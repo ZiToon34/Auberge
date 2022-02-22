@@ -54,16 +54,62 @@ export default {
     '@nuxtjs/recaptcha',
     [
       '@nuxtjs/i18n',
-      { locales: ['en', 'fr', 'nl', 'de'],
+    { locales: ['en', 'de', 'nl', 'fr',],
+    strategy: 'prefix_except_default',
       defaultLocale: 'fr',
+      parsePages: false,   // Disable babel parsing
+      pages: {
+        index: {
+          fr: '/', 
+          en: '/',
+          de: '/',
+          nl: '/'
+        },
+        hotel: {
+          fr: '/hotel', 
+          en: '/hostel',
+          de: '/hotel',
+          nl: '/hotel'
+        },
+        restaurant: {
+          fr: '/restaurant', 
+          en: '/restaurant',
+          de: '/restaurant',
+          nl: '/restaurant'
+        },
+        alentour: {
+          fr: '/alentour', 
+          en: '/around',
+          de: '/umgebung',
+          nl: '/rondom'
+        },
+        contact: {
+          fr: '/contact', 
+          en: '/contact',
+          de: '/kontakt',
+          nl: '/contact'
+        },
+        reservation: {
+          fr: '/reservation', 
+          en: '/reservation',
+          de: '/reservierung',
+          nl: '/reservering'
+        }
+      },
       vueI18n: {
         fallbackLocale: 'fr',
         messages: {
           en,
-          fr,
+          de,
           nl,
-          de
-        }
+          fr
+        },
+        detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected',
+        redirectOn: 'root',  // recommended
+          }
+        
       }}
     ]
 
@@ -84,13 +130,5 @@ export default {
     templateId: process.env.YOUR_TEMPLATE_ID,
     userId: process.env.YOUR_USER_ID,
     siteKey: process.env.SITE_KEY
-  },
-  i18n: {
-    // ...
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',  // recommended
-    }
   }
 }
