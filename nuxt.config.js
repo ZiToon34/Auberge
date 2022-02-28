@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Auberge',
+    title: 'Auberge de la cascade Cirque de Navacelles',
     script:[{
      src: "https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"
     }],
@@ -19,7 +19,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Bar, Hotel, Restaurant situé au coeur du cirque de Navacelles, proche de la cascade de la vis ' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
