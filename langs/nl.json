@@ -1,4 +1,6 @@
 {
+    "person": "Persoon",
+    "day": "Dag",
     "linkform": "Voor een vraag per e-mail kunt u het formulier invullen op de pagina:",
     "formail": "Om contact op te nemen per post of per telefoon, gelieve u te adresseren aan:",
     "nameandsur": "Achternaam en voornaam",
@@ -32,7 +34,7 @@
     "price": "Tarieven:",
     "priceRoom": "prijzen",
     "half": "overnachting Halfpension (1 persoon) ",
-    "half2": "overnachting Halfpension (2 tot 4 personen)",
+    "half2": "overnachting Halfpension (Vanaf 2 personen)",
     "half3": "overnachting Halfpension (-12 jaar oud)",
     "breakfast": " ontbijt / persoon",
     "supPet": "extra kosten / huisdier",

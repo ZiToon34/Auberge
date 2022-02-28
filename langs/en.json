@@ -1,6 +1,8 @@
 {
-    "linkform": "If you wanna contact us buy E-mail, go on the page :",
-    "formail": "For contact us buy mail or phone, thanks to ask at:",
+    "person": "person",
+    "day": "day",
+    "linkform": "If you wanna contact us by E-mail, go on the page :",
+    "formail": "For contact us by mail or phone, thanks to ask at:",
     "nameandsur": "Name and surname",
     "formemail": "Email (required)",
     "formphone": "Phone number",

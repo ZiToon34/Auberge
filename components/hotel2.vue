@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
-                        <td>60€/personne</td>
+                        <td>60€/{{$t('person')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half3')}}</td>
@@ -32,7 +32,7 @@
                     </tr>
                     <tr>
                         <td>{{$t('supPet')}}</td>
-                        <td>5€/jour</td>
+                        <td>5€/{{$t('day')}}</td>
                     </tr>
                     <tr>
                         <th>{{$t('tax')}}</th>
