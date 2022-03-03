@@ -18,13 +18,13 @@
         <div class="footer2">
             <div class="reseaux">
                 <div class="facebook">
-                    <a href="https://www.facebook.com/AubergeDeLaCascade/"><img src="@/assets/img/facebook.svg" alt="image et lien facebook"></a>
+                    <a href="https://www.facebook.com/AubergeDeLaCascade/" target="_blank"><img src="@/assets/img/facebook.svg" alt="image et lien facebook"></a>
                 </div>
                 <div class="instagram">
-                    <a href="https://www.instagram.com/la_cascade_navacelles/"><img src="@/assets/img/instagram.svg" alt="image et lien instagram "></a>
+                    <a href="https://www.instagram.com/la_cascade_navacelles/" target="_blank"><img src="@/assets/img/instagram.svg" alt="image et lien instagram "></a>
                 </div>
                 <div class="tripadvisor">
-                    <a href="https://www.tripadvisor.fr/Restaurant_Review-g3490621-d6742799-Reviews-Auberge_de_la_Cascade-Saint_Maurice_Navacelles_Herault_Occitanie.html"><img src="@/assets/img/tripadvisor.svg" alt="image et lien tripadvisor"></a>
+                    <a href="https://www.tripadvisor.fr/Restaurant_Review-g3490621-d6742799-Reviews-Auberge_de_la_Cascade-Saint_Maurice_Navacelles_Herault_Occitanie.html" target="_blank"><img src="@/assets/img/tripadvisor.svg" alt="image et lien tripadvisor"></a>
                 </div>
             </div>
         </div>
