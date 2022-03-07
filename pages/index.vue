@@ -6,9 +6,26 @@
 </template>
 
 <script>
+
 export default {
-  name: 'Acceuil'
-}
+    data() {
+      return {
+        title: 'Page Accueil'
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Hotel Restaurant Auberge de la cascade Navacelles'
+          }
+        ]
+      }
+    }
+  }
 </script>
 
 <style scoped>
