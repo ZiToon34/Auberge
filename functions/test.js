@@ -1,5 +1,4 @@
 const { MongoClient } = require('mongodb');
-import { Context, Callback, mongoDB } from 'mongodb';
 
 const DB_URL = process.env.DB_URL || 'mongodb://localhost:27017';
 const DB_NAME = 'Test';
@@ -19,12 +18,35 @@ function errorResponse(callback, err){
     body: JSON.stringify({ error: err })
   }, null)
 }
-exports.handler = (event, context, callback) => {
-  MongoClient.connect(`${DB_URL}/${DB_NAME}`, (err, connection) => {
-    if (err) return errorResponse(callback, err);
+let cachedDb = null;
 
-    const db = connection.db(DB_NAME);
-    const infoCollection = db.collection('avions');
+async function connectToDatabase() {
+
+  if (cachedDb) {
+
+    return cachedDb;
+
+  }
+
+  // Connect to our MongoDB database hosted on MongoDB Atlas
+
+  const client = await MongoClient.connect(DB_URL);
+
+  // Specify which database we want to use
+
+  const db = await client.db("Test");
+
+  cachedDb = db;
+
+  return db;
+
+}
+exports.handler = async (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false;
+
+  // Get an instance of our database
+
+  const db = await connectToDatabase();
     if(event.httpMethod === 'POST') {
       const { seating, firstFly, name } = JSON.parse(event.body);
       infoCollection.insert({
@@ -40,14 +62,15 @@ exports.handler = (event, context, callback) => {
       });
     }
     if(event.httpMethod === 'GET') {
-      infoCollection.find({'name': event.queryStringParameters.name}, async (err, result) => {
-        if (err) {
-          console.log('Mongo db error');
-          return errorResponse(callback, err);
-        }
-        successResponse(callback, await result.toArray());
-      });
+        const avions =  await db.collection("avions").find({'name': event.queryStringParameters.name}).toArray();
+
+        const response = {
+      
+          statusCode: 200,
+      
+          body: JSON.stringify(avions),
+      
+        };
+        return response; 
     }
-    connection.close()
-  });
 }

@@ -22,7 +22,7 @@ export default {
     },
    async mounted() {
     this.avions = await this.$http.$get(
-      `/.netlify/functions/avions?name=A380`
+      `/.netlify/functions/test?name=A380`
     );
   }, 
   }
