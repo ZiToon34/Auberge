@@ -10,7 +10,7 @@
 export default {
     data() {
       return {
-        title: 'Auberge de la Cascade à Navacelles (Gard, Hérault)',
+        title: 'Auberge de la Cascade à Navacelles',
         meta: [
           {
           name: 'description',
