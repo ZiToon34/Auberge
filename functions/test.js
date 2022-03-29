@@ -24,20 +24,13 @@ exports.handler = (event, context, callback) => {
     if (err) return errorResponse(callback, err);
 
     const db = connection.db(DB_NAME);
-    const infoCollection = db.collection('animaux');
+    const infoCollection = db.collection('avions');
     if(event.httpMethod === 'POST') {
-      const { race, type, father, mother, birthday_date, loof, available, sexe, photos, siret } = JSON.parse(event.body);
+      const { seating, firstFly, name } = JSON.parse(event.body);
       infoCollection.insert({
-        'race': race,
-        'type': type,
-        'father': father,
-        'mother': mother,
-        'birthday_date': birthday_date,
-        'loof': loof,
-        'available': available,
-        'sexe': sexe,
-        'photos': photos,
-        'siret': siret,
+       'seating': seating,
+       'firstFly': firstFly,
+       'name': name
       }, async (err, result) => {
         if (err) {
           console.log('Mongo db error');
@@ -47,11 +40,11 @@ exports.handler = (event, context, callback) => {
       });
     }
     if(event.httpMethod === 'GET') {
-      infoCollection.find({'type': event.queryStringParameters.type}, async (err, result) => {
+      infoCollection.find({'name': event.queryStringParameters.name}, async (err, result) => {
         if (err) {
           console.log('Mongo db error');
           return errorResponse(callback, err);
-        } 
+        }
         successResponse(callback, await result.toArray());
       });
     }
