@@ -16,21 +16,15 @@ export default {
           name: 'description',
           content: 'Situé au centre du crique de Navacelles, proche de la cascade de la vis. L\'aubgerge de la cascade propose un restaurant, un bar ainsi que plusieurs hébergements.'
           }
-        ]
+        ],
+        avions: null
       }
     },
-    head() {
-      return {
-        title: this.title,
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Hotel Restaurant Auberge de la cascade Navacelles'
-          }
-        ]
-      }
-    }
+   async mounted() {
+    this.avions = await this.$http.$get(
+      `/.netlify/functions/avions?name=A380`
+    );
+  }, 
   }
 </script>
 
