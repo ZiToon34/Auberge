@@ -54,8 +54,14 @@
           <input type="submit" id="submitBtn" value="Envoyer" />
         </form>
       </div>
-    </div>
+      <div>
+        <br>
+    <a href="mailto:durand.olivier.34@gmail.com?subject=Reservation&body=Demande de Reservation" class="box1" style="color: red">En cas de Problème lors de l'envoi du formulaire, cliquez ici</a>
   </div>
+    </div>
+    
+  </div>
+  
 </template>
 
 <script>
