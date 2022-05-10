@@ -56,7 +56,7 @@
       </div>
       <div>
         <br>
-    <a href="mailto:durand.olivier.34@gmail.com?subject=Reservation&body=Demande de Reservation" class="box1" style="color: red">En cas de Problème lors de l'envoi du formulaire, cliquez ici</a>
+    <a href="mailto:durand.olivier.34@gmail.com?subject=Reservation&body=Demande de Reservation" class="box1" style="color: red"><strong>En cas de Problème lors de l'envoi du formulaire, cliquez ici</strong></a>
   </div>
     </div>
     
