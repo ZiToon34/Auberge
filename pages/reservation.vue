@@ -55,18 +55,6 @@
         </form>
       </div>
     </div>
-    <form method="post" action="mail.php">
-            <input id="form_name" type="text" name="name" class="form-control" placeholder="Entrez vôtre Nom *" required="required" data-error="Nom Obligatoire.">
-            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Entrez vôtre Prénom *" required="required" data-error="Prénom obligatoire.">
-            <input id="form_email" type="email" name="email" class="form-control" placeholder="Entrez vôtre Email *" required="required" data-error="email valide obligatoire.">
-            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Entrez vôtre Numéro de Téléphone">
-            <textarea id="form_message" name="message" class="form-control" placeholder="Entrez vôtre Message *" rows="4" required="required" data-error="S'il vous plait, laissez nous un message."></textarea>
-            <br />
-            <input type="submit" value="Envoyer message">
-
-        
-
-        </form>
   </div>
 </template>
 
