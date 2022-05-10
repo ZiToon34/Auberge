@@ -130,7 +130,7 @@ export default {
   robots: [
     {
       UserAgent: 'Googlebot',
-      Disallow: '/user',
+      Disallow: '/nogooglebot/',
     },
     {
       UserAgent: '*',
