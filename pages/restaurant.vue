@@ -33,11 +33,11 @@
         <tbody>
         <tr>
           <td class="listePlat">{{$t('listeplat1')}}</td>
-          <td class="prixPlat">18.50€</td>
+          <td class="prixPlat">19.50€</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('listeplat2')}}</td>
-          <td class="prixPlat">22.50€</td>
+          <td class="prixPlat">23€</td>
         </tr>
         </tbody>
       </table>

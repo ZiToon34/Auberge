@@ -7,6 +7,7 @@
             <h2 class="nom">{{$t('contact')}}</h2>
             <h3 class="description"> {{$t('linkform')}} <NuxtLink to="/reservation" style="border-style: solid; border-color: black; color: #af8842;"> RESERVATION </NuxtLink>.</h3>
             <p class="info"><u><strong>{{$t('formail')}}</strong></u><br> Auberge de la cascade navacelles<br><br>
+            18 chemin des faïsses <br><br>
             Hameau de navacelles<br><br>
             34520 St Maurice – Navacelles <br><br>
             Tél: 04-67-81-50-95</p>

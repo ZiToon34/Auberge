@@ -42,13 +42,13 @@
     "arounds": {
         "navacelle": {
             "namePlace": "Cirque de Navacelles",
-            "decription_place": "Cirque naturel formé par un méandre recoupé de la rivière la Vis dans l'impressionnantes gorges entre le causse du Larzac (Hérault, au sud) et le causse de Blandas (Gard, au nord).",
+            "decription_place": "Cirque naturel formé par un méandre recoupé de la rivière la Vis dans d'impressionantes gorges entre le causse du Larzac (Hérault, au sud) et le causse de Blandas (Gard, au nord).",
             "unite_dist": "0 Km"
         },
         "foux": {
             "namePlace": "La Foux",
             "decription_place": "Résurgence de la rivière la Vis après un parcours souterrain, dans le calcaire des Causses. Le moulin de la Foux est situé sur le parcours des randonnées dans la Vallée de la Vis.",
-            "unite_dist": "(à pied) 4,5Km - 59min (Allé)"
+            "unite_dist": "(à pied) 4,5Km - 59min (Aller)"
         },
         "aigoual": {
             "namePlace": "Mont Aigoual",
@@ -57,7 +57,7 @@
         },
         "couvertoirade": {
             "namePlace": "La Couvertoirade",
-            "decription_place": "Reconnue comme l'un des plus beaux villages de France, Patrimoine Mondial de l'Humanité. La Cité de la Couvertoirade, posée au coeur du Larzac, vous acceuille avec ses mille ans d'histoire. Poussez les portes des remparts hospitaliers et osez vous perdre dans les secrets et la mémoire des lieux.",
+            "decription_place": "Reconnue comme l'un des plus beaux villages de France, Patrimoine Mondial de l'Humanité. La Cité de la Couvertoirade, posée au coeur du Larzac, vous accueille avec ses mille ans d'histoire. Poussez les portes des remparts hospitaliers et osez vous perdre dans les secrets et la mémoire des lieux.",
             "unite_dist": "35Km - 45min"
         },
         "salagou": {
@@ -77,7 +77,7 @@
         },
         "levigan": {
             "namePlace": "Le Vigan",
-            "decription_place": "sous-préfecture du département du Gard, porte d'entrée des Cévennes, Le Vigan vous acceuille avec son hisoire (à travers notamment l'hisoire de la soie, des pommes, châtaignes, des Oignons... ) et son patrimoine ( quatre immeubles protégés au titre des monuments historiques : le vieux pont, classé en 1938, l'hospice, inscrit en 1993, le château d'Assas, inscrit et classé en 2002, et le château de Mareilles, inscrit en 2015. ).",
+            "decription_place": "Sous-préfecture du département du Gard, porte d'entrée des Cévennes, Le Vigan vous acceuille avec son histoire (à travers notamment l'histoire de la soie, des pommes, châtaignes, des Oignons... ) et son patrimoine ( quatre immeubles protégés au titre des monuments historiques : le vieux pont, classé en 1938, l'hospice, inscrit en 1993, le château d'Assas, inscrit et classé en 2002, et le château de Mareilles, inscrit en 2015. ).",
             "unite_dist": "26Km - 39min"
         }
 
@@ -113,7 +113,7 @@
         },
         "chambre8": {
             "nameRoom": "Chambre Relais n°4",
-            "maxPeople": "Maximum 2 personnes"
+            "maxPeople": "Maximum 3 personnes"
         }
     }
 }
