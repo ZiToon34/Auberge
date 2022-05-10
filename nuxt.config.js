@@ -124,8 +124,19 @@ export default {
         
       }}
     ],
-    
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://coqhaw.fr',
+    gzip: true,
+    routes: [
+      '/hotel',
+      '/reservation',
+      '/contact',
+      '/restaurant',
+      '/alentour'
+    ]
+  },
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
     language: 'fr',   // Recaptcha language (v2)
