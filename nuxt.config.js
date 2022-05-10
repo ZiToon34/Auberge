@@ -127,7 +127,7 @@ export default {
     '@nuxtjs/sitemap',
   ],
   sitemap: {
-    hostname: 'https://coqhaw.fr',
+    hostname: 'https://www.coqhaw.fr/sitemap.xml',
     gzip: true,
     routes: [
       '/hotel',
