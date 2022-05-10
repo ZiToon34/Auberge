@@ -124,7 +124,6 @@ export default {
         
       }}
     ],
-    '@nuxtjs/robots',
     '@nuxtjs/sitemap',
   ],
   sitemap: {
