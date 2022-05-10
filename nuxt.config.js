@@ -137,28 +137,6 @@ export default {
       '/alentour'
     ]
   },
-  sitemap: {
-    hostname: 'http://www.coqhaw.fr/sitemap.xml',
-    gzip: true,
-    routes: [
-      '/hotel',
-      '/reservation',
-      '/contact',
-      '/restaurant',
-      '/alentour'
-    ]
-  },
-  sitemap: {
-    hostname: 'www.coqhaw.fr/sitemap.xml',
-    gzip: true,
-    routes: [
-      '/hotel',
-      '/reservation',
-      '/contact',
-      '/restaurant',
-      '/alentour'
-    ]
-  },
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
     language: 'fr',   // Recaptcha language (v2)
