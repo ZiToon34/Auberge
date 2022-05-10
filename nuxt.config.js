@@ -131,11 +131,7 @@ export default {
     {
       UserAgent: 'Googlebot',
       Disallow: '/nogooglebot/',
-    },
-    {
-      UserAgent: '*',
-      Disallow: '/admin',
-    },
+    }
   ],
   sitemap: {
     hostname: 'https://www.coqhaw.fr/sitemap.xml',
