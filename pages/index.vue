@@ -8,29 +8,16 @@
 <script>
 
 export default {
-    data() {
-      return {
-        title: 'Auberge de la Cascade à Navacelles (Gard, Hérault)',
-        meta: [
-          {
-          name: 'description',
-          content: 'Situé au centre du crique de Navacelles, proche de la cascade de la vis. L\'aubgerge de la cascade propose un restaurant, un bar ainsi que plusieurs hébergements.'
-          }
-        ]
+    head: {
+    title: 'Page d\'Accueil',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Bienvenue sur le site de l\'Auberge de la Cascade à Navacelles - Hérault. Profitez d\'un cadre exceptionnel pour vos vacances.'
       }
-    },
-    head() {
-      return {
-        title: this.title,
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: 'Hotel Restaurant Auberge de la cascade Navacelles'
-          }
-        ]
-      }
-    }
+    ]
+  }
   }
 </script>
 
