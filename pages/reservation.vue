@@ -98,6 +98,16 @@ export default {
         );
     },
   },
+  head: {
+    title: 'Reservation',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Reserver à l\'Auberge de la cascade'
+      }
+    ],
+  }
 };
 </script>
 

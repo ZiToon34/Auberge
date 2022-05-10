@@ -20,7 +20,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'google-site-verification', content: 'O-APpDp4_S4j8HrzBcEnlwSXW_wS7ZDTIhDOYXcgJbY' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Bar, Hotel, Restaurant situé au coeur du cirque de Navacelles, proche de la cascade de la vis ' },
+      { name: "description", content: "Bienvenue sur le site de l'Auberge de la Cascade à Navacelles - Hérault. Profitez d'un cadre exceptionnel pour vos vacances." },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -123,8 +123,8 @@ export default {
           }
         
       }}
-    ]
-
+    ],
+    
   ],
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)

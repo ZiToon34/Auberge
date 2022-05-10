@@ -16,8 +16,18 @@ export default {
         return {
           rooms
         }
+      },
+      head: {
+    title: 'Hotel',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Hebergement au centre du cirque de Navacelles'
       }
-} 
+    ],
+  }
+}
 </script>
 
 

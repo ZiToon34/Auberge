@@ -16,7 +16,17 @@ export default {
         return {
           arounds
         }
+      },
+      head: {
+    title: 'Alentour',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Autour de l\'Auberge de la cascade'
       }
+    ],
+  }
 } 
 </script>
 

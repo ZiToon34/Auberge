@@ -117,6 +117,16 @@ export default {
         paginationEnabled: false
       }
     }
+  },
+  head: {
+    title: 'Restaurant',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Restaurant Auberge de la Cascade'
+      }
+    ],
   }
 }
 </script>

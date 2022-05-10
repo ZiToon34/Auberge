@@ -18,3 +18,17 @@
 </div>
 </div>
 </template>
+<script>
+export default {
+    head: {
+    title: 'Contact',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Contacter l\'Auberge de la cascade'
+      }
+    ],
+  }
+} 
+</script>
