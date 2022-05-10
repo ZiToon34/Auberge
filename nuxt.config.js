@@ -127,12 +127,6 @@ export default {
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
   ],
-  robots: [
-    {
-      UserAgent: '*',
-      Disallow: ''
-    }
-  ],
   sitemap: {
     hostname: 'https://www.coqhaw.fr/sitemap.xml',
     gzip: true,
