@@ -66,7 +66,7 @@
             name="pers"
             class="form-control"
             :placeholder="$t('form_pers')"
-          />
+          >
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -95,7 +95,7 @@
             name="bed"
             class="form-control"
             :placeholder="$t('form_bed')"
-          />
+          >
           <option value="Grand Lit">{{$t('bigbed')}}</option>
           <option value="Lits Jumeaux">{{$t('twinbed')}}</option>
           <option value="Grand Lit + Petit Lit">{{$t('bigtwinbed')}}</option>
