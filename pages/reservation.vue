@@ -59,14 +59,49 @@
           <option value="Chambre Seule + Petit Dej">{{$t('roomalonedej')}}</option>
           <option value="Chambre Seule">{{$t('roomalone')}}</option>
           </select>
+          <label for="form_pers">{{$t('formpers')}}</label>
+          <select
+            id="form_pers"
+            type="text"
+            name="pers"
+            class="form-control"
+            :placeholder="$t('form_pers')"
+          />
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          </select>
           <label for="form_bed">{{$t('formbed')}}</label>
-          <input
+          <select
             id="form_bed"
             type="text"
             name="bed"
             class="form-control"
             :placeholder="$t('form_bed')"
           />
+          <option value="Grand Lit">{{$t('bigbed')}}</option>
+          <option value="Lits Jumeaux">{{$t('twinbed')}}</option>
+          <option value="Grand Lit + Petit Lit">{{$t('bigtwinbed')}}</option>
+          <option value="Grand Lit + Supperposé">{{$t('bigsupp')}}</option>
+          <option value="Groupe">{{$t('group')}}</option>
+          </select>
           <label for="form_datestart">{{$t('formdatestart')}}</label>
           <input
             id="form_datestart"
