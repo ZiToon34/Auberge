@@ -58,13 +58,27 @@
             class="form-control"
             :placeholder="$t('form_bed')"
           />
+          <label for="form_datestart">{{$t('formdatestart')}}</label>
+          <input
+            id="form_datestart"
+            type="date"
+            name="datestart"
+            class="form-control"
+          />
+          <label for="form_dateend">{{$t('formdateend')}}</label>
+          <input
+            id="form_dateend"
+            type="date"
+            name="dateend"
+            class="form-control"
+          />
           <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
             id="form_message"
             name="message"
             class="form-control"
             :placeholder="$t('form_message')"
-            rows="4"
+            rows="10"
             required="required"
             data-error="S'il vous plait, laissez nous un message."
           ></textarea>
