@@ -1,4 +1,10 @@
 {
+    "bigbed": "Grand Lit",
+    "twinbed": "Lits Jumeaux",
+    "bigtwinbed": "Grand Lit + Lits Jumeaux",
+    "bigsupp": "Grand Lit + Lit Supperposé",
+    "group": "Groupe",
+    "formpers": "Nombre de Personne",
     "demipension": "Demi-pension",
     "roomalonedej": "Chambre seule + Petit Déjeuner",
     "roomalone": "Chambre seule",
