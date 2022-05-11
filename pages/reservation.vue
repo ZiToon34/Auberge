@@ -8,6 +8,10 @@
       />
     </div>
     <div class="conteneur">
+    <div>
+        <br>
+    <p class="box1" style="color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
+  </div>
       <div class="box1" style="display: block">
         <form id="myForm" ref="form" @submit.prevent="sendEmail">
           <label for="form_name">{{$t('nameandsur')}}</label>
