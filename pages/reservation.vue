@@ -55,9 +55,9 @@
             data-error="Type d'Hébergement Obligatoire"
           >
           <option value="">--Choisissez une Option--</option>
-          <option value="demipension">{{$t('demipension')}}</option>
-          <option value="roomalonedej">{{$t('roomalonedej')}}</option>
-          <option value="roomalone">{{$t('roomalone')}}</option>
+          <option value="Demi-pension">{{$t('demipension')}}</option>
+          <option value="Chambre Seule + Petit Dej">{{$t('roomalonedej')}}</option>
+          <option value="Chambre Seule">{{$t('roomalone')}}</option>
           </select>
           <label for="form_bed">{{$t('formbed')}}</label>
           <input
