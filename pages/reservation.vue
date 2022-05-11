@@ -63,7 +63,7 @@
             id="form_message"
             name="message"
             class="form-control"
-            :placeholder="$t('formmessage')"
+            :placeholder="$t('form_message')"
             rows="4"
             required="required"
             data-error="S'il vous plait, laissez nous un message."
