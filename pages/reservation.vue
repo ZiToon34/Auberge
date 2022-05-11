@@ -41,6 +41,8 @@
             name="phone"
             class="form-control"
             :placeholder="$t('formphone')"
+            required="required"
+            data-error="Téléphone Obligatoire"
           />
           <label for="form_pension">{{$t('formpension')}}</label>
           <input
@@ -64,6 +66,8 @@
             type="date"
             name="datestart"
             class="form-control"
+            required="required"
+            data-error="Date d'arrivée obligatoire."
           />
           <label for="form_dateend">{{$t('formdateend')}}</label>
           <input
@@ -71,6 +75,8 @@
             type="date"
             name="dateend"
             class="form-control"
+            required="required"
+            data-error="Date de départ obligatoire."
           />
           <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
