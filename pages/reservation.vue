@@ -48,7 +48,7 @@
             type="text"
             name="pension"
             class="form-control"
-            :placeholder="$t('pension')"
+            :placeholder="$t('form_pension')"
           />
           <label for="form_bed">{{$t('formbed')}}</label>
           <input
@@ -56,7 +56,7 @@
             type="text"
             name="bed"
             class="form-control"
-            :placeholder="$t('formbed')"
+            :placeholder="$t('form_bed')"
           />
           <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
