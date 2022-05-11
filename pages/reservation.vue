@@ -42,6 +42,22 @@
             class="form-control"
             :placeholder="$t('formphone')"
           />
+          <label for="form_pension">{{$t('formpension')}}</label>
+          <input
+            id="pension"
+            type="text"
+            name="pension"
+            class="form-control"
+            :placeholder="$t('pension')"
+          />
+          <label for="form_bed">{{$t('formbed')}}</label>
+          <input
+            id="form_bed"
+            type="text"
+            name="bed"
+            class="form-control"
+            :placeholder="$t('formbed')"
+          />
           <label for="form_message">{{$t('formmessage')}}</label>
           <textarea
             id="form_message"
