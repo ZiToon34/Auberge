@@ -45,13 +45,20 @@
             data-error="Téléphone Obligatoire"
           />
           <label for="form_pension">{{$t('formpension')}}</label>
-          <input
+          <select
             id="pension"
             type="text"
             name="pension"
             class="form-control"
             :placeholder="$t('form_pension')"
-          />
+            required="required"
+            data-error="Type d'Hébergement Obligatoire"
+          >
+          <option value="">--Choisissez une Option--</option>
+          <option value="demipension">{{$t('demipension')}}</option>
+          <option value="roomalonedej">{{$t('roomalonedej')}}</option>
+          <option value="roomalone">{{$t('roomalone')}}</option>
+          </select>
           <label for="form_bed">{{$t('formbed')}}</label>
           <input
             id="form_bed"
