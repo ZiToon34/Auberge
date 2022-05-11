@@ -15,6 +15,10 @@
                         <th>{{$t('priceRoom')}}</th>
                     </tr>
                     <tr>
+                        <td>{{$t('justroom')}}</td>
+                        <td>65€</td>
+                    </tr>
+                    <tr>
                         <td>{{$t('half')}}</td>
                         <td>78€</td>
                     </tr>
