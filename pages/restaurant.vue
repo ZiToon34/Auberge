@@ -37,7 +37,7 @@
         </tr>
         <tr>
           <td class="listePlat">{{$t('listeplat2')}}</td>
-          <td class="prixPlat">23€</td>
+          <td class="prixPlat">24€</td>
         </tr>
         </tbody>
       </table>
@@ -45,16 +45,16 @@
       <table>
         <tbody>
         <tr>
-          <td class="listePlat">{{$t('burger')}}</td>
-          <td class="prixPlat">16€</td>
+          <td class="listePlat">{{$t('Steak enfant + sirop')}}</td>
+          <td class="prixPlat">9€</td>
         </tr>
         <tr>
-          <td class="listePlat">{{$t('salade')}}</td>
-          <td class="prixPlat">14€</td>
+          <td class="listePlat">{{$t('Salade Repas')}}</td>
+          <td class="prixPlat">14.50€</td>
         </tr>
         <tr>
-          <td class="listePlat">{{$t('dessert')}}</td>
-          <td class="prixPlat">5.50€</td>
+          <td class="listePlat">{{$t('Dessert')}}</td>
+          <td class="prixPlat">6€</td>
         </tr>
         </tbody>
       </table>
