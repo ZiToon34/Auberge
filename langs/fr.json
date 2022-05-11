@@ -1,4 +1,7 @@
 {
+    "demipension": "Demi-pension",
+    "roomalonedej": "Chambre seule + Petit Déjeuner",
+    "roomalone": "Chambre seule",
     "formdatestart": "Date d'Arrivée",
     "formdateend": "Date de Départ",
     "person": "personne",
@@ -9,7 +12,7 @@
     "formemail": "Email (obligatoire)",
     "formphone": "Numéro de téléphone",
     "form_pension": "Demi-pension ou Non",
-    "formpension": "Demi-pension",
+    "formpension": "Type d'Hébergement",
     "form_bed": "Lits Jumeaux ou Grand Lit (Ou nombre de lit si plus de 2)",
     "formbed": "Type de Lit",
     "formmessage": "Votre Message",
