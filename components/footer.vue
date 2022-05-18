@@ -4,12 +4,12 @@
         <div class="horaires" >
             <h2 class="h2_horaires">{{$t('timetable')}}</h2>
             <hr class="barre barre_horaire" style="width: 30%; height: 1px; background: #b2b2b2;">
-            <p class="info_footer">{{$t('openFooter')}} <br> {{$t('openFooter2')}} </p>
+            <p class="info_footer">{{$t('openFooter')}} <br> {{$t('openFooter2')}} <br> 04-67-81-50-95 </p>
         </div>
         <div class="adresse">
             <h2 class="h2_adresse">{{$t('locate')}}</h2>
             <hr class="barre barre_adresse" style="width: 30%; height: 1px; background: #b2b2b2;">
-            <a href="https://www.google.com/maps/place/Auberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles/@43.8863591,3.5430335,14z/data=!4m6!1m3!3m2!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4!2sAuberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles!3m1!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4?hl=fr&gl=FR" class="info_footer info_adresse" style="text-decoration: underline;">Auberge de la cascade <br> Hameau de Navacelles <br> 34520 Saint Maurice-Navacelles</a>
+            <a href="https://www.google.com/maps/place/Auberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles/@43.8863591,3.5430335,14z/data=!4m6!1m3!3m2!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4!2sAuberge+de+la+Cascade,+hameau+de,+34520+Saint-Maurice-Navacelles!3m1!1s0x12b3ef59f8fcd04d:0x7cbe35cb64f667b4?hl=fr&gl=FR" class="info_footer info_adresse" style="text-decoration: underline;">Auberge de la cascade <br> 18 Chemin des Faïsses <br> Hameau de Navacelles <br> 34520 Saint Maurice-Navacelles</a>
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11500.545067018318!2d3.5116667!3d43.8944444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7cbe35cb64f667b4!2sAuberge%20de%20la%20Cascade!5e0!3m2!1sfr!2sfr!4v1620997946108!5m2!1sfr!2sfr" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
