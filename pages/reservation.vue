@@ -117,6 +117,7 @@
           <input
             id="form_dateend"
             type="date"
+            pattern="\d{1,2}/\d{1,2}/\d{4}"
             name="dateend"
             class="form-control"
             required="required"
