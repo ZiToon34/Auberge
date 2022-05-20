@@ -108,7 +108,7 @@
           <input
             id="form_datestart"
             type="text"
-            placeholder="{{$t('kindofdate')}}"
+            :placeholder="$t('kindofdate')"
             name="datestart"
             class="form-control"
             required="required"
@@ -118,7 +118,7 @@
           <input
             id="form_dateend"
             type="text"
-            placeholder="{{$t('kindofdate')}}"
+            :placeholder="$t('kindofdate')"
             name="dateend"
             class="form-control"
             required="required"
