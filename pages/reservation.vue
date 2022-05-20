@@ -107,7 +107,8 @@
           <label for="form_datestart">{{$t('formdatestart')}}</label>
           <input
             id="form_datestart"
-            type="date"
+            type="text"
+            placeholder="DD/MM/YYYY"
             name="datestart"
             class="form-control"
             required="required"
