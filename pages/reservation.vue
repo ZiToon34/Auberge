@@ -108,7 +108,7 @@
           <input
             id="form_datestart"
             type="text"
-            placeholder="DD/MM/YYYY"
+            placeholder="{{$t('kindofdate')}}"
             name="datestart"
             class="form-control"
             required="required"
@@ -117,8 +117,8 @@
           <label for="form_dateend">{{$t('formdateend')}}</label>
           <input
             id="form_dateend"
-            type="date"
-            pattern="\d{1,2}/\d{1,2}/\d{4}"
+            type="text"
+            placeholder="{{$t('kindofdate')}}"
             name="dateend"
             class="form-control"
             required="required"
