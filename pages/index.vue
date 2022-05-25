@@ -30,7 +30,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 660px;
-    animation: fondu 8s ease-in-out infinite both;
+    animation: fondu 10s ease-in-out infinite both;
 }
 
 .auberge{
