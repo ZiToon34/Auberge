@@ -29,7 +29,7 @@ export default {
     background-position: center;
     justify-content: center;
     width: 100%;
-    height: 660px;
+    height: 645px;
     animation: fondu 10s ease-in-out infinite both;
 }
 
