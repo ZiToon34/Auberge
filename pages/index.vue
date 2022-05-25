@@ -51,8 +51,12 @@ export default {
 }
 
 @keyframes fondu{
-    50%{background-image: url("~/assets/img/navacelles1.jpg");
-    100%{background-image: url(""~/assets/img/aubergecasc.jpg");
+    50%{
+    background-image: url("~/assets/img/navacelles1.jpg");
+    }
+    100%{
+    background-image: url(""~/assets/img/aubergecasc.jpg");
+    }
 }
 
 
