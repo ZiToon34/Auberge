@@ -51,7 +51,7 @@ export default {
 }
 
 @keyframes fondu{
-    50%{
+    0%{
     background-image: url("~/assets/img/navacelles1.jpg");
     }
     100%{
