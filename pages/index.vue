@@ -30,7 +30,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 660px;
-    animation: fondu 5s ease-in-out infinite both;
+    animation: fondu 8s ease-in-out infinite both;
 }
 
 .auberge{
@@ -54,8 +54,11 @@ export default {
     0%{
     background-image: url("~/assets/img/navacelles1.jpg");
     }
-    100%{
+    50%{
     background-image: url("~/assets/img/aubergecasc.jpg");
+    }
+    100%{
+    background-image: url("~/assets/img/navacelles1.jpg");
     }
 }
 
