@@ -26,11 +26,11 @@ export default {
 .welcome{
     position: relative;
     text-align: center;
-    background: url("~/assets/img/navacelles1.jpg") center center / cover no-repeat;
     background-position: center;
     justify-content: center;
     width: 100%;
     height: 660px;
+    animation: fondu 5s ease-in-out infinite both;
 }
 
 .auberge{
@@ -48,6 +48,11 @@ export default {
     animation-duration: 2s;
     font-size: 50px;
 
+}
+
+@keyframes fondu{
+    50%{background-image: url("~/assets/img/navacelles1.jpg");}
+    100%{background-image: url(""~/assets/img/aubergecasc.jpg");}
 }
 
 
