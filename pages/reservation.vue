@@ -107,7 +107,8 @@
           <label for="form_datestart">{{$t('formdatestart')}}</label>
           <input
             id="form_datestart"
-            type="date"
+            type="text"
+            :placeholder="$t('kindofdate')"
             name="datestart"
             class="form-control"
             required="required"
@@ -116,7 +117,8 @@
           <label for="form_dateend">{{$t('formdateend')}}</label>
           <input
             id="form_dateend"
-            type="date"
+            type="text"
+            :placeholder="$t('kindofdate')"
             name="dateend"
             class="form-control"
             required="required"
