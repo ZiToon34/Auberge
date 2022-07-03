@@ -8,25 +8,25 @@
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink :to="localePath('/hotel')"> {{ $t("hotel") }} </NuxtLink>
+          <NuxtLink :to="localePath('/hotel/')"> {{ $t("hotel") }} </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink :to="localePath('/restaurant')">
+          <NuxtLink :to="localePath('/restaurant/')">
             {{ $t("restaurant") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink :to="localePath('/alentour')">
+          <NuxtLink :to="localePath('/alentour/')">
             {{ $t("navaAndAround") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink :to="localePath('/contact')">
+          <NuxtLink :to="localePath('/contact/')">
             {{ $t("contact") }}
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">
-          <NuxtLink :to="localePath('/reservation')" id="reservation">
+          <NuxtLink :to="localePath('/reservation/')" id="reservation">
             {{ $t("reservation") }}
           </NuxtLink>
         </div>
