@@ -12,7 +12,7 @@
         </div>
         <div class="nav_topbar" @click="showMenu = false">
           <NuxtLink :to="localePath('/restaurant/')">
-            {{ $t("restaurant") }}
+            <p>{{ $t("restaurant") }}</p>
           </NuxtLink>
         </div>
         <div class="nav_topbar" @click="showMenu = false">

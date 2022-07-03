@@ -31,7 +31,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 645px;
-    animation: fondu 10s ease-in-out infinite both;
+    animation: fondu 5s ease-in-out infinite both;
 }
 
 .auberge{
