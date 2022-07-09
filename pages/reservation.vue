@@ -66,6 +66,7 @@
             name="pers"
             class="form-control"
             :placeholder="$t('form_pers')"
+            required="required"
           >
           <option value="">--Choisissez une Option--</option>
           <option value="1">1</option>
@@ -96,6 +97,7 @@
             name="bed"
             class="form-control"
             :placeholder="$t('form_bed')"
+            required="required"
           >
           <option value="">--Choisissez une Option--</option>
           <option value="Grand Lit">{{$t('bigbed')}}</option>
