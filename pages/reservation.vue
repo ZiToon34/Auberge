@@ -144,7 +144,7 @@
       </div>
       <div>
         <br>
-    <a href="mailto:durand.olivier.34@gmail.com?subject=Reservation&body=Demande de Reservation" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"><strong>En cas de Problème lors de l'envoi du formulaire, cliquez ici</strong></a>
+    <a href="mailto:aubergedelacascade@orange.fr?subject=Reservation&body=Demande de Reservation" style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"><strong>En cas de Problème lors de l'envoi du formulaire, cliquez ici</strong></a>
   </div>
     </div>
     
