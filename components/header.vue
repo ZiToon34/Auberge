@@ -62,10 +62,9 @@
       </div>
       <div id="popup">
         <div style="text-align: center; font-size: 42px !important;
-    line-height: 42px !important; margin-bottom: 20px; margin-top: 20px;"> Fermeture Annuelle </div>
-        <div style="text-align: center; margin-top: 20px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
-        <div style="text-align: center; font-size: 18px !important;
-    line-height: 42px !important; margin-bottom: 20px;"> A très bientôt !</div>
+    line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Fermeture Annuelle </div>
+        <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
+        <div style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
       </div>
     </header>
   </div>
