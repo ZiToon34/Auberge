@@ -101,6 +101,7 @@ export default {
 <style scoped>
 
 #popup{
+    border-width: 5px;
     border-style: solid;
     border-color: #af8842;
     background-color: white;
@@ -237,6 +238,7 @@ export default {
 
 #popup{
     border-style: solid;
+    border-width: 5px;
     border-color: #af8842;
     background-color: white;
     position: fixed;
