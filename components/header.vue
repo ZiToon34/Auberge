@@ -100,21 +100,6 @@ export default {
 
 <style scoped>
 
-#popup{
-    border-width: 5px;
-    border-style: solid;
-    border-color: #af8842;
-    background-color: white;
-    position: fixed;
-    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 100%;
-    height: 30vh;
-    top: 308px;
-    opacity: 1;
-    display: block;
-    z-index: 1999999999;
-  }
-
 #selectLang {
   position: relative;
   display: flex;
@@ -234,42 +219,7 @@ export default {
   display: none;
 }
 
-@media screen and (max-width: 410px){
-
-#popup{
-    border-style: solid;
-    border-width: 5px;
-    border-color: #af8842;
-    background-color: white;
-    position: fixed;
-    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 100%;
-    height: 35vh;
-    top: 308px;
-    opacity: 1;
-    display: block;
-    z-index: 1999999999;
-  }
-
-
-}
-
 @media screen and (min-width: 1285px) {
-
-  #popup {
-    border-style: solid;
-    border-color: #af8842;
-    background-color: white;
-    position: fixed;
-    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 650px;
-    height: 200px;
-    top: 308px;
-    left: 25vw;
-    opacity: 1;
-    display: block;
-    z-index: 1999999999;
-}
 
   #listLang {
   padding: 5px;
