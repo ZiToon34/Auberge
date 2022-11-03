@@ -1,0 +1,179 @@
+
+<template>
+  <div class="modal-overlay">
+    <div id="popup">
+      <div class="close" @click="$emit('close-modal')">
+      <button class="close-img">X</button>
+      </div>
+     <div style="text-align: center; font-size: 42px !important;
+    line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Fermeture Annuelle </div>
+      <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
+      <div style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+}
+</script>
+
+<style scoped>
+
+.modal-overlay {
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000da;
+  z-index: 9999999;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.close-img {
+  width: 25px;
+}
+
+button {
+  display: block;
+  background-color: #af8842;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  border-radius: 16px;
+}
+
+#popup{
+    border-width: 5px;
+    border-style: solid;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    height: 25vh;
+    top: 308px;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+  }
+
+  @media screen and (max-width: 410px){
+
+#popup{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    height: 35vh;
+    top: 308px;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+  }
+}
+
+@media screen and (min-width: 1285px) {
+
+#popup {
+    border-style: solid;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 650px;
+    height: 220px;
+    top: 308px;
+    left: 25vw;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+    }
+}
+</style>
+
+
+<!--<template>
+    <div id="popup">
+        <button id="closepopup">X</button>
+        <div style="text-align: center; font-size: 42px !important;
+    line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Fermeture Annuelle </div>
+        <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
+        <div style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
+        <div class="close" @click="$emit('close-modal')">
+      <button class="close-img">X</button>
+      </div>
+      </div>
+</template>
+
+<script>
+export default {
+   
+}
+</script>
+
+<style scoped>
+
+#popup{
+    border-width: 5px;
+    border-style: solid;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    height: 25vh;
+    top: 308px;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+  }
+
+  @media screen and (max-width: 410px){
+
+#popup{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    height: 35vh;
+    top: 308px;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+  }
+}
+
+@media screen and (min-width: 1285px) {
+
+#popup {
+    border-style: solid;
+    border-color: #af8842;
+    background-color: white;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 650px;
+    height: 200px;
+    top: 308px;
+    left: 25vw;
+    opacity: 1;
+    display: block;
+    z-index: 1999999999;
+    }
+}
+
+</style>--!>

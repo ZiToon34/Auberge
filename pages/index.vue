@@ -17,7 +17,7 @@ export default {
         content: 'Bienvenue sur le site de l\'Auberge de la Cascade à Navacelles - Hérault. Profitez d\'un cadre exceptionnel pour vos vacances.'
       }
     ]
-  }
+  },
   }
 </script>
 

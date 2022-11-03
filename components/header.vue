@@ -60,18 +60,17 @@
       <div v-if="showMenu" @click="showMenu = false" id="croix">
         <img src="@/assets/img/croix.png" alt="boutton croix" />
       </div>
-      <popup id="popup">
-        <div style="text-align: center; font-size: 42px !important;
-    line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Fermeture Annuelle </div>
-        <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
-        <div style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
-      </popup>
+        <SavedModal v-show="showModal" />
+        <SavedModal v-show="showModal" @close-modal="showModal = false" />
     </header>
   </div>
 </template>
 
 <script>
+import SavedModal from '../components/SavedModal.vue'
+
 export default {
+  components: { SavedModal },
   name: "Acceuil",
   data() {
     return {
@@ -82,6 +81,7 @@ export default {
         { i18n: "nl", flag: "nl" },
         { i18n: "de", flag: "de" },
       ],
+      showModal: true,
       showLang: false,
     };
   },
@@ -108,7 +108,7 @@ export default {
     position: fixed;
     box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     top: 308px;
     opacity: 1;
     display: block;
