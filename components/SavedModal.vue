@@ -7,8 +7,8 @@
       </div>
      <div style="text-align: center; font-size: 42px !important;
     line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Fermeture Annuelle </div>
-      <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture.</div>
-      <div style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
+      <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade est fermée pour la saison 2022, elle sera heureuse de vous retrouver en Avril 2023 pour sa réouverture. Vous pouvez toujours nous contacter par le formulaire de pré-reservation.</div>
+      <div class="seeusoon" style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
     </div>
   </div>
 </template>
@@ -56,6 +56,7 @@ button {
     border-style: solid;
     border-color: #af8842;
     background-color: white;
+    text-align: center;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100%;
@@ -66,7 +67,7 @@ button {
     z-index: 1999999999;
   }
 
-  @media screen and (max-width: 439px){
+  @media screen and (max-width: 630px){
 
 #popup{
     border-style: solid;
@@ -76,7 +77,7 @@ button {
     position: fixed;
     box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100%;
-    height: 35vh;
+    height: 400px;
     top: 308px;
     opacity: 1;
     display: block;
@@ -93,7 +94,7 @@ button {
     position: fixed;
     box-shadow: rgba(0, 0, 0, 1) 0px 54px 55px, rgba(0, 0, 0, 1) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 650px;
-    height: 220px;
+    height: 250px;
     top: 308px;
     left: 25vw;
     opacity: 1;
