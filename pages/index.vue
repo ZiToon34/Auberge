@@ -18,8 +18,30 @@ export default {
       }
     ]
   },
-  }
-</script>
+  mounted() {
+  addAnimationClasses();
+},
+beforeRouteLeave(to, from, next) {
+  removeAnimationClasses();
+  next();
+}
+}
+function addAnimationClasses() {
+  const welcome = document.querySelector('.welcome');
+  welcome.classList.add('animate-fondu');
+
+  const auberge = document.querySelector('.auberge');
+  auberge.classList.add('animate-arrive', 'animate-apparait');
+}
+function removeAnimationClasses() {
+  const welcome = document.querySelector('.welcome');
+  welcome.classList.remove('animate-fondu');
+
+  const auberge = document.querySelector('.auberge');
+  auberge.classList.remove('animate-arrive', 'animate-apparait');
+}
+
+ </script>
 
 <style scoped>
 
@@ -31,7 +53,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: 645px;
-    animation: fondu 5s ease-in-out infinite both;
+    /*animation: fondu 5s ease-in-out infinite both;*/
 }
 
 .auberge{
@@ -45,10 +67,24 @@ export default {
     position: relative;
     text-align: center;
     border: solid 4px;
-    animation-name: arrive, apparait;
-    animation-duration: 2s;
+   /* animation-name: arrive, apparait;
+    animation-duration: 2s; */
     font-size: 50px;
 
+}
+
+.animate-fondu {
+  animation: fondu 5s ease-in-out infinite both;
+}
+
+.animate-arrive {
+  animation-name: arrive;
+  animation-duration: 2s;
+}
+
+.animate-apparait {
+  animation-name: apparait;
+  animation-duration: 2s;
 }
 
 @keyframes fondu{
