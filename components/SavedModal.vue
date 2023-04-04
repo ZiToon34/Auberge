@@ -1,5 +1,6 @@
 
-<template script="display: none">
+<!--
+<template>
   <div class="modal-overlay">
     <div id="popup">
       <div class="close" @click="$emit('close-modal')">
@@ -20,8 +21,6 @@
 
 <style scoped>
 
-// changer display none en flex pour réafficher la fenetre modale et enlever dans le template//
-
 .modal-overlay {
   opacity: 0.7;
   position: fixed;
@@ -29,7 +28,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
+  display: flex;
   justify-content: center;
   background-color: #000000da;
   z-index: 9999999;
@@ -105,3 +104,5 @@ button {
     }
 }
 </style>
+
+-->
