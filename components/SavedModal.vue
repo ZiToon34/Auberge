@@ -20,7 +20,7 @@
 
 <style scoped>
 
-// changer display none en flex pour réafficher la fenetre modale //
+// changer display none en flex pour réafficher la fenetre modale et enlever dans le template//
 
 .modal-overlay {
   opacity: 0.7;
