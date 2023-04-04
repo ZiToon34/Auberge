@@ -1,5 +1,5 @@
 
-<template>
+<template script="display: none">
   <div class="modal-overlay">
     <div id="popup">
       <div class="close" @click="$emit('close-modal')">
