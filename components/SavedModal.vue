@@ -20,6 +20,8 @@
 
 <style scoped>
 
+// changer display none en flex pour réafficher la fenetre modale //
+
 .modal-overlay {
   opacity: 0.7;
   position: fixed;
@@ -27,7 +29,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   background-color: #000000da;
   z-index: 9999999;
