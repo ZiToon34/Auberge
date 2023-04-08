@@ -12,9 +12,6 @@
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br> <u><strong> {{$t('infonight')}} </strong></u> <br>{{$t('ps')}}</p>
   </div>
 
-  <!-- information de mAj des prix des menus et boissons-->
-
-  <div class="menu, plat"><strong> Les Menus et boissons sont en cours de modification pour la saison 2023. N'hésitez pas à nous contacter pour plus de précisions avant votre venue. Nous vous remercions pour votre compréhension. </strong></div>
 
   <!-- Ajouter Caroussel ici -->
 
@@ -28,9 +25,7 @@
   </div>
      </div>
     
-<!-- Enlever le style display none a menu pour les réactiver une foi modifier -->
-
-  <div class="menu" style="display: none">
+  <div class="menu">
 
     <div class="plat" style="box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
       <div class="listeMenu"> <strong>{{$t('listemenu')}}</strong></div>
@@ -38,11 +33,11 @@
         <tbody>
         <tr>
           <td class="listePlat">{{$t('listeplat1')}}</td>
-          <td class="prixPlat">19.50€</td>
+          <td class="prixPlat">21€</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('listeplat2')}}</td>
-          <td class="prixPlat">24€</td>
+          <td class="prixPlat">25.50€</td>
         </tr>
         </tbody>
       </table>
@@ -55,11 +50,11 @@
         </tr>
         <tr>
           <td class="listePlat">{{$t('Salade Repas')}}</td>
-          <td class="prixPlat">14.50€</td>
+          <td class="prixPlat">16€</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('Dessert')}}</td>
-          <td class="prixPlat">6€</td>
+          <td class="prixPlat">7€</td>
         </tr>
         </tbody>
       </table>
