@@ -154,6 +154,7 @@
 
 <script>
 import emailjs from "emailjs-com";
+import swal from 'sweetalert';
 
 export default {
   name: "Reservation",
@@ -173,7 +174,7 @@ export default {
         // at the end you need to reset recaptcha
         await this.$recaptcha.reset();
       } catch (error) {
-        window.alert("Il y a un problème de connection", error);
+        swal("Il y a un problème de connection", error);
       }
       emailjs
         .sendForm(
@@ -184,10 +185,10 @@ export default {
         )
         .then(
           (result) => {
-            window.alert("L'email a bien été envoyé", result.text);
+            swal("L'email a bien été envoyé", result.text);
           },
           (error) => {
-            window.alert("Problème d'envoi, veuillez réesayer", error.text);
+            swal("Problème d'envoi, veuillez réesayer", error.text);
           }
         );
     },
