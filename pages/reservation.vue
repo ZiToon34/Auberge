@@ -13,7 +13,7 @@
     <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
   </div>
       <div class="box1" style="display: block">
-        <form id="myForm" ref="form" @submit.prevent="sendEmail, submitForm" >
+        <form id="myForm" ref="form" @submit.prevent="sendEmail" onsubmit="return submitForm(event)" >
           <label for="form_name">{{$t('nameandsur')}}</label>
           <input
             id="form_name"
@@ -164,9 +164,10 @@ export default {
     };
   },
   methods: {
-     submitForm() {
+     submitForm(event) {
       // Code pour traiter les données du formulaire
       location.reload(); // Actualiser la page
+      return false;
     },
     async sendEmail() {
       try {
