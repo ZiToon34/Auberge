@@ -193,6 +193,7 @@ export default {
         );
     },
     submitForm(event) {
+      event.preventDefault();
       // Code pour traiter les données du formulaire
       location.reload(); // Actualiser la page
       return false;
