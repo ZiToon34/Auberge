@@ -164,11 +164,6 @@ export default {
     };
   },
   methods: {
-     submitForm(event) {
-      // Code pour traiter les données du formulaire
-      location.reload(); // Actualiser la page
-      return false;
-    },
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
@@ -196,6 +191,11 @@ export default {
             swal("Problème d'envoi, veuillez réesayer", error.text);
           }
         );
+    },
+    submitForm(event) {
+      // Code pour traiter les données du formulaire
+      location.reload(); // Actualiser la page
+      return false;
     },
   },
   head: {
