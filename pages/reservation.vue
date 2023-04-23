@@ -191,7 +191,7 @@ export default {
             swal("Problème d'envoi, veuillez réesayer", error.text);
           }
         )
-      location.reload()
+      window.location.href = "https://www.auberge-de-la-cascade.fr/formsend"
     },
   },
   head: {
