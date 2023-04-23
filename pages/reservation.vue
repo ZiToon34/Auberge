@@ -191,7 +191,7 @@ export default {
             swal("Problème d'envoi, veuillez réesayer", error.text);
           }
         )
-      this.$router.push(this.$route.path)
+      location.reload()
     },
   },
   head: {
