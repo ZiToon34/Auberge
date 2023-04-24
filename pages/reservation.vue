@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer" ref="submitButton"/>
+          <button type="submit" id="submitBtn" value="Envoyer" ref="submitButton"/>
         </form>
       </div>
       <div>
@@ -164,6 +164,14 @@ export default {
     };
   },
   methods: {
+  {
+    disableSubmitButton() {
+      this.$refs.submitButton.disabled = true;
+    }
+  },
+  mounted() {
+    this.$refs.submitButton.addEventListener('click', this.disableSubmitButton);
+  },
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
