@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer" @click="handleClick()" :disabled="isButtonDisabled"/>
+          <input type="submit" id="submitBtn" value="Envoyer" @input="handleInput()" :disabled="isInputDisabled"/>
         </form>
       </div>
       <div>
@@ -161,14 +161,14 @@ export default {
   data() {
     return {
       siteKey: process.env.siteKey,
-      isButtonDisabled: false,
+      isInputDisabled: false,
     };
   },
   methods:{
-  handleClick() {
-    if (!this.isButtonDisabled) {
-      // Votre code de gestion de clic ici
-      this.isButtonDisabled = true;
+  handleInput() {
+    if (!this.isInputDisabled) {
+      // Votre code de gestion d'input ici
+      this.isInputDisabled = true;
     }
   },
     async sendEmail() {
