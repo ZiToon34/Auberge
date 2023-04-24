@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <button @click="removeButton" type="submit" id="submitBtn" value="Envoyer" ref="submitButton"/>
+          <input type="submit" id="submitBtn" value="Envoyer" />
         </form>
       </div>
       <div>
@@ -164,10 +164,6 @@ export default {
     };
   },
   methods:{
-  removeButton() {
-      const button = document.querySelector('button'); // ou utiliser une référence de bouton si vous en avez une
-      button.remove();
-    },
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
