@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer" @click="submitForm" :disabled="isSubmitting">{{ buttonLabel }}/>
+          <input type="submit" id="submitBtn" value="Envoyer"/>
         </form>
       </div>
       <div>
@@ -165,11 +165,6 @@ export default {
     };
   },
   methods:{
-  submitForm() {
-if (!this.isSubmitting) {
-this.isSubmitting = true
-
-// Code pour envoyer le formulaire...
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
@@ -199,10 +194,6 @@ this.isSubmitting = true
         )
       //window.location.href = "https://www.auberge-de-la-cascade.fr/formsend"//
     },
-    this.isSubmitting = false
-this.buttonLabel = 'Envoyé'
-}
-}
   },
   head: {
     title: 'Reservation',
