@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <a type="submit" id="submitBtn" value="Envoyer"><a/>
+          <a type="submit" id="submitBtn" value="Envoyer" href="https://www.auberge-de-la-cascade.fr/formsend"><a/>
         </form>
       </div>
       <div>
