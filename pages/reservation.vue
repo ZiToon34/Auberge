@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer" />
+          <a type="submit" id="submitBtn" value="Envoyer"><a/>
         </form>
       </div>
       <div>
