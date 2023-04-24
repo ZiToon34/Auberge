@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer"/>
+          <input type="submit" id="submitBtn" value="Envoyer" @click="onSubmit" :disabled="isSubmitting"/>
         </form>
       </div>
       <div>
@@ -161,13 +161,16 @@ export default {
   data() {
     return {
       siteKey: process.env.siteKey,
+      isSubmitting: false,
     };
   },
   methods:{
-  const submitBtn = document.getElementById("submitBtn");
-      submitBtn.addEventListener("click", function() {
-        submitBtn.disabled = true;
-      });
+  onSubmit() {
+      const submitBtn = document.getElementById("submitBtn");
+      submitBtn.disabled = true;
+      this.isSubmitting = true;
+      this.sendEmail();
+    },
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
