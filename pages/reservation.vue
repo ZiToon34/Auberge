@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <button type="submit" id="submitBtn" value="Envoyer" ref="submitButton"/>
+          <button v-html="script" type="submit" id="submitBtn" value="Envoyer" ref="submitButton"/>
         </form>
       </div>
       <div>
@@ -161,16 +161,13 @@ export default {
   data() {
     return {
       siteKey: process.env.siteKey,
+      script:
+          const submitButton = document.getElementById('submit-button');
+
+submitButton.addEventListener('click', () => {
+  submitButton.disabled = true;
+});
     };
-  },
-  methods: {
-  {
-    disableSubmitButton() {
-      this.$refs.submitButton.disabled = true;
-    }
-  },
-  mounted() {
-    this.$refs.submitButton.addEventListener('click', this.disableSubmitButton);
   },
     async sendEmail() {
       try {
