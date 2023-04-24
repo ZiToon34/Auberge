@@ -161,10 +161,13 @@ export default {
   data() {
     return {
       siteKey: process.env.siteKey,
-      isInputDisabled: false,
     };
   },
   methods:{
+  const submitBtn = document.getElementById("submitBtn");
+      submitBtn.addEventListener("click", function() {
+        submitBtn.disabled = true;
+      });
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
