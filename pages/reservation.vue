@@ -195,7 +195,6 @@ export default {
         )
         .then(
           (result) => {
-            window.alert("L'email a bien été envoyé", result.text);
             window.location.href = "https://www.auberge-de-la-cascade.fr/formsend"
           },
           (error) => {
