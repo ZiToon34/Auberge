@@ -164,16 +164,6 @@ export default {
     };
   },
   methods: {
-  disableSubmitButton() {
-      this.$refs.submitButton.disabled = true;
-    }
-  },
-  mounted() {
-    this.$refs.submitButton.addEventListener('click', this.disableSubmitButton);
-  },
-  beforeDestroy() {
-    this.$refs.submitButton.removeEventListener('click', this.disableSubmitButton);
-  },
     async sendEmail() {
       try {
         const token = await this.$recaptcha.getResponse();
