@@ -139,7 +139,7 @@
 
           <recaptcha />
           <br />
-          <input type="submit" id="submitBtn" value="Envoyer" @click="onSubmit" :disabled="isSubmitting"/>
+          <input type="submit" id="submitBtn" value="Envoyer" @click.prevent="sendEmail()" :disabled="submitDisabled"/>
         </form>
       </div>
       <div>
@@ -153,31 +153,24 @@
 </template>
 
 <script>
+import swal from "sweetalert";
 import emailjs from "emailjs-com";
-import swal from 'sweetalert';
 
 export default {
   name: "Reservation",
   data() {
     return {
       siteKey: process.env.siteKey,
-      isSubmitting: false,
+      submitDisabled: false,
     };
   },
-  methods:{
-  onSubmit() {
-      const submitBtn = document.getElementById("submitBtn");
-      submitBtn.disabled = true;
-      this.isSubmitting = true;
-      this.sendEmail();
-    },
+  methods: {
     async sendEmail() {
+      this.submitDisabled = true; // désactive le bouton
       try {
         const token = await this.$recaptcha.getResponse();
         console.log("ReCaptcha token:", token);
-
         // send token to server alongside your form data
-
         // at the end you need to reset recaptcha
         await this.$recaptcha.reset();
       } catch (error) {
@@ -192,28 +185,27 @@ export default {
         )
         .then(
           (result) => {
-            window.location.href = "https://www.auberge-de-la-cascade.fr/formsend"
+            window.location.href = "https://www.auberge-de-la-cascade.fr/formsend";
           },
           (error) => {
-            swal("Problème d'envoi, veuillez réesayer", error.text);
+            swal("Problème d'envoi, veuillez réessayer", error.text);
           }
-        )
+        );
       //window.location.href = "https://www.auberge-de-la-cascade.fr/formsend"//
     },
   },
   head: {
-    title: 'Reservation',
+    title: "Reservation",
     meta: [
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Reserver à l\'Auberge de la cascade'
-      }
+        hid: "description",
+        name: "description",
+        content: "Reserver à l'Auberge de la cascade",
+      },
     ],
-  }
+  },
 };
 </script>
-
 
 
 <style scoped>
