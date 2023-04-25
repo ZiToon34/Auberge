@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="allBody">
     <div id="container-nava"><img class="nava" alt="photo Navacelles" src="@/assets/img/navacelles1.jpg"></div>
     <div></div>
 
@@ -19,7 +19,7 @@
        <div class="carousel-wrapper">
       <carousel v-bind="options">
         <slide v-for="i in 10" :key="i" class="img-wrapper">
-          <img v-bind:src="`../${i}eat.jpg`" type="jpeg" />
+          <img v-bind:src="`../${i}eat.jpg`" type="jpeg" class="imgCarousel"/>
         </slide>
       </carousel>
   </div>
@@ -112,7 +112,7 @@ export default {
     return {
       options: {
         loop: true,
-        perPageCustom: [[0, 0], [300, 1], [600, 1.5], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
+        perPageCustom: [[0, 0], [300, 1.5], [600, 1.5], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
         scrollPerPage: true,
         paginationEnabled: false
       }
@@ -132,6 +132,7 @@ export default {
 </script>
 
 <style scoped>
+
 .menu{
     display: block;
     background-color: rgb(245, 245, 245, 0.9);
@@ -172,5 +173,27 @@ export default {
     }
   
    
+}
+@media screen and (max-width: 390px){
+
+.imgCarousel{
+  width: 167px;
+  height: 344px;
+}
+
+.allBody{
+  width: 390px;
+
+}
+
+
+}
+@media screen and (min-width: 390px) and (max-width: 599px){
+
+.imgCarousel{
+  width: 256px;
+  height: 456px;
+}
+
 }
 </style>
