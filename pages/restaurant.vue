@@ -112,7 +112,7 @@ export default {
     return {
       options: {
         loop: true,
-        perPageCustom: [[0, 0], [300, 1.75], [600, 1.75], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
+        perPageCustom: [[0, 0], [300, 1], [600, 1], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
         scrollPerPage: true,
         paginationEnabled: false
       }
