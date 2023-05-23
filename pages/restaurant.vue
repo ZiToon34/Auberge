@@ -66,16 +66,24 @@
       <table>
         <tbody>
         <tr>
-          <td class="listeBoisson">Vin Rosé/ Blanc "Domaine de la Perdrix" <br> La coule douce</td>
-          <td class="prixBoisson">16€</td>
+          <td class="listeBoisson">Vin Blanc "Domaine Chemin Farrat" <br> Gourmandise</td>
+          <td class="prixBoisson">17€</td>
         </tr>
         <tr>
-          <td class="listeBoisson">Vin Rosé "Domaine de Ferrussac <br> Serieys</td>
+          <td class="listeBoisson">Vin Blanc "Domaine de la Perdrix" <br> La coule douce</td>
           <td class="prixBoisson">18€</td>
         </tr>
         <tr>
+          <td class="listeBoisson">Vin Rosé "Domaine de Ferrussac <br> Sérieys</td>
+          <td class="prixBoisson">19€</td>
+        </tr>
+        <tr>
+          <td class="listeBoisson">Vin Rosé "Domaine Chemin Farrat" <br> Tendresse</td>
+          <td class="prixBoisson">17€</td>
+        </tr>
+        <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de la Perdrix" <br> Tradition</td>
-          <td class="prixBoisson">20€</td>
+          <td class="prixBoisson">21€</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de la Perdrix <br> Cuvée J-S Pons</td>
@@ -83,11 +91,15 @@
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge Terrasse du Larzac "Mas Haut Buis" <br> Les Carlines</td>
-          <td class="prixBoisson">23€</td>
+          <td class="prixBoisson">25€</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de Ferrussac" <br> Coste Rousse</td>
           <td class="prixBoisson">23€</td>
+        </tr>
+        <tr>
+          <td class="listeBoisson">Vin Rouge "Domaine Chemin Farrat" <br> Emotion</td>
+          <td class="prixBoisson">21€</td>
         </tr>
         <tr>
           <td class="listeBoisson">{{$t('wine')}} <br> 0.25L - 0.5L - 1L</td>
