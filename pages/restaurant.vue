@@ -127,10 +127,8 @@ export default {
         perPageCustom: [[0, 0], [300, 2], [600, 2], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
         scrollPerPage: true,
         paginationEnabled: true,
-        navigationPrevLabel: "◀",
-        navigationNextLabe: "▶", 
         autoplay: true,
-        autoplayTimeout: 1000
+        autoplayTimeout: 1300
       }
     }
   },
