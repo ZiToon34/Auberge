@@ -128,7 +128,7 @@ export default {
         scrollPerPage: true,
         paginationEnabled: true,
         autoplay: true,
-        autoplayTimeout: 1500
+        autoplayTimeout: 2000
       }
     }
   },
