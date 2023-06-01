@@ -126,7 +126,7 @@ export default {
         loop: true,
         perPageCustom: [[0, 0], [300, 2], [600, 2], [790, 2], [980, 2.5], [1165, 3], [1370, 3.5],  [1555, 4]],
         scrollPerPage: true,
-        paginationEnabled: false
+        paginationEnabled: true
       }
     }
   },
