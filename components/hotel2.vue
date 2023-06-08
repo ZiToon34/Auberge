@@ -16,7 +16,7 @@
                     </tr>
                     <tr>
                         <td>{{$t('justroom')}}</td>
-                        <td>65€</td>
+                        <td>65€/85€/105€</td>
                     </tr>
                     <tr>
                         <td>{{$t('half')}}</td>
