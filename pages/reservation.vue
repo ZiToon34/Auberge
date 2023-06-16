@@ -8,10 +8,14 @@
       />
     </div>
     <div class="conteneur">
+<div>
+      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+    </div>
     <div>
         <br>
     <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
   </div>
+    
       <div class="box1" style="display: block">
         <form id="myForm" ref="form" @submit.prevent="sendEmail">
           <label for="form_name">{{$t('nameandsur')}}</label>
@@ -139,6 +143,10 @@
 
           <recaptcha />
           <br />
+          <div>
+      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+    </div>
+          <br />
           <input type="submit" id="submitBtn" value="Envoyer" @click.prevent="sendEmail()" :disabled="submitDisabled"/>
         </form>
       </div>
@@ -244,6 +252,10 @@ export default {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#form_message::placeholder{
+  color: red
 }
 
 @media screen and (min-width: 1100px){
