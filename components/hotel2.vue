@@ -20,27 +20,27 @@
                     </tr>
                     <tr>
                         <td>{{$t('half')}}</td>
-                        <td>78€</td>
+                        <td>80€</td>
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
-                        <td>60€/{{$t('person')}}</td>
+                        <td>62.50€/{{$t('person')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half3')}}</td>
-                        <td>35€</td>
+                        <td>37€</td>
                     </tr>
                     <tr>
                         <td>{{$t('breakfast')}}</td>
-                        <td>8€</td>
+                        <td>8.50€</td>
                     </tr>
                     <tr>
                         <td>{{$t('supPet')}}</td>
-                        <td>5€/{{$t('day')}}</td>
+                        <td>7€/{{$t('day')}}</td>
                     </tr>
                     <tr>
                         <th>{{$t('tax')}}</th>
-                        <th>0.80€</th>
+                        <th>??€</th>
                     </tr>
                     </tbody>
             </table>
