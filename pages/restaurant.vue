@@ -8,7 +8,7 @@
 
   <div class="text" style="opacity: 1; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
     <h2 class="nom">{{$t('restaurant')}}</h2>
-    <p> Tarifs 2023 </p>
+    <p> <strong> Tarifs 2023 </strong> </p>
     
     <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
