@@ -1,6 +1,7 @@
 <template>
   <div class="hostelRooms">
     <div id="container-nava"><img class="nava" alt="Photo de navacelles" src="@/assets/img/navacelles1.jpg"></div>
+    <p> <strong> Tarifs 2024 </strong> </p>
     <Hotel2 class="hostel_room" id="hostelPair" v-for="room in rooms.rooms" :key="room.id" :imgRoom="room.img" :nameRoom="$t(`rooms.${room.id}.nameRoom`)" :maxPeople="$t(`rooms.${room.id}.maxPeople`)"/>
   </div>
 </template>
