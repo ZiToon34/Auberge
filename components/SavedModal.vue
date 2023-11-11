@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<!-- change modal to display flex for see her -->
+<!-- change modal-overlay to display flex for see it or display none to unsee it -->
 
 <script>
   export default {
