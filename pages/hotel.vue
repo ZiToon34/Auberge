@@ -21,10 +21,6 @@
                     <td>2 personnes</td>
                     <td>85€</td>
                   </tr>
-                  <tr>
-                    <td>3 personnes</td>
-                    <td>105€</td>
-                  </tr>
                         </tbody>
       </table>
       </div>
