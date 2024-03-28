@@ -4,7 +4,7 @@
         <div class="horaires" >
             <h2 class="h2_horaires">{{$t('timetable')}}</h2>
             <hr class="barre barre_horaire" style="width: 30%; height: 1px; background: #b2b2b2;">
-            <p class="info_footer">{{$t('openFooter')}} <br> {{$t('openFooter2')}} <br> 04-67-81-50-95 </p>
+            <p class="info_footer">{{$t('openFooter')}} <br> {{$t('openFooter2')}} <br> Restaurant: 12h00 - 14h00 <br> Bar: 14h00 - 18h30 <br> Accueil Hébergement: 16h00 - 19h00 <br> 04-67-81-50-95 </p>
         </div>
         <div class="adresse">
             <h2 class="h2_adresse">{{$t('locate')}}</h2>

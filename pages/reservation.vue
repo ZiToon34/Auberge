@@ -63,6 +63,7 @@
           <option value="Demi-pension">{{$t('demipension')}}</option>
           <option value="Chambre Seule + Petit Dej">{{$t('roomalonedej')}}</option>
           <option value="Chambre Seule">{{$t('roomalone')}}</option>
+          <option value="Vente au lit">Vente au lit</option>
           </select>
           <label for="form_pers">{{$t('formpers')}}</label>
           <select
@@ -110,6 +111,7 @@
           <option value="Grand Lit + Petit Lit">{{$t('bigtwinbed')}}</option>
           <option value="Grand Lit + Supperposé">{{$t('bigsupp')}}</option>
           <option value="Groupe">{{$t('group')}}</option>
+          <option value="Vente au lit">Vente au lit</option>
           </select>
           <label for="form_datestart">{{$t('formdatestart')}}</label>
           <input

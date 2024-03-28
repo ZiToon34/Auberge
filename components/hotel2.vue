@@ -5,6 +5,8 @@
         <h2 class="nom">{{nameRoom}}</h2>
         <h3 class="description">
             {{$t('descriptionRoom')}}
+            <br>
+            *Pas d'accés PMR
         </h3>
         <p><u><strong>{{$t('price')}}</strong></u></p>
         <div class="tableTarifs">
@@ -42,7 +44,7 @@
                     </tbody>
             </table>
         </div>
-        <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>
+        <div style="padding-top: 10px;"> <strong> {{maxPeople}}</strong> <br> *Petit Déjeuner de 8h00 à 9h00 </div>
       </div>
     </div>
 </template>

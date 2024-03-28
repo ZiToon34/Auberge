@@ -14,14 +14,23 @@
                 <tbody>
                 
                   <tr>
-                    <td>1 personne</td>
+                    <td>1 ou 2 personne(s)</td>
                     <td>65€</td>
                   </tr>
                   <tr>
-                    <td>2 personnes</td>
+                    <td>3 personnes</td>
                     <td>85€</td>
                   </tr>
+                  <tr>
+                    <td>4 personnes</td>
+                    <td>105€</td>
+                  </tr>
+                  <tr>
+                    <td><p><strong>*Vente au lit (selon disponibilité et sur réservation)</strong></p></td>
+                    <td><strong>40€</strong></td>
+                  </tr>
                         </tbody>
+                        
       </table>
       </div>
       </div>
