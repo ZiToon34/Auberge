@@ -48,7 +48,7 @@
       <table>
         <tbody>
         <tr>
-          <td class="listePlat">{{$t('Steak enfant + sirop')}}</td>
+          <td class="listePlat">Assiette enfant + sirop</td>
           <td class="prixPlat">9€</td>
         </tr>
         <tr>
