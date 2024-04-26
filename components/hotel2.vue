@@ -39,7 +39,7 @@
                     </tr>
                     <tr>
                         <th>{{$t('tax')}}</th>
-                        <th>0.80€</th>
+                        <th>0.65€</th>
                     </tr>
                     </tbody>
             </table>
