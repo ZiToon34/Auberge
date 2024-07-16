@@ -6,7 +6,7 @@
         <div class="text" style="max-height: none;">
             <h2 class="nom">{{$t('contact')}}</h2>
             <h3 class="description"> {{$t('linkform')}} <NuxtLink to="/reservation" style="border-style: solid; border-color: black; color: #af8842;"> RESERVATION </NuxtLink>.</h3>
-           <!-- <a class="description" href="https://aubergedelacascade-reservation.onrender.com/" >Reserver au Restaurant en ligne, cliquez ici</a> -->
+            <a class="description" href="https://aubergedelacascade-reservation.onrender.com/" >Reserver au Restaurant en ligne, cliquez ici</a>
             <p class="info"><u><strong>{{$t('formail')}}</strong></u><br> Auberge de la cascade navacelles<br><br>
             18 chemin des faïsses <br><br>
             Hameau de navacelles<br><br>
