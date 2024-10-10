@@ -19,7 +19,7 @@
                 
                     <tr>
                         <td>{{$t('half')}}</td>
-                        <td>80€</td>
+                        <td>82€</td>
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
