@@ -76,6 +76,7 @@ Dans Auberge -> components -> hotel2.vue
 
 -prix du restaurant:
  Dans Auberge -> pages -> restaurant.vue
+ (pas oublier de changer la date des prix)
 
  pour modifier les horaires:
  Dans Auberge -> components -> footer.vue
