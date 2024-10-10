@@ -83,8 +83,9 @@ Dans Auberge -> components -> hotel2.vue
  Pour Valider une modification:
  Valider la modification avec les boutons du clavier "ctrl + s" sur chaques page modifiées.
  Puis Utiliser les 3 petits points (en haut à droite à coté de view) -> Terminal -> New Terminal
+ (vous devez être dans C:\Users\BAR\Desktop\Site Web\Auberge\Auberge)
  taper les commandes:
 
  git add .
-git commit -m "nom de la modification"
-git push
+ git commit -m "nom de la modification"
+ git push
