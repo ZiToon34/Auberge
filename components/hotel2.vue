@@ -19,27 +19,27 @@
                 
                     <tr>
                         <td>{{$t('half')}}</td>
-                        <td>80€</td>
+                        <td>{{$t('prixdemiseul')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
-                        <td>62.50€/{{$t('person')}}</td>
+                        <td>{{$t('prixdemi2')}}/{{$t('person')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half3')}}</td>
-                        <td>37€</td>
+                        <td>{{$t('prixdemienfant')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('breakfast')}}</td>
-                        <td>8.50€</td>
+                        <td>{{$t('prixdej')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('supPet')}}</td>
-                        <td>7€/{{$t('day')}}</td>
+                        <td>{{$t('prixanimaux')}}/{{$t('day')}}</td>
                     </tr>
                     <tr>
                         <th>{{$t('tax')}}</th>
-                        <th>0.65€</th>
+                        <th>{{$t('prixtaxe')}}</th>
                     </tr>
                     </tbody>
             </table>

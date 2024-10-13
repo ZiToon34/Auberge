@@ -6,7 +6,7 @@
       </div>
      <div style="text-align: center; font-size: 42px !important;
     line-height: 42px !important; margin-bottom: 5px; margin-top: 20px;"> Réouverture </div>
-      <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir du 30 Mars 2024. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date. </div>
+      <div style="text-align: center; margin-top: 15px; font-size: 20px; line-height: 30px; font-family: 'Playfair Display', Arial, Tahoma, sans-serif; color: #af8842;"> L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir de Mars 2025. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date. </div>
       <div class="seeusoon" style="text-align: center; margin-top: 5px; font-size: 18px !important; line-height: 42px !important; margin-bottom: 5px;"> A très bientôt !</div>
     </div>
   </div>

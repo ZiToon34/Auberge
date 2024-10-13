@@ -8,7 +8,7 @@
 
   <div class="text" style="opacity: 1; box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;">
     <h2 class="nom">{{$t('restaurant')}}</h2>
-    <p> <strong> Tarifs 2024 </strong> </p>
+    <p> <strong> {{$t('price')}} </strong> </p>
     
     <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
@@ -36,11 +36,11 @@
         <tbody>
         <tr>
           <td class="listePlat">{{$t('listeplat1')}}</td>
-          <td class="prixPlat">22€</td>
+          <td class="prixPlat">{{$t('prixEP')}}</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('listeplat2')}}</td>
-          <td class="prixPlat">26€</td>
+          <td class="prixPlat">{{$t('prixEPD')}}</td>
         </tr>
         </tbody>
       </table>
@@ -49,15 +49,15 @@
         <tbody>
         <tr>
           <td class="listePlat">Assiette enfant + sirop</td>
-          <td class="prixPlat">9€</td>
+          <td class="prixPlat">{{$t('Assietteenfant')}}</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('Salade Repas')}}</td>
-          <td class="prixPlat">16€</td>
+          <td class="prixPlat">{{$t('prixsalade')}}</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('Dessert')}}</td>
-          <td class="prixPlat">7.50€</td>
+          <td class="prixPlat">{{$t('prixdessert')}}</td>
         </tr>
         </tbody>
       </table>
@@ -69,48 +69,44 @@
       <table>
         <tbody>
         <tr>
-          <td class="listeBoisson">Vin Blanc "Domaine Chemin Farrat" <br> Gourmandise</td>
-          <td class="prixBoisson">17€</td>
+          <td class="listeBoisson">Vin Blanc "Mas Haut-Buis" <br> Les Carlines</td>
+          <td class="prixBoisson">{{$t('prixcarlinesblanc')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Blanc "Domaine de la Perdrix" <br> La coule douce</td>
-          <td class="prixBoisson">18€</td>
+          <td class="prixBoisson">{{$t('prixperdrixblanc')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rosé "Domaine de Ferrussac <br> Sérieys</td>
-          <td class="prixBoisson">19€</td>
+          <td class="prixBoisson">{{$t('prixserieys')}}</td>
         </tr>
         <tr>
-          <td class="listeBoisson">Vin Rosé "Domaine Chemin Farrat" <br> Tendresse</td>
-          <td class="prixBoisson">17€</td>
+          <td class="listeBoisson">Vin Rosé "Domaine de la Perdrix" <br> La Coule Douce</td>
+          <td class="prixBoisson">{{$t('prixcouledouce')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de la Perdrix" <br> Tradition</td>
-          <td class="prixBoisson">21€</td>
+          <td class="prixBoisson">{{$t('prixtrad')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de la Perdrix <br> Cuvée J-S Pons</td>
-          <td class="prixBoisson">29€</td>
+          <td class="prixBoisson">{{$t('prixpons')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge Terrasse du Larzac "Mas Haut Buis" <br> Les Carlines</td>
-          <td class="prixBoisson">25€</td>
+          <td class="prixBoisson">{{$t('prixcarlinesrge')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">Vin Rouge "Domaine de Ferrussac" <br> Coste Rousse</td>
-          <td class="prixBoisson">23€</td>
-        </tr>
-        <tr>
-          <td class="listeBoisson">Vin Rouge "Domaine Chemin Farrat" <br> Emotion</td>
-          <td class="prixBoisson">21€</td>
+          <td class="prixBoisson">{{$t('prixcosterousse')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">{{$t('wine')}} <br> 0.25L - 0.5L - 1L</td>
-          <td class="prixBoisson">5€ - 8€ - 11€</td>
+          <td class="prixBoisson">{{$t('prixpichet')}}</td>
         </tr>
         <tr>
           <td class="listeBoisson">{{$t('water')}}</td>
-          <td class="prixBoisson">6.50€</td>
+          <td class="prixBoisson">{{$t('prixeau')}}</td>
         </tr>
         </tbody>
       </table>
