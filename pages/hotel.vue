@@ -15,19 +15,19 @@
                 
                   <tr>
                     <td>1 ou 2 personne(s)</td>
-                    <td>65€</td>
+                    <td>{{$t('prix1et2')}}</td>
                   </tr>
                   <tr>
                     <td>3 personnes</td>
-                    <td>85€</td>
+                    <td>{{$t('prix3')}}</td>
                   </tr>
                   <tr>
                     <td>4 personnes</td>
-                    <td>105€</td>
+                    <td>{{$t('prix4')}}</td>
                   </tr>
                   <tr>
                     <td><p><strong>*Vente au lit (selon disponibilité et sur réservation)</strong></p></td>
-                    <td><strong>40€</strong></td>
+                    <td><strong>{{$t('aulit')}}</strong></td>
                   </tr>
                         </tbody>
                         
