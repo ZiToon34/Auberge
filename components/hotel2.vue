@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
-                        <td>60€/{{$t('person')}}</td>
+                        <td>64€/{{$t('person')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half3')}}</td>
