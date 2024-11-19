@@ -8,10 +8,15 @@
       />
     </div>
     <div class="conteneur">
+<div>
+ <!-- <a style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black; color: aliceblue;" href="">Pour Reserver au Restaurant en ligne cliquez ici</a> -->
+      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+    </div>
     <div>
         <br>
     <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
   </div>
+    
       <div class="box1" style="display: block">
         <form id="myForm" ref="form" @submit.prevent="sendEmail">
           <label for="form_name">{{$t('nameandsur')}}</label>
@@ -58,6 +63,7 @@
           <option value="Demi-pension">{{$t('demipension')}}</option>
           <option value="Chambre Seule + Petit Dej">{{$t('roomalonedej')}}</option>
           <option value="Chambre Seule">{{$t('roomalone')}}</option>
+          <option value="Vente au lit">Vente au lit</option>
           </select>
           <label for="form_pers">{{$t('formpers')}}</label>
           <select
@@ -105,6 +111,7 @@
           <option value="Grand Lit + Petit Lit">{{$t('bigtwinbed')}}</option>
           <option value="Grand Lit + Supperposé">{{$t('bigsupp')}}</option>
           <option value="Groupe">{{$t('group')}}</option>
+          <option value="Vente au lit">Vente au lit</option>
           </select>
           <label for="form_datestart">{{$t('formdatestart')}}</label>
           <input
@@ -138,6 +145,10 @@
           ></textarea>
 
           <recaptcha />
+          <br />
+          <div>
+      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+    </div>
           <br />
           <input type="submit" id="submitBtn" value="Envoyer" @click.prevent="sendEmail()" :disabled="submitDisabled"/>
         </form>
@@ -244,6 +255,10 @@ export default {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#form_message::placeholder{
+  color: red
 }
 
 @media screen and (min-width: 1100px){

@@ -67,3 +67,26 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+
+Pour modifier les prix :
+-prix de l'hotel:
+Dans Auberge -> components -> hotel2.vue
+(pour les prix des chambres -> Auberge -> pages -> hotel.vue)
+
+-prix du restaurant:
+ Dans Auberge -> pages -> restaurant.vue
+ (pas oublier de changer la date des prix)
+
+ pour modifier les horaires:
+ Dans Auberge -> components -> footer.vue
+
+ Pour Valider une modification:
+ Valider la modification avec les boutons du clavier "ctrl + s" sur chaques page modifiées.
+ Puis Utiliser les 3 petits points (en haut à droite à coté de view) -> Terminal -> New Terminal
+ (vous devez être dans C:\Users\BAR\Desktop\Site Web\Auberge\Auberge)
+ taper les commandes:
+
+ git add .
+ git commit -m "nom de la modification"
+ git push

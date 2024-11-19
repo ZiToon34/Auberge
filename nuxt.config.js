@@ -63,7 +63,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    //'@nuxtjs/recaptcha',//
+    '@nuxtjs/recaptcha',
     [
       '@nuxtjs/i18n',
     { locales: ['en', 'de', 'nl', 'fr',],

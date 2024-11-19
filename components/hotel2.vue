@@ -5,6 +5,8 @@
         <h2 class="nom">{{nameRoom}}</h2>
         <h3 class="description">
             {{$t('descriptionRoom')}}
+            <br>
+            *Pas d'accés PMR
         </h3>
         <p><u><strong>{{$t('price')}}</strong></u></p>
         <div class="tableTarifs">
@@ -14,38 +16,35 @@
                         <td style="border: none;"></td>
                         <th>{{$t('priceRoom')}}</th>
                     </tr>
-                    <tr>
-                        <td>{{$t('justroom')}}</td>
-                        <td>65€</td>
-                    </tr>
+                
                     <tr>
                         <td>{{$t('half')}}</td>
-                        <td>78€</td>
+                        <td>{{$t('prixdemiseul')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half2')}}</td>
-                        <td>64€/{{$t('person')}}</td>
+                        <td>{{$t('prixdemi2')}}/{{$t('person')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('half3')}}</td>
-                        <td>35€</td>
+                        <td>{{$t('prixdemienfant')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('breakfast')}}</td>
-                        <td>8€</td>
+                        <td>{{$t('prixdej')}}</td>
                     </tr>
                     <tr>
                         <td>{{$t('supPet')}}</td>
-                        <td>5€/{{$t('day')}}</td>
+                        <td>{{$t('prixanimaux')}}/{{$t('day')}}</td>
                     </tr>
                     <tr>
                         <th>{{$t('tax')}}</th>
-                        <th>0.80€</th>
+                        <th>{{$t('prixtaxe')}}</th>
                     </tr>
                     </tbody>
             </table>
         </div>
-        <div style="padding-top: 10px;"> <strong> {{maxPeople}} </strong></div>
+        <div style="padding-top: 10px;"> <strong> {{maxPeople}}</strong> <br> *Petit Déjeuner de 8h00 à 9h00 </div>
       </div>
     </div>
 </template>
