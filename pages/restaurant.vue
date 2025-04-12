@@ -12,7 +12,6 @@
     
     <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
-<a class="reservation-btn" href="https://larzac34.netlify.app/reservation">🍽️ Réserver au Restaurant en ligne</a>
   </div>
 
 
