@@ -12,7 +12,7 @@
     
     <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
-  <a class="nom" href="https://larzac34.netlify.app/reservation" style="border-radius: 30px; background-color: black; color: aliceblue;">Reserver au Restaurant en ligne, cliquez ici</a>
+  <!--<a class="nom" href="https://larzac34.netlify.app/reservation" style="border-radius: 30px; background-color: black; color: aliceblue;">Reserver au Restaurant en ligne, cliquez ici</a> -->
   </div>
 
 
