@@ -9,7 +9,7 @@
     </div>
     <div class="conteneur">
 <div>
- <a style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black; color: aliceblue;" href="https://larzac34.netlify.app/reservation">Pour Reserver au Restaurant en ligne cliquez ici</a>
+ <a style="display: flex; flex-direction: column; height: 55px; justify-content: center; align-items: center; background-color: black; color: aliceblue" href="https://larzac34.netlify.app/reservation">Pour Reserver au Restaurant en ligne cliquez ici</a>
       <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
     </div>
     <div>
