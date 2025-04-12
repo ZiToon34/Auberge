@@ -5,6 +5,7 @@
         <div class="box">
         <div class="text" style="max-height: none;">
             <h2 class="nom">{{$t('contact')}}</h2>
+            <a class="reservation-btn" href="https://larzac34.netlify.app/reservation">🍽️ Réserver au Restaurant en ligne</a>
             <h3 class="description"> {{$t('linkform')}} <NuxtLink to="/reservation" style="border-style: solid; border-color: black; color: #af8842;"> RESERVATION </NuxtLink>.</h3>
           <!-- <a style="border-radius: 30px; display: flex; flex-direction: column; height: 55px; justify-content: center; align-items: center; background-color: black; color: aliceblue" href="https://larzac34.netlify.app/reservation">Pour Reserver au Restaurant en ligne cliquez ici</a> -->
             <p class="info"><u><strong>{{$t('formail')}}</strong></u><br> Auberge de la cascade navacelles<br><br>
@@ -34,3 +35,24 @@ export default {
   }
 } 
 </script>
+<style scoped>
+
+.reservation-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.reservation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+}
+</style>
