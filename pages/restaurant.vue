@@ -12,7 +12,7 @@
     
     <h3 class="description">{{$t('descriptionrestaurant')}}</h3>
     <p class="info"><u><strong> {{$t('inforestaurant')}} </strong></u> <br>{{$t('ps')}}</p>
-  <!--<a class="nom" href="https://larzac34.netlify.app/reservation" style="border-radius: 30px; background-color: black; color: aliceblue;">Reserver au Restaurant en ligne, cliquez ici</a> -->
+<a class="reservation-btn" href="https://larzac34.netlify.app/reservation">🍽️ Réserver au Restaurant en ligne</a>
   </div>
 
 
@@ -178,6 +178,25 @@ export default {
     font-size: 2rem;
     padding: 50px;
     text-decoration:underline;
+}
+
+.reservation-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.reservation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #3498db, #2c3e50);
 }
 @media screen and (min-width: 1100px){
   
