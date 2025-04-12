@@ -14,7 +14,7 @@
     </div>
     <div>
         <br>
-    <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; height: 55px"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
+    <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
   </div>
     
       <div class="box1" style="display: block">
