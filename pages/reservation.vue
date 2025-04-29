@@ -8,15 +8,17 @@
       />
     </div>
     <div class="conteneur">
-<div>
- <!-- <a style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: black; color: aliceblue;" href="">Pour Reserver au Restaurant en ligne cliquez ici</a> -->
-      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+      <div class="button-container">
+<a class="reservation-btn" href="https://larzac34.netlify.app/reservation">🍽️ Réserver au Restaurant en ligne, <span class="click-here">Cliquez ICI</span></a>
+      </div>
+      <div>
+        <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+      </div>
+      <div>
+          <br>
+      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
     </div>
-    <div>
-        <br>
-    <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: black"><strong>Ceci est un formulaire de PRÉ-RÉSERVATION (Réponse sous 48H) </strong></p>
-  </div>
-    
+      
       <div class="box1" style="display: block">
         <form id="myForm" ref="form" @submit.prevent="sendEmail">
           <label for="form_name">{{$t('nameandsur')}}</label>
@@ -147,8 +149,8 @@
           <recaptcha />
           <br />
           <div>
-      <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
-    </div>
+        <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; color: red"> <strong>!! L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non-pas à St Maurice-Navacelles mais sur sa commune) !!</strong></p>
+      </div>
           <br />
           <input type="submit" id="submitBtn" value="Envoyer" @click.prevent="sendEmail()" :disabled="submitDisabled"/>
         </form>
@@ -221,6 +223,26 @@ export default {
 
 <style scoped>
 /* CSS */
+
+.reservation-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.reservation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+}
+
 .form-control {
   display: block;
   margin-bottom: 1rem;
@@ -267,6 +289,20 @@ export default {
   width: 50%;
 }
 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.click-here {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: bold;
 }
 </style>
 
