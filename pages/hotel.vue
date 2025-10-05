@@ -2,6 +2,9 @@
   <div>
   <div class="hostelRooms">
     <div id="container-nava"><img class="nava" alt="Photo de navacelles" src="@/assets/img/navacelles1.jpg"></div>
+    <div class="button-container">
+  <a class="reservation-btn" href="https://auberge-de-la-cascade.fr/reservationHotel">🏨 Réserver pour l'Hébergement, <span class="click-here">Cliquez ICI</span></a>
+        </div>
     <Hotel2 class="hostel_room" id="hostelPair" v-for="room in rooms.rooms" :key="room.id" :imgRoom="room.img" :nameRoom="$t(`rooms.${room.id}.nameRoom`)" :maxPeople="$t(`rooms.${room.id}.maxPeople`)"/>
   </div>
   <div class="hostel_room">
@@ -76,6 +79,14 @@ export default {
     color: #1a1a1a;
     font-weight: 400;
     font-family: "Cinzel", Helvetica, Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .hostel_room {
