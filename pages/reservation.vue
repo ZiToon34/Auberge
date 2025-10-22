@@ -9,7 +9,7 @@
     </div>
     <div class="conteneur">
       <div class="button-container">
-  <a class="reservation-btn" href="https://larzac34.netlify.app/reservation">🍽️ Réserver au Restaurant en ligne, <span class="click-here">Cliquez ICI</span></a>
+  <a class="reservation-btn" href="https://www.bookatable.fr">🍽️ Réserver au Restaurant en ligne, <span class="click-here">Cliquez ICI</span></a>
         </div>
         <div class="button-container">
   <a class="reservation-btn" href="https://auberge-de-la-cascade.fr/reservationHotel">🏨 Réserver pour l'Hébergement, <span class="click-here">Cliquez ICI</span></a>
