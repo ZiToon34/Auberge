@@ -38,7 +38,7 @@
           <td class="prixPlat">{{$t('Assietteenfant')}}</td>
         </tr>
         <tr>
-          <td class="listePlat">{{$t('Salade Repas')}}</td>
+          <td class="listePlat">{{$t('3 Salade Repas')}}</td>
           <td class="prixPlat">{{$t('prixsalade')}}</td>
         </tr>
         <tr>
