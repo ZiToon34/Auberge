@@ -34,16 +34,20 @@
       <table>
         <tbody>
         <tr>
-          <td class="listePlat">Assiette enfant + sirop</td>
-          <td class="prixPlat">{{$t('Assietteenfant')}}</td>
-        </tr>
-        <tr>
           <td class="listePlat">{{$t('3 Salade Repas')}}</td>
           <td class="prixPlat">{{$t('prixsalade')}}</td>
+        </tr>
+          <tr>
+          <td class="listePlat">{{$t('ListePlats')}}</td>
+          <td class="prixPlat">{{$t('prixplats')}}</td>
         </tr>
         <tr>
           <td class="listePlat">{{$t('Dessert')}}</td>
           <td class="prixPlat">{{$t('prixdessert')}}</td>
+        </tr>
+          <tr>
+          <td class="listePlat">Assiette enfant + sirop</td>
+          <td class="prixPlat">{{$t('Assietteenfant')}}</td>
         </tr>
         </tbody>
       </table>
