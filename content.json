@@ -8,7 +8,7 @@
           "id": "popup_visible",
           "label": "Afficher la pop-up sur le site",
           "type": "boolean",
-          "value": true
+          "value": false
         },
         {
           "id": "popup_title",
