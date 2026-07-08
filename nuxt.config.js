@@ -1,7 +1,4 @@
 import fr from './langs/fr.json'
-import nl from './langs/nl.json'
-import en from './langs/en.json'
-import de from './langs/de.json'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -50,6 +47,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: './plugins/vue-carousel.js', mode: 'client'},
+    { src: '~/plugins/cms.client.js', mode: 'client' },
   { src: './plugins/vue-country-flag.js' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -63,57 +61,36 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
-    '@nuxtjs/recaptcha',
+     '@nuxtjs/recaptcha',
     [
       '@nuxtjs/i18n',
-    { locales: ['en', 'de', 'nl', 'fr',],
-    strategy: 'prefix_except_default',
+    { locales: [{ code: 'fr', iso: 'fr-FR' }],
+    strategy: 'no_prefix',
       defaultLocale: 'fr',
       parsePages: false,   // Disable babel parsing
       pages: {
         index: {
-          fr: '/', 
-          en: '/',
-          de: '/',
-          nl: '/'
+          fr: '/'
         },
         hotel: {
-          fr: '/hotel', 
-          en: '/hostel',
-          de: '/hotel',
-          nl: '/hotel'
+          fr: '/hotel'
         },
         restaurant: {
-          fr: '/restaurant', 
-          en: '/restaurant',
-          de: '/restaurant',
-          nl: '/restaurant'
+          fr: '/restaurant'
         },
         alentour: {
-          fr: '/alentour', 
-          en: '/around',
-          de: '/umgebung',
-          nl: '/rondom'
+          fr: '/alentour'
         },
         contact: {
-          fr: '/contact', 
-          en: '/contact',
-          de: '/kontakt',
-          nl: '/contact'
+          fr: '/contact'
         },
         reservation: {
-          fr: '/reservation', 
-          en: '/reservation',
-          de: '/reservierung',
-          nl: '/reservering'
+          fr: '/reservation'
         }
       },
       vueI18n: {
         fallbackLocale: 'fr',
         messages: {
-          en,
-          de,
-          nl,
           fr
         },
         detectBrowserLanguage: {

@@ -1,0 +1,34 @@
+{
+    "sections": [
+      {
+        "id": "popup",
+        "label": "Pop-up d'annonce",
+        "fields": [
+          {
+            "id": "visible",
+            "label": "Afficher la pop-up sur le site",
+            "type": "boolean",
+            "value": false
+          },
+          {
+            "id": "title",
+            "label": "Titre de la pop-up",
+            "type": "text",
+            "value": "Réouverture"
+          },
+          {
+            "id": "text",
+            "label": "Texte de la pop-up",
+            "type": "text",
+            "value": "L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir du 4 Avril 2026. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date."
+          },
+          {
+            "id": "footer_text",
+            "label": "Texte de fin",
+            "type": "text",
+            "value": "A très bientôt !"
+          }
+        ]
+      }
+    ]
+  }

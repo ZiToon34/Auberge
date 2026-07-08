@@ -30,23 +30,6 @@
             {{ $t("reservation") }}
           </NuxtLink>
         </div>
-        <div id="selectLang">
-          <button id="buttonLang" @click="showLang = !showLang">
-            <country-flag :country="findCurrentFlag($i18n.locale)" size="normal" />
-          </button>
-          <ul id="listLang" v-if="showLang">
-            <li
-              v-for="lang in langs"
-              :key="lang.i18n"
-              @click="
-                showLang = false;
-                $i18n.locale = lang.i18n;
-              "
-            >
-              <country-flag :country="lang.flag" size="normal" />
-            </li>
-          </ul>
-        </div>
       </nav>
       <div id="topbar_phone" v-if="!showMenu" class="hide_fullscreen">
         <div id="button_phone">
@@ -60,7 +43,6 @@
       <div v-if="showMenu" @click="showMenu = false" id="croix">
         <img src="@/assets/img/croix.png" alt="boutton croix" />
       </div>
-        <SavedModal v-show="showModal" />
         <SavedModal v-show="showModal" @close-modal="showModal = false" />
     </header>
   </div>
@@ -75,12 +57,6 @@ export default {
   data() {
     return {
       showMenu: false,
-      langs: [
-        { i18n: "fr", flag: "fr" },
-        { i18n: "en", flag: "gb" },
-        { i18n: "nl", flag: "nl" },
-        { i18n: "de", flag: "de" },
-      ],
       showModal: true,
       showLang: false,
     };
