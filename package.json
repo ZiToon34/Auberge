@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "git config --global url.\"https://github.com/\".insteadOf ssh://git@github.com/",
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
