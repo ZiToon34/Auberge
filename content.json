@@ -308,7 +308,7 @@
           "id": "rooms.chambre2.nameRoom",
           "label": "Chambre 2 — Nom",
           "type": "text",
-          "value": "Chambre n°222"
+          "value": "Chambre n°2"
         },
         {
           "id": "rooms.chambre2.maxPeople",
