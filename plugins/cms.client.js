@@ -1,7 +1,7 @@
 export default async ({ app }) => {
     const GITHUB_USER = 'ZiToon34'
     const GITHUB_REPO = 'Auberge'
-    const BRANCH = 'master'
+    const BRANCH = 'main'
     const RAW = (path) => `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${BRANCH}/${path}?t=${Date.now()}`
   
     try {
