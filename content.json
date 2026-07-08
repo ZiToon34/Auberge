@@ -1,34 +1,121 @@
 {
-    "sections": [
-      {
-        "id": "popup",
-        "label": "Pop-up d'annonce",
-        "fields": [
-          {
-            "id": "visible",
-            "label": "Afficher la pop-up sur le site",
-            "type": "boolean",
-            "value": false
-          },
-          {
-            "id": "title",
-            "label": "Titre de la pop-up",
-            "type": "text",
-            "value": "Réouverture"
-          },
-          {
-            "id": "text",
-            "label": "Texte de la pop-up",
-            "type": "text",
-            "value": "L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir du 4 Avril 2026. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date."
-          },
-          {
-            "id": "footer_text",
-            "label": "Texte de fin",
-            "type": "text",
-            "value": "A très bientôt !"
-          }
-        ]
-      }
-    ]
-  }
+  "sections": [
+    {
+      "id": "popup",
+      "label": "Pop-up d'annonce",
+      "fields": [
+        { "id": "popup_visible", "label": "Afficher la pop-up sur le site", "type": "boolean", "value": false },
+        { "id": "popup_title", "label": "Titre de la pop-up", "type": "text", "value": "Réouverture" },
+        { "id": "popup_text", "label": "Texte de la pop-up", "type": "text", "value": "L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir du 4 Avril 2026. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date." },
+        { "id": "popup_footer", "label": "Texte de fin", "type": "text", "value": "A très bientôt !" }
+      ]
+    },
+    {
+      "id": "restaurant_textes",
+      "label": "Restaurant — Textes",
+      "fields": [
+        { "id": "descriptionrestaurant", "label": "Description du restaurant", "type": "text", "value": " \" Située au cœur du cirque de Navacelles , l'auberge de la cascade vous propose une restauration simple et de qualitée dans un cadre hors du commun \"" },
+        { "id": "inforestaurant", "label": "Horaires d'ouverture restaurant", "type": "text", "value": "Restaurant ouvert le samedi, dimanche et lundi en basse saison. Tous les midi en haute saison." },
+        { "id": "infonight", "label": "Info soirées", "type": "text", "value": "Le Restaurant vous ouvre ses portes les Vendredis et Samedis soirs pour les mois de Juillet et Août." },
+        { "id": "ps", "label": "Info groupes", "type": "text", "value": " Pour les groupes nous pouvons, à la demande, faire des menus spéciaux. (en fonction du nombre possibilité d'ouvrir à la demande.)" }
+      ]
+    },
+    {
+      "id": "restaurant_menu",
+      "label": "Restaurant — Menu & Tarifs",
+      "fields": [
+        { "id": "listemenu", "label": "Description du menu", "type": "text", "value": "3 Choix d'entrées, de plats et desserts (au moins)" },
+        { "id": "listeplat1", "label": "Formule 1 — Nom", "type": "text", "value": "Entrée + Plat (ou Plat + Dessert)" },
+        { "id": "prixEP", "label": "Formule 1 — Prix", "type": "text", "value": "22€" },
+        { "id": "listeplat2", "label": "Formule 2 — Nom", "type": "text", "value": "Entrée + Plat + Dessert" },
+        { "id": "prixEPD", "label": "Formule 2 — Prix", "type": "text", "value": "26€" },
+        { "id": "ListePlats", "label": "Carte — Description plats", "type": "text", "value": "5 Choix de Plats (adapté par le Chef en suivant la saison)" },
+        { "id": "prixplats", "label": "Carte — Prix des plats", "type": "text", "value": "De 18,50€ à 21€" },
+        { "id": "salade", "label": "Salades — Description", "type": "text", "value": "3 Salade Repas (Pour tous les gouts)" },
+        { "id": "prixsalade", "label": "Salades — Prix", "type": "text", "value": "de 15€ à 17€" },
+        { "id": "dessert", "label": "Desserts — Description", "type": "text", "value": "Dessert Maison" },
+        { "id": "prixdessert", "label": "Desserts — Prix", "type": "text", "value": "6,50€" },
+        { "id": "burger", "label": "Assiette enfant — Nom", "type": "text", "value": "Assiette enfant + sirop" },
+        { "id": "Assietteenfant", "label": "Assiette enfant — Prix", "type": "text", "value": "9€" }
+      ]
+    },
+    {
+      "id": "vins",
+      "label": "Carte des vins",
+      "fields": [
+        { "id": "prixcarlinesblanc", "label": "Les Carlines Blanc", "type": "text", "value": "23€" },
+        { "id": "prixperdrixblanc", "label": "La Perdrix Blanc", "type": "text", "value": "18€" },
+        { "id": "prixserieys", "label": "Domaine Serieys", "type": "text", "value": "19€" },
+        { "id": "prixcouledouce", "label": "Coule Douce", "type": "text", "value": "18€" },
+        { "id": "prixtrad", "label": "Cuvée Tradition", "type": "text", "value": "21€" },
+        { "id": "prixpons", "label": "Domaine Pons", "type": "text", "value": "29€" },
+        { "id": "prixcarlinesrge", "label": "Les Carlines Rouge", "type": "text", "value": "25€" },
+        { "id": "prixcosterousse", "label": "Coste Rousse", "type": "text", "value": "23€" },
+        { "id": "prixpichet", "label": "Pichet Rouge/Blanc/Rosé", "type": "text", "value": "5€ - 8€ -11€" },
+        { "id": "prixeau", "label": "Eaux minérales", "type": "text", "value": "6,50€" }
+      ]
+    },
+    {
+      "id": "hotel_tarifs",
+      "label": "Hôtel — Tarifs",
+      "fields": [
+        { "id": "price", "label": "Titre du tableau des tarifs", "type": "text", "value": "Tarifs 2026:" },
+        { "id": "prixdemiseul", "label": "Demi-pension personne seule", "type": "text", "value": "82€" },
+        { "id": "prixdemi2", "label": "Demi-pension (à partir de 2 pers.)", "type": "text", "value": "64€" },
+        { "id": "prixdemienfant", "label": "Demi-pension -12 ans", "type": "text", "value": "37,00€" },
+        { "id": "prixdej", "label": "Petit-déjeuner / personne", "type": "text", "value": "8,50€" },
+        { "id": "prixanimaux", "label": "Supplément animal / jour", "type": "text", "value": "8€" },
+        { "id": "prixtaxe", "label": "Taxe de séjour / personne", "type": "text", "value": "0,80€" },
+        { "id": "prix1et2", "label": "Chambre seule 1-2 personnes", "type": "text", "value": "64€" },
+        { "id": "prix3", "label": "Chambre seule 3 personnes", "type": "text", "value": "85€" },
+        { "id": "prix4", "label": "Chambre seule 4 personnes", "type": "text", "value": "105€" },
+        { "id": "aulit", "label": "Prix au lit (relais)", "type": "text", "value": "40€" },
+        { "id": "descriptionRoom", "label": "Description des chambres", "type": "text", "value": "Comprend Salle d'eau, Bagagerie, WiFi et WC" }
+      ]
+    },
+    {
+      "id": "chambres",
+      "label": "Hôtel — Chambres",
+      "fields": [
+        { "id": "rooms.chambre1.nameRoom", "label": "Chambre 1 — Nom", "type": "text", "value": "Chambre n°1" },
+        { "id": "rooms.chambre1.maxPeople", "label": "Chambre 1 — Capacité", "type": "text", "value": "Maximum 4 personnes" },
+        { "id": "rooms.chambre2.nameRoom", "label": "Chambre 2 — Nom", "type": "text", "value": "Chambre n°2" },
+        { "id": "rooms.chambre2.maxPeople", "label": "Chambre 2 — Capacité", "type": "text", "value": "Maximum 2 personnes" },
+        { "id": "rooms.chambre3.nameRoom", "label": "Chambre 3 — Nom", "type": "text", "value": "Chambre n°4" },
+        { "id": "rooms.chambre3.maxPeople", "label": "Chambre 3 — Capacité", "type": "text", "value": "Maximum 3 personnes" },
+        { "id": "rooms.chambre4.nameRoom", "label": "Chambre 4 — Nom", "type": "text", "value": "Chambre n°5" },
+        { "id": "rooms.chambre4.maxPeople", "label": "Chambre 4 — Capacité", "type": "text", "value": "Maximum 2 personnes" },
+        { "id": "rooms.chambre5.nameRoom", "label": "Chambre 5 — Nom", "type": "text", "value": "Chambre Relais n°1" },
+        { "id": "rooms.chambre5.maxPeople", "label": "Chambre 5 — Capacité", "type": "text", "value": "Maximum 2 personnes" },
+        { "id": "rooms.chambre6.nameRoom", "label": "Chambre 6 — Nom", "type": "text", "value": "Chambre Relais n°2" },
+        { "id": "rooms.chambre6.maxPeople", "label": "Chambre 6 — Capacité", "type": "text", "value": "Maximum 2 personnes" },
+        { "id": "rooms.chambre7.nameRoom", "label": "Chambre 7 — Nom", "type": "text", "value": "Chambre Relais n°3" },
+        { "id": "rooms.chambre7.maxPeople", "label": "Chambre 7 — Capacité", "type": "text", "value": "Maximum 2 personnes" },
+        { "id": "rooms.chambre8.nameRoom", "label": "Chambre 8 — Nom", "type": "text", "value": "Chambre Relais n°4" },
+        { "id": "rooms.chambre8.maxPeople", "label": "Chambre 8 — Capacité", "type": "text", "value": "Maximum 3 personnes" }
+      ]
+    },
+    {
+      "id": "photos_chambres",
+      "label": "Photos des chambres",
+      "fields": [
+        { "id": "chambre1_img", "label": "Photo Chambre 1", "type": "image", "value": "" },
+        { "id": "chambre2_img", "label": "Photo Chambre 2", "type": "image", "value": "" },
+        { "id": "chambre3_img", "label": "Photo Chambre 3", "type": "image", "value": "" },
+        { "id": "chambre4_img", "label": "Photo Chambre 4", "type": "image", "value": "" },
+        { "id": "chambre5_img", "label": "Photo Chambre Relais 1", "type": "image", "value": "" },
+        { "id": "chambre6_img", "label": "Photo Chambre Relais 2", "type": "image", "value": "" },
+        { "id": "chambre7_img", "label": "Photo Chambre Relais 3", "type": "image", "value": "" },
+        { "id": "chambre8_img", "label": "Photo Chambre Relais 4", "type": "image", "value": "" }
+      ]
+    },
+    {
+      "id": "horaires",
+      "label": "Horaires & Footer",
+      "fields": [
+        { "id": "openFooter", "label": "Ouverture haute saison", "type": "text", "value": "L'Auberge est ouverte tous les jours de la semaine en Haute Saison (14 Juillet / 31 Août)" },
+        { "id": "openFooter2", "label": "Ouverture basse saison", "type": "text", "value": "Fermée un jour par semaine en basse saison, contactez nous pour plus de précision." }
+      ]
+    }
+  ]
+}

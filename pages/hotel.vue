@@ -5,7 +5,7 @@
     <div class="button-container">
   <a class="reservation-btn" href="https://auberge-de-la-cascade.fr/reservationHotel">🏨 Réserver pour l'Hébergement, <span class="click-here">Cliquez ICI</span></a>
         </div>
-    <Hotel2 class="hostel_room" id="hostelPair" v-for="room in rooms.rooms" :key="room.id" :imgRoom="room.img" :nameRoom="$t(`rooms.${room.id}.nameRoom`)" :maxPeople="$t(`rooms.${room.id}.maxPeople`)"/>
+    <Hotel2 class="hostel_room" id="hostelPair" v-for="room in rooms.rooms" :key="room.id" :imgRoom="room.img" :cmsImageId="`${room.id}_img`" :nameRoom="$t(`rooms.${room.id}.nameRoom`)" :maxPeople="$t(`rooms.${room.id}.maxPeople`)"/>
   </div>
   <div class="hostel_room">
       <div class="conteneur1">

@@ -8,21 +8,27 @@ export default async ({ app }) => {
       const res = await fetch(RAW('content.json'))
       const cms = await res.json()
   
-      // 1. Surcharger les textes i18n avec les valeurs du CMS
+      // Construire l'objet de surcharge (gère les clés imbriquées "a.b.c")
       const overrides = {}
       cms.sections.forEach(section => {
         section.fields.forEach(field => {
           if (field.type === 'text' && field.value) {
-            overrides[field.id] = field.value
+            const parts = field.id.split('.')
+            let node = overrides
+            for (let i = 0; i < parts.length - 1; i++) {
+              node[parts[i]] = node[parts[i]] || {}
+              node = node[parts[i]]
+            }
+            node[parts[parts.length - 1]] = field.value
           }
         })
       })
       app.i18n.mergeLocaleMessage('fr', overrides)
   
-      // 2. Rendre les données CMS accessibles partout
-      app.$cmsData = cms
-      window.$cmsData = cms
-      window.$cmsImg = (filename) => RAW(`images/${filename}`)
+      // Données CMS accessibles partout
+      const getSection = (id) => cms.sections.find(s => s.id === id)?.fields || []
+      const getField = (fields, id) => fields.find(f => f.id === id)?.value
+      window.$cms = { data: cms, getSection, getField, img: (f) => RAW(`images/${f}`) }
     } catch (e) {
       console.warn('CMS non chargé', e)
     }

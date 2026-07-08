@@ -1,6 +1,6 @@
 <template>
   <div class="conteneur1">
-      <img class="img" :src="require(`@/assets/img/${imgRoom}`)" alt="Photo de la Chambre" />
+      <img class="img" :src="imageSrc" alt="Photo de la Chambre" @error="onImgError" />
             <div class="textRoom">
         <h2 class="nom">{{nameRoom}}</h2>
         <h3 class="description">
@@ -16,7 +16,6 @@
                         <td style="border: none;"></td>
                         <th>{{$t('priceRoom')}}</th>
                     </tr>
-                
                     <tr>
                         <td>{{$t('half')}}</td>
                         <td>{{$t('prixdemiseul')}}</td>
@@ -57,6 +56,29 @@ export default {
         nameRoom: String,
         descriptionRoom: String,
         maxPeople: String,
+        cmsImageId: String
+    },
+    data() {
+        return {
+            imageSrc: require(`@/assets/img/${this.imgRoom}`)
+        }
+    },
+    mounted() {
+        // Si une image CMS existe pour cette chambre, l'utiliser
+        const cms = window.$cms
+        if (cms && this.cmsImageId) {
+            const photos = cms.getSection('photos_chambres')
+            const cmsImg = cms.getField(photos, this.cmsImageId)
+            if (cmsImg) {
+                this.imageSrc = cms.img(cmsImg)
+            }
+        }
+    },
+    methods: {
+        onImgError() {
+            // Si l'image CMS échoue, revenir à l'image d'origine
+            this.imageSrc = require(`@/assets/img/${this.imgRoom}`)
+        }
     }
 }
 </script>

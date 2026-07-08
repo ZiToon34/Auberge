@@ -28,17 +28,16 @@ export default {
     }
   },
   mounted() {
-    // Attendre que le plugin CMS soit chargé
-    this.$nextTick(() => {
-      const cms = this.$cms
-      if (!cms || !cms.data) return
-      const popup = cms.getSection('popup')
-      this.popupVisible = cms.getField(popup, 'visible') === true
-      this.popupTitle = cms.getField(popup, 'title') || this.popupTitle
-      this.popupText = cms.getField(popup, 'text') || this.popupText
-      this.popupFooter = cms.getField(popup, 'footer_text') || this.popupFooter
-    })
-  }
+  this.$nextTick(() => {
+    const cms = window.$cms
+    if (!cms) return
+    const popup = cms.getSection('popup')
+    this.popupVisible = cms.getField(popup, 'popup_visible') === true
+    this.popupTitle = cms.getField(popup, 'popup_title') || this.popupTitle
+    this.popupText = cms.getField(popup, 'popup_text') || this.popupText
+    this.popupFooter = cms.getField(popup, 'popup_footer') || this.popupFooter
+  })
+}
 }
 </script>
 
