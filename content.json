@@ -80,7 +80,7 @@
           "id": "prixEP",
           "label": "Formule 1 — Prix",
           "type": "text",
-          "value": "22€"
+          "value": "22"
         },
         {
           "id": "listeplat2",
