@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /mentions-legales.html
+Disallow: /confidentialite.html
+Disallow: /merci.html
+
+Sitemap: https://www.auberge-de-la-cascade.fr/sitemap.xml

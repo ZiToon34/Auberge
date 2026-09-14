@@ -1,7 +1,59 @@
-[dev]
-   command = "npm run dev"
+# --- Redirection vers le domaine principal (avec www) ---
+[[redirects]]
+  from = "https://auberge-de-la-cascade.fr/*"
+  to = "https://www.auberge-de-la-cascade.fr/:splat"
+  status = 301
+  force = true
 
-[build]
-  command = "npm run generate"
-  publish = "dist"
-  functions = "functions"
+# --- Anciennes adresses du site Nuxt ---
+[[redirects]]
+  from = "/reservationHotel"
+  to = "/reservation-hotel.html"
+  status = 301
+[[redirects]]
+  from = "/alentour"
+  to = "/alentours.html"
+  status = 301
+[[redirects]]
+  from = "/reservationsend"
+  to = "/merci.html"
+  status = 301
+[[redirects]]
+  from = "/formsend"
+  to = "/merci.html"
+  status = 301
+
+# --- Page introuvable ---
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# --- Securite ---
+# frame-ancestors autorise l'apercu de Mon CMS, et lui seul.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "frame-ancestors 'self' https://mon-cms-mnrd.vercel.app"
+
+# --- HTML : toujours a jour ---
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# --- content.json : jamais en cache (edite via Mon CMS) ---
+[[headers]]
+  for = "/content.json"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+# --- Images : cache long ---
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

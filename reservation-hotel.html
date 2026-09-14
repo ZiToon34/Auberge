@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réservation hébergement — Auberge de la Cascade</title>
+<meta name="description" content="Formulaire de pré-réservation pour l'hébergement à l'Auberge de la Cascade. Réponse sous 48 heures.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://www.auberge-de-la-cascade.fr/reservation-hotel.html">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Auberge de la Cascade">
+<meta property="og:url" content="https://www.auberge-de-la-cascade.fr/reservation-hotel.html">
+<meta property="og:title" content="Réservation hébergement — Auberge de la Cascade">
+<meta property="og:description" content="Formulaire de pré-réservation pour l'hébergement à l'Auberge de la Cascade. Réponse sous 48 heures.">
+<meta property="og:image" content="https://www.auberge-de-la-cascade.fr/images/aubergecasc.jpg">
+
+<link rel="icon" href="images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Franklin:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Franklin:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<button class="burger" id="burger" aria-label="Ouvrir le menu">
+  <span></span><span></span><span></span>
+</button>
+
+<nav class="topbar" id="topbar">
+  <a class="nav_topbar" href="hotel.html" data-cms-text="nav.hotel">Hôtel</a>
+  <a class="nav_topbar" href="restaurant.html" data-cms-text="nav.restaurant">Restaurant</a>
+  <a class="nav_topbar" href="alentours.html" data-cms-text="nav.alentours">Navacelles et alentours</a>
+  <a class="nav_topbar" href="contact.html" data-cms-text="nav.contact">Contact</a>
+  <a class="nav_topbar reservation" href="reservation.html" data-cms-text="nav.reservation">Pré-Réservation</a>
+</nav>
+
+<main>
+  <div id="container-nava" style="background-image:url('images/navacelles1.jpg')">
+    <img class="nava" src="images/navacelles1.jpg" alt="Le Cirque de Navacelles">
+  </div>
+  <div class="conteneur">
+    <div class="interieur">
+
+      <p class="avertissement">
+        <strong>L'auberge se situe au hameau de Navacelles, dans le cirque de Navacelles —
+        et non à Saint Maurice-Navacelles, mais sur sa commune.</strong>
+      </p>
+
+      <p class="paragraphe"><strong>Ceci est un formulaire de pré-réservation — réponse sous 48 h.</strong></p>
+
+      <form class="formulaire" id="form-reservation" novalidate>
+
+        <!-- Piege a robots : invisible pour les visiteurs -->
+        <div class="piege" aria-hidden="true">
+          <label for="site">Ne pas remplir</label>
+          <input type="text" id="site" name="site" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="champ">
+          <label for="form_name" data-cms-text="formulaire.nom">Nom et Prénom</label>
+          <input type="text" id="form_name" name="name" required>
+        </div>
+
+        <div class="champ">
+          <label for="form_email" data-cms-text="formulaire.email">Votre Email</label>
+          <input type="email" id="form_email" name="email" required>
+        </div>
+
+        <div class="champ">
+          <label for="form_phone" data-cms-text="formulaire.telephone">Votre Numéro de Téléphone</label>
+          <input type="tel" id="form_phone" name="phone" required>
+        </div>
+
+        <div class="champ">
+          <label for="form_pension" data-cms-text="formulaire.hebergement">Type d'Hébergement</label>
+          <select id="form_pension" name="pension" required
+                  data-cms-list="formulaire.hebergements" data-cms-list-style="option">
+            <option value="">— Choisissez une option —</option>
+            <option>Demi-pension</option>
+            <option>Chambre Seule + Petit Déjeuner</option>
+            <option>Chambre Seule</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="form_pers" data-cms-text="formulaire.personnes">Nombre de Personnes</label>
+          <select id="form_pers" name="pers" required>
+            <option value="">— Choisissez une option —</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="form_bed" data-cms-text="formulaire.lit">Type de Lit</label>
+          <select id="form_bed" name="bed" required
+                  data-cms-list="formulaire.lits" data-cms-list-style="option">
+            <option value="">— Choisissez une option —</option>
+            <option>Grand Lit</option>
+            <option>Lits Jumeaux</option>
+            <option>Grand Lit + Petit Lit</option>
+            <option>Grand Lit + Superposé</option>
+            <option>Groupe</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="form_datestart" data-cms-text="formulaire.arrivee">Date d'arrivée</label>
+          <input type="date" id="form_datestart" name="datestart" required>
+        </div>
+
+        <div class="champ">
+          <label for="form_dateend" data-cms-text="formulaire.depart">Date de départ</label>
+          <input type="date" id="form_dateend" name="dateend" required>
+        </div>
+
+        <div class="champ">
+          <label for="form_message" data-cms-text="formulaire.message">Votre Message</label>
+          <textarea id="form_message" name="message" rows="8" required
+                    placeholder="Précisez votre demande"></textarea>
+          <p class="note" data-cms-text="formulaire.message_aide">Précisez votre demande</p>
+        </div>
+
+        <p class="avertissement">
+          <strong>L'auberge se situe au hameau de Navacelles, dans le cirque de Navacelles.</strong>
+        </p>
+        <div class="champ champ-case">
+          <input type="checkbox" id="rgpd" name="rgpd" required>
+          <label for="rgpd">
+            J'accepte que mes informations soient utilisées pour traiter ma demande de
+            réservation, conformément à la
+            <a href="confidentialite.html" target="_blank">politique de confidentialité</a>.
+          </label>
+        </div>
+
+
+        <button type="submit" class="bouton bouton-centre" id="form-envoyer"
+                data-cms-text="formulaire.envoyer">Envoyer la demande</button>
+
+        <p class="formulaire-etat" id="form-etat" role="status"></p>
+      </form>
+
+      <p class="note">
+        <a href="mailto:aubergedelacascade@orange.fr?subject=Réservation&amp;body=Demande de réservation">
+          En cas de problème lors de l'envoi, écrivez-nous directement
+        </a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- ================= PIED DE PAGE ================= -->
+<footer>
+  <div class="footer">
+    <div class="horaires">
+      <h2 class="h2_horaires" data-cms-text="footer.horaires_titre">Horaires</h2>
+      <hr class="barre">
+      <div class="info_footer" data-cms-list="footer.horaires" data-cms-list-style="paragraphe">
+        <p>Restaurant <strong>12h00 - 14h00</strong></p>
+        <p>Bar <strong>14h00 - 18h30</strong></p>
+        <p>Accueil hébergement <strong>16h00 - 19h00</strong></p>
+      </div>
+      <p class="info_footer" data-cms-text="footer.ouverture1">L'Auberge est ouverte tous les jours de la semaine en Haute Saison (14 Juillet / 31 Août)</p>
+      <p class="info_footer" data-cms-text="footer.ouverture2">Fermée un jour par semaine en basse saison, contactez nous pour plus de précision.</p>
+    </div>
+
+    <div class="adresse">
+      <h2 class="h2_adresse" data-cms-text="footer.adresse_titre">Adresse</h2>
+      <hr class="barre">
+      <p class="info_footer" data-cms-text="contact.nom_etab">Auberge de la Cascade</p>
+      <p class="info_footer" data-cms-text="contact.adresse1">18 Chemin des Faïsses</p>
+      <p class="info_footer" data-cms-text="contact.adresse2">Hameau de Navacelles</p>
+      <p class="info_footer" data-cms-text="contact.adresse3">34520 Saint Maurice-Navacelles</p>
+      <p class="info_footer"><a href="tel:0467815095" data-cms-tel="contact.telephone" data-cms-text="contact.telephone">04 67 81 50 95</a></p>
+    </div>
+  </div>
+
+  <div class="footer2">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="#" target="_blank" rel="noopener" data-cms-href="contact.facebook">Facebook</a>
+    <a href="#" target="_blank" rel="noopener" data-cms-href="contact.instagram">Instagram</a>
+    <a href="#" target="_blank" rel="noopener" data-cms-href="contact.tripadvisor">Tripadvisor</a>
+  </div>
+</footer>
+
+<!-- ================= POP-UP D'ANNONCE ================= -->
+<div class="modal-fond" id="popup-fond">
+  <div class="popup">
+    <button class="popup-fermer" id="popup-fermer" aria-label="Fermer">&times;</button>
+    <p class="popup-titre" data-cms-text="popup.titre">Réouverture</p>
+    <p class="popup-texte" data-cms-text="popup.texte">
+      L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau prochainement.
+    </p>
+    <p class="popup-fin" data-cms-text="popup.fin">A très bientôt !</p>
+  </div>
+</div>
+
+<script defer src="cms.js" data-cms-repo="ZiToon34/Auberge"></script>
+<script defer src="site.js"></script>
+<script defer src="cms-bridge.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script defer src="reservation.js"></script>
+</body>
+</html>
