@@ -1,29 +1,89 @@
 {
   "sections": [
     {
+      "id": "accueil",
+      "label": "Accueil",
+      "fields": [
+        {
+          "id": "titre",
+          "label": "Titre sur la photo",
+          "type": "text",
+          "value": "Auberge de la Cascade | Hameau de Navacelles"
+        },
+        {
+          "id": "photo1",
+          "label": "Photo de fond 1",
+          "type": "image",
+          "value": "navacelles1.jpg"
+        },
+        {
+          "id": "photo2",
+          "label": "Photo de fond 2",
+          "type": "image",
+          "value": "aubergecasc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "nav",
+      "label": "Menu de navigation",
+      "fields": [
+        {
+          "id": "hotel",
+          "label": "Lien 1",
+          "type": "text",
+          "value": "Hébergements"
+        },
+        {
+          "id": "restaurant",
+          "label": "Lien 2",
+          "type": "text",
+          "value": "Le Restaurant"
+        },
+        {
+          "id": "alentours",
+          "label": "Lien 3",
+          "type": "text",
+          "value": "Navacelles et Alentours"
+        },
+        {
+          "id": "contact",
+          "label": "Lien 4",
+          "type": "text",
+          "value": "Contact"
+        },
+        {
+          "id": "reservation",
+          "label": "Lien 5",
+          "type": "text",
+          "value": "Pré-Réservation"
+        }
+      ]
+    },
+    {
       "id": "popup",
       "label": "Pop-up d'annonce",
       "fields": [
         {
-          "id": "popup_visible",
-          "label": "Afficher la pop-up sur le site",
+          "id": "visible",
+          "label": "Afficher la pop-up",
           "type": "boolean",
           "value": false
         },
         {
-          "id": "popup_title",
-          "label": "Titre de la pop-up",
+          "id": "titre",
+          "label": "Titre",
           "type": "text",
           "value": "Réouverture"
         },
         {
-          "id": "popup_text",
-          "label": "Texte de la pop-up",
+          "id": "texte",
+          "label": "Texte",
           "type": "text",
           "value": "L'Auberge de la Cascade sera heureuse de vous accueillir à nouveau à partir du 4 Avril 2026. Vous pouvez toujours nous contacter via le formulaire de pré-réservation avant cette date."
         },
         {
-          "id": "popup_footer",
+          "id": "fin",
           "label": "Texte de fin",
           "type": "text",
           "value": "A très bientôt !"
@@ -31,182 +91,221 @@
       ]
     },
     {
-      "id": "restaurant_textes",
-      "label": "Restaurant — Textes",
+      "id": "restaurant",
+      "label": "Restaurant — Présentation",
       "fields": [
         {
-          "id": "descriptionrestaurant",
-          "label": "Description du restaurant",
+          "id": "description",
+          "label": "Phrase d'accroche",
           "type": "text",
           "value": " \" Située au cœur du cirque de Navacelles , l'auberge de la cascade vous propose une restauration simple et de qualitée dans un cadre hors du commun \""
         },
         {
-          "id": "inforestaurant",
-          "label": "Horaires d'ouverture restaurant",
+          "id": "horaires",
+          "label": "Horaires d'ouverture",
           "type": "text",
           "value": "Restaurant ouvert le samedi, dimanche et lundi en basse saison. Tous les midi en haute saison."
         },
         {
-          "id": "infonight",
-          "label": "Info soirées",
+          "id": "soirs",
+          "label": "Ouverture en soirée",
           "type": "text",
           "value": "Le Restaurant vous ouvre ses portes les Vendredis et Samedis soirs pour les mois de Juillet et Août."
         },
         {
-          "id": "ps",
-          "label": "Info groupes",
+          "id": "groupes",
+          "label": "Note pour les groupes",
           "type": "text",
           "value": " Pour les groupes nous pouvons, à la demande, faire des menus spéciaux. (en fonction du nombre possibilité d'ouvrir à la demande.)"
+        },
+        {
+          "id": "photos",
+          "label": "Photos du restaurant",
+          "type": "image-list",
+          "value": [
+            "1eat.jpg",
+            "2eat.jpg",
+            "3eat.jpg",
+            "4eat.jpg",
+            "5eat.jpg",
+            "6eat.jpg",
+            "7eat.jpg",
+            "8eat.jpg",
+            "9eat.jpg",
+            "10eat.jpg"
+          ]
         }
       ]
     },
     {
-      "id": "restaurant_menu",
-      "label": "Restaurant — Menu & Tarifs",
+      "id": "carte",
+      "label": "Restaurant — La carte",
       "fields": [
         {
-          "id": "listemenu",
+          "id": "menu_titre",
+          "label": "Titre du menu",
+          "type": "text",
+          "value": "Le Menu"
+        },
+        {
+          "id": "menu_intro",
           "label": "Description du menu",
           "type": "text",
           "value": "3 Choix d'entrées, de plats et desserts (au moins)"
         },
         {
-          "id": "listeplat1",
-          "label": "Formule 1 — Nom",
-          "type": "text",
-          "value": "Entrée + Plat (ou Plat + Dessert)"
+          "id": "formules",
+          "label": "Formules",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Entrée + Plat (ou Plat + Dessert)",
+              "valeur": "22"
+            },
+            {
+              "label": "Entrée + Plat + Dessert",
+              "valeur": "26€"
+            }
+          ]
         },
         {
-          "id": "prixEP",
-          "label": "Formule 1 — Prix",
+          "id": "carte_titre",
+          "label": "Titre de la carte",
           "type": "text",
-          "value": "22"
+          "value": "Carte"
         },
         {
-          "id": "listeplat2",
-          "label": "Formule 2 — Nom",
-          "type": "text",
-          "value": "Entrée + Plat + Dessert"
-        },
-        {
-          "id": "prixEPD",
-          "label": "Formule 2 — Prix",
-          "type": "text",
-          "value": "26€"
-        },
-        {
-          "id": "ListePlats",
-          "label": "Carte — Description plats",
-          "type": "text",
-          "value": "5 Choix de Plats (adapté par le Chef en suivant la saison)"
-        },
-        {
-          "id": "prixplats",
-          "label": "Carte — Prix des plats",
-          "type": "text",
-          "value": "De 18,50€ à 21€"
-        },
-        {
-          "id": "salade",
-          "label": "Salades — Description",
-          "type": "text",
-          "value": "3 Salade Repas (Pour tous les gouts)"
-        },
-        {
-          "id": "prixsalade",
-          "label": "Salades — Prix",
-          "type": "text",
-          "value": "de 15€ à 17€"
-        },
-        {
-          "id": "dessert",
-          "label": "Desserts — Description",
-          "type": "text",
-          "value": "Dessert Maison"
-        },
-        {
-          "id": "prixdessert",
-          "label": "Desserts — Prix",
-          "type": "text",
-          "value": "6,50€"
-        },
-        {
-          "id": "burger",
-          "label": "Assiette enfant — Nom",
-          "type": "text",
-          "value": "Assiette enfant + sirop"
-        },
-        {
-          "id": "Assietteenfant",
-          "label": "Assiette enfant — Prix",
-          "type": "text",
-          "value": "9€"
+          "id": "plats",
+          "label": "À la carte",
+          "type": "liste",
+          "value": [
+            {
+              "label": "5 Choix de Plats (adapté par le Chef en suivant la saison)",
+              "valeur": "De 18,50€ à 21€"
+            },
+            {
+              "label": "3 Salade Repas (Pour tous les gouts)",
+              "valeur": "de 15€ à 17€"
+            },
+            {
+              "label": "Dessert Maison",
+              "valeur": "6,50€"
+            },
+            {
+              "label": "Assiette enfant + sirop",
+              "valeur": "9€"
+            }
+          ]
         }
       ]
     },
     {
       "id": "vins",
-      "label": "Carte des vins",
+      "label": "Restaurant — Boissons & vins",
       "fields": [
         {
-          "id": "prixcarlinesblanc",
-          "label": "Les Carlines Blanc",
+          "id": "titre",
+          "label": "Titre de la section",
           "type": "text",
-          "value": "23€"
+          "value": "Boissons"
         },
         {
-          "id": "prixperdrixblanc",
-          "label": "La Perdrix Blanc",
-          "type": "text",
-          "value": "18€"
+          "id": "blancs",
+          "label": "Vins blancs",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Vin Blanc \"Mas Haut-Buis\" — Les Carlines",
+              "valeur": "23€"
+            },
+            {
+              "label": "Vin Blanc \"Domaine de la Perdrix\" — La Coule Douce",
+              "valeur": "18€"
+            }
+          ]
         },
         {
-          "id": "prixserieys",
-          "label": "Domaine Serieys",
-          "type": "text",
-          "value": "19€"
+          "id": "roses",
+          "label": "Vins rosés",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Vin Rosé \"Domaine de Ferrussac\" — Sérieys",
+              "valeur": "19€"
+            },
+            {
+              "label": "Vin Rosé \"Domaine de la Perdrix\" — La Coule Douce",
+              "valeur": "18€"
+            }
+          ]
         },
         {
-          "id": "prixcouledouce",
-          "label": "Coule Douce",
-          "type": "text",
-          "value": "18€"
+          "id": "rouges",
+          "label": "Vins rouges",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Vin Rouge \"Domaine de la Perdrix\" — Tradition",
+              "valeur": "21€"
+            },
+            {
+              "label": "Vin Rouge \"Domaine de la Perdrix\" — Cuvée J-S Pons",
+              "valeur": "29€"
+            },
+            {
+              "label": "Vin Rouge Terrasses du Larzac \"Mas Haut-Buis\" — Les Carlines",
+              "valeur": "25€"
+            },
+            {
+              "label": "Vin Rouge \"Domaine de Ferrussac\" — Coste Rousse",
+              "valeur": "23€"
+            }
+          ]
         },
         {
-          "id": "prixtrad",
-          "label": "Cuvée Tradition",
+          "id": "autres",
+          "label": "Autres boissons",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Pichet de vin — 0,25L / 0,5L / 1L",
+              "valeur": "5€ - 8€ -11€"
+            },
+            {
+              "label": "Eaux minérales",
+              "valeur": "6,50€"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "label": "Hôtel — Présentation",
+      "fields": [
+        {
+          "id": "titre",
+          "label": "Titre de la page",
           "type": "text",
-          "value": "21€"
+          "value": "Hébergements"
         },
         {
-          "id": "prixpons",
-          "label": "Domaine Pons",
+          "id": "description_chambre",
+          "label": "Ce que comprend chaque chambre",
           "type": "text",
-          "value": "29€"
+          "value": "Comprend Salle d'eau, Bagagerie, WiFi et WC"
         },
         {
-          "id": "prixcarlinesrge",
-          "label": "Les Carlines Rouge",
+          "id": "petitdej",
+          "label": "Note petit-déjeuner",
           "type": "text",
-          "value": "25€"
+          "value": "Petit Déjeuner de 8h00 à 9h00"
         },
         {
-          "id": "prixcosterousse",
-          "label": "Coste Rousse",
+          "id": "pmr",
+          "label": "Note accessibilité",
           "type": "text",
-          "value": "23€"
-        },
-        {
-          "id": "prixpichet",
-          "label": "Pichet Rouge/Blanc/Rosé",
-          "type": "text",
-          "value": "5€ - 8€ -11€"
-        },
-        {
-          "id": "prixeau",
-          "label": "Eaux minérales",
-          "type": "text",
-          "value": "6,50€"
+          "value": "Pas d'accès PMR"
         }
       ]
     },
@@ -215,250 +314,774 @@
       "label": "Hôtel — Tarifs",
       "fields": [
         {
-          "id": "price",
-          "label": "Titre du tableau des tarifs",
+          "id": "titre",
+          "label": "Titre du tableau",
           "type": "text",
           "value": "Tarifs 2026:"
         },
         {
-          "id": "prixdemiseul",
-          "label": "Demi-pension personne seule",
-          "type": "text",
-          "value": "82€"
+          "id": "pension",
+          "label": "Demi-pension",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Demi-pension (Personne seule)",
+              "valeur": "82€"
+            },
+            {
+              "label": "Demi-pension (à partir de 2)",
+              "valeur": "64€ / personne"
+            },
+            {
+              "label": "Demi-pension (-12 ans)",
+              "valeur": "37,00€"
+            }
+          ]
         },
         {
-          "id": "prixdemi2",
-          "label": "Demi-pension (à partir de 2 pers.)",
-          "type": "text",
-          "value": "64€"
+          "id": "chambre_seule",
+          "label": "Chambre seule",
+          "type": "liste",
+          "value": [
+            {
+              "label": "1 à 2 personnes",
+              "valeur": "64€"
+            },
+            {
+              "label": "3 personnes",
+              "valeur": "85€"
+            },
+            {
+              "label": "4 personnes",
+              "valeur": "105€"
+            },
+            {
+              "label": "Prix au lit (relais)",
+              "valeur": "40€"
+            }
+          ]
         },
         {
-          "id": "prixdemienfant",
-          "label": "Demi-pension -12 ans",
-          "type": "text",
-          "value": "37,00€"
-        },
-        {
-          "id": "prixdej",
-          "label": "Petit-déjeuner / personne",
-          "type": "text",
-          "value": "8,50€"
-        },
-        {
-          "id": "prixanimaux",
-          "label": "Supplément animal / jour",
-          "type": "text",
-          "value": "8€"
-        },
-        {
-          "id": "prixtaxe",
-          "label": "Taxe de séjour / personne",
-          "type": "text",
-          "value": "0,80€"
-        },
-        {
-          "id": "prix1et2",
-          "label": "Chambre seule 1-2 personnes",
-          "type": "text",
-          "value": "64€"
-        },
-        {
-          "id": "prix3",
-          "label": "Chambre seule 3 personnes",
-          "type": "text",
-          "value": "85€"
-        },
-        {
-          "id": "prix4",
-          "label": "Chambre seule 4 personnes",
-          "type": "text",
-          "value": "105€"
-        },
-        {
-          "id": "aulit",
-          "label": "Prix au lit (relais)",
-          "type": "text",
-          "value": "40€"
-        },
-        {
-          "id": "descriptionRoom",
-          "label": "Description des chambres",
-          "type": "text",
-          "value": "Comprend Salle d'eau, Bagagerie, WiFi et WC"
+          "id": "supplements",
+          "label": "Suppléments",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Petit-Déjeuner / Personne",
+              "valeur": "8,50€"
+            },
+            {
+              "label": "Supplément / Animal",
+              "valeur": "8€ / jour"
+            },
+            {
+              "label": "Taxe de Séjour par personne",
+              "valeur": "0,80€"
+            }
+          ]
         }
       ]
     },
     {
       "id": "chambres",
-      "label": "Hôtel — Chambres",
+      "label": "Hôtel — Les chambres",
       "fields": [
         {
-          "id": "rooms.chambre1.nameRoom",
+          "id": "nom1",
           "label": "Chambre 1 — Nom",
           "type": "text",
           "value": "Chambre n°1"
         },
         {
-          "id": "rooms.chambre1.maxPeople",
+          "id": "capacite1",
           "label": "Chambre 1 — Capacité",
           "type": "text",
           "value": "Maximum 4 personnes"
         },
         {
-          "id": "rooms.chambre2.nameRoom",
+          "id": "photo1",
+          "label": "Chambre 1 — Photo",
+          "type": "image",
+          "value": "chambre1.jpg"
+        },
+        {
+          "id": "nom2",
           "label": "Chambre 2 — Nom",
           "type": "text",
           "value": "Chambre n°2"
         },
         {
-          "id": "rooms.chambre2.maxPeople",
+          "id": "capacite2",
           "label": "Chambre 2 — Capacité",
           "type": "text",
           "value": "Maximum 2 personnes"
         },
         {
-          "id": "rooms.chambre3.nameRoom",
+          "id": "photo2",
+          "label": "Chambre 2 — Photo",
+          "type": "image",
+          "value": "chambre2.jpg"
+        },
+        {
+          "id": "nom3",
           "label": "Chambre 3 — Nom",
           "type": "text",
           "value": "Chambre n°4"
         },
         {
-          "id": "rooms.chambre3.maxPeople",
+          "id": "capacite3",
           "label": "Chambre 3 — Capacité",
           "type": "text",
           "value": "Maximum 3 personnes"
         },
         {
-          "id": "rooms.chambre4.nameRoom",
+          "id": "photo3",
+          "label": "Chambre 3 — Photo",
+          "type": "image",
+          "value": "chambre4.jpg"
+        },
+        {
+          "id": "nom4",
           "label": "Chambre 4 — Nom",
           "type": "text",
           "value": "Chambre n°5"
         },
         {
-          "id": "rooms.chambre4.maxPeople",
+          "id": "capacite4",
           "label": "Chambre 4 — Capacité",
           "type": "text",
           "value": "Maximum 2 personnes"
         },
         {
-          "id": "rooms.chambre5.nameRoom",
+          "id": "photo4",
+          "label": "Chambre 4 — Photo",
+          "type": "image",
+          "value": "chambre5.jpg"
+        },
+        {
+          "id": "nom5",
           "label": "Chambre 5 — Nom",
           "type": "text",
           "value": "Chambre Relais n°1"
         },
         {
-          "id": "rooms.chambre5.maxPeople",
+          "id": "capacite5",
           "label": "Chambre 5 — Capacité",
           "type": "text",
           "value": "Maximum 2 personnes"
         },
         {
-          "id": "rooms.chambre6.nameRoom",
+          "id": "photo5",
+          "label": "Chambre 5 — Photo",
+          "type": "image",
+          "value": "chambrersp1.jpg"
+        },
+        {
+          "id": "nom6",
           "label": "Chambre 6 — Nom",
           "type": "text",
           "value": "Chambre Relais n°2"
         },
         {
-          "id": "rooms.chambre6.maxPeople",
+          "id": "capacite6",
           "label": "Chambre 6 — Capacité",
           "type": "text",
           "value": "Maximum 2 personnes"
         },
         {
-          "id": "rooms.chambre7.nameRoom",
+          "id": "photo6",
+          "label": "Chambre 6 — Photo",
+          "type": "image",
+          "value": "chambrersp2.jpg"
+        },
+        {
+          "id": "nom7",
           "label": "Chambre 7 — Nom",
           "type": "text",
           "value": "Chambre Relais n°3"
         },
         {
-          "id": "rooms.chambre7.maxPeople",
+          "id": "capacite7",
           "label": "Chambre 7 — Capacité",
           "type": "text",
           "value": "Maximum 2 personnes"
         },
         {
-          "id": "rooms.chambre8.nameRoom",
+          "id": "photo7",
+          "label": "Chambre 7 — Photo",
+          "type": "image",
+          "value": "chambrersp3.jpg"
+        },
+        {
+          "id": "nom8",
           "label": "Chambre 8 — Nom",
           "type": "text",
           "value": "Chambre Relais n°4"
         },
         {
-          "id": "rooms.chambre8.maxPeople",
+          "id": "capacite8",
           "label": "Chambre 8 — Capacité",
           "type": "text",
           "value": "Maximum 3 personnes"
+        },
+        {
+          "id": "photo8",
+          "label": "Chambre 8 — Photo",
+          "type": "image",
+          "value": "chambrersp4.jpg"
         }
       ]
     },
     {
-      "id": "photos_chambres",
-      "label": "Photos des chambres",
+      "id": "alentours",
+      "label": "Navacelles et alentours",
       "fields": [
         {
-          "id": "chambre1_img",
-          "label": "Photo Chambre 1",
-          "type": "image",
-          "value": ""
+          "id": "titre",
+          "label": "Titre de la page",
+          "type": "text",
+          "value": "Navacelles et Alentours"
         },
         {
-          "id": "chambre2_img",
-          "label": "Photo Chambre 2",
-          "type": "image",
-          "value": ""
+          "id": "distance_label",
+          "label": "Étiquette distance",
+          "type": "text",
+          "value": "Distance:"
         },
         {
-          "id": "chambre3_img",
-          "label": "Photo Chambre 3",
-          "type": "image",
-          "value": ""
+          "id": "nom1",
+          "label": "Lieu 1 — Nom",
+          "type": "text",
+          "value": "Cirque de Navacelles"
         },
         {
-          "id": "chambre4_img",
-          "label": "Photo Chambre 4",
-          "type": "image",
-          "value": ""
+          "id": "texte1",
+          "label": "Lieu 1 — Description",
+          "type": "text",
+          "value": "Cirque naturel formé par un méandre recoupé de la rivière la Vis dans d'impressionantes gorges entre le causse du Larzac (Hérault, au sud) et le causse de Blandas (Gard, au nord)."
         },
         {
-          "id": "chambre5_img",
-          "label": "Photo Chambre Relais 1",
-          "type": "image",
-          "value": ""
+          "id": "distance1",
+          "label": "Lieu 1 — Distance",
+          "type": "text",
+          "value": "0 Km"
         },
         {
-          "id": "chambre6_img",
-          "label": "Photo Chambre Relais 2",
+          "id": "photo1",
+          "label": "Lieu 1 — Photo",
           "type": "image",
-          "value": ""
+          "value": "navacelles.jpg"
         },
         {
-          "id": "chambre7_img",
-          "label": "Photo Chambre Relais 3",
-          "type": "image",
-          "value": ""
+          "id": "nom2",
+          "label": "Lieu 2 — Nom",
+          "type": "text",
+          "value": "La Foux"
         },
         {
-          "id": "chambre8_img",
-          "label": "Photo Chambre Relais 4",
+          "id": "texte2",
+          "label": "Lieu 2 — Description",
+          "type": "text",
+          "value": "Résurgence de la rivière la Vis après un parcours souterrain, dans le calcaire des Causses. Le moulin de la Foux est situé sur le parcours des randonnées dans la Vallée de la Vis."
+        },
+        {
+          "id": "distance2",
+          "label": "Lieu 2 — Distance",
+          "type": "text",
+          "value": "(à pied) 4,5Km - 59min (Aller)"
+        },
+        {
+          "id": "photo2",
+          "label": "Lieu 2 — Photo",
           "type": "image",
-          "value": ""
+          "value": "foux.jpg"
+        },
+        {
+          "id": "nom3",
+          "label": "Lieu 3 — Nom",
+          "type": "text",
+          "value": "Mont Aigoual"
+        },
+        {
+          "id": "texte3",
+          "label": "Lieu 3 — Description",
+          "type": "text",
+          "value": "Le mont Aigoual est un sommet situé dans le Sud du Massif central, à la limite entre les départements du Gard et de la Lozère. Il culmine à 1 565 mètres d'altitude. Cela en fait le point culminant du Gard et le second point le plus haut de la Lozère. Il vous offrira un panorama remarquable à perte de vue."
+        },
+        {
+          "id": "distance3",
+          "label": "Lieu 3 — Distance",
+          "type": "text",
+          "value": "60Km - 1h30min"
+        },
+        {
+          "id": "photo3",
+          "label": "Lieu 3 — Photo",
+          "type": "image",
+          "value": "aigoual.jpg"
+        },
+        {
+          "id": "nom4",
+          "label": "Lieu 4 — Nom",
+          "type": "text",
+          "value": "La Couvertoirade"
+        },
+        {
+          "id": "texte4",
+          "label": "Lieu 4 — Description",
+          "type": "text",
+          "value": "Reconnue comme l'un des plus beaux villages de France, Patrimoine Mondial de l'Humanité. La Cité de la Couvertoirade, posée au coeur du Larzac, vous accueille avec ses mille ans d'histoire. Poussez les portes des remparts hospitaliers et osez vous perdre dans les secrets et la mémoire des lieux."
+        },
+        {
+          "id": "distance4",
+          "label": "Lieu 4 — Distance",
+          "type": "text",
+          "value": "35Km - 45min"
+        },
+        {
+          "id": "photo4",
+          "label": "Lieu 4 — Photo",
+          "type": "image",
+          "value": "couvertoirade.jpg"
+        },
+        {
+          "id": "nom5",
+          "label": "Lieu 5 — Nom",
+          "type": "text",
+          "value": "Lac du Salagou"
+        },
+        {
+          "id": "texte5",
+          "label": "Lieu 5 — Description",
+          "type": "text",
+          "value": "Le lac du Salagou est le lac de retenue du barrage du Salagou. Marquée par 'les ruffes', ces terres rouges, la Vallée du Salagou offre un spectacle surnaturel, un véritable 'choc minéral'. La ruffe cède la place aux roches noires volcaniques sur les reliefs, et aux étranges roches blanches du Cirque de Mourèze."
+        },
+        {
+          "id": "distance5",
+          "label": "Lieu 5 — Distance",
+          "type": "text",
+          "value": "43Km - 47min"
+        },
+        {
+          "id": "photo5",
+          "label": "Lieu 5 — Photo",
+          "type": "image",
+          "value": "salagou.jpg"
+        },
+        {
+          "id": "nom6",
+          "label": "Lieu 6 — Nom",
+          "type": "text",
+          "value": "Saint Guilhem-le-Désert"
+        },
+        {
+          "id": "texte6",
+          "label": "Lieu 6 — Description",
+          "type": "text",
+          "value": "Reconnue comme l'un des plus beaux villages de France, Patrimoine Mondial de l'Humanité. Village abbatial, Saint-Guilhem-le-Désert est construit autour de l’Abbaye de Gellone, situé dans les Gorges de l'Hérault. Pénétrez dans ce symbole de l’art roman languedocien qui a fait de Saint-Guilhem l’un des plus grands foyers spirituels et culturels du Languedoc."
+        },
+        {
+          "id": "distance6",
+          "label": "Lieu 6 — Distance",
+          "type": "text",
+          "value": "43Km - 1h"
+        },
+        {
+          "id": "photo6",
+          "label": "Lieu 6 — Photo",
+          "type": "image",
+          "value": "stguilhem.jpg"
+        },
+        {
+          "id": "nom7",
+          "label": "Lieu 7 — Nom",
+          "type": "text",
+          "value": "Lodève"
+        },
+        {
+          "id": "texte7",
+          "label": "Lieu 7 — Description",
+          "type": "text",
+          "value": " Entre Larzac et Salagou, « capitale » des hautes terres de l’Hérault, Lodève allie les témoignages architecturaux d’une ancienne cité épiscopale influente (avec sa Cathédrale Saint Fulcran) qui fut aussi un important centre textile (avec la savonnerie fabrique de tapis), et une dynamique de développement s’appuyant sur de prestigieuses manifestations culturelles, la promotion de son terroir et de ses savoir-faire."
+        },
+        {
+          "id": "distance7",
+          "label": "Lieu 7 — Distance",
+          "type": "text",
+          "value": "35Km - 41min"
+        },
+        {
+          "id": "photo7",
+          "label": "Lieu 7 — Photo",
+          "type": "image",
+          "value": "lodeve.jpg"
+        },
+        {
+          "id": "nom8",
+          "label": "Lieu 8 — Nom",
+          "type": "text",
+          "value": "Le Vigan"
+        },
+        {
+          "id": "texte8",
+          "label": "Lieu 8 — Description",
+          "type": "text",
+          "value": "Sous-préfecture du département du Gard, porte d'entrée des Cévennes, Le Vigan vous acceuille avec son histoire (à travers notamment l'histoire de la soie, des pommes, châtaignes, des Oignons... ) et son patrimoine ( quatre immeubles protégés au titre des monuments historiques : le vieux pont, classé en 1938, l'hospice, inscrit en 1993, le château d'Assas, inscrit et classé en 2002, et le château de Mareilles, inscrit en 2015. )."
+        },
+        {
+          "id": "distance8",
+          "label": "Lieu 8 — Distance",
+          "type": "text",
+          "value": "26Km - 39min"
+        },
+        {
+          "id": "photo8",
+          "label": "Lieu 8 — Photo",
+          "type": "image",
+          "value": "levigan.jpg"
         }
       ]
     },
     {
-      "id": "horaires",
-      "label": "Horaires & Footer",
+      "id": "contact",
+      "label": "Contact",
       "fields": [
         {
-          "id": "openFooter",
-          "label": "Ouverture haute saison",
+          "id": "titre",
+          "label": "Titre de la page",
+          "type": "text",
+          "value": "Contact"
+        },
+        {
+          "id": "intro_form",
+          "label": "Texte au-dessus du formulaire",
+          "type": "text",
+          "value": "Pour une demande par courrier électronique, vous pouvez remplir le formulaire sur la page"
+        },
+        {
+          "id": "intro_coord",
+          "label": "Texte au-dessus des coordonnées",
+          "type": "text",
+          "value": "Pour nous contacter par courrier ou par téléphone, merci de vous adresser à:"
+        },
+        {
+          "id": "nom_etab",
+          "label": "Nom de l'établissement",
+          "type": "text",
+          "value": "Auberge de la Cascade"
+        },
+        {
+          "id": "adresse1",
+          "label": "Adresse — ligne 1",
+          "type": "text",
+          "value": "18 Chemin des Faïsses"
+        },
+        {
+          "id": "adresse2",
+          "label": "Adresse — ligne 2",
+          "type": "text",
+          "value": "Hameau de Navacelles"
+        },
+        {
+          "id": "adresse3",
+          "label": "Adresse — ligne 3",
+          "type": "text",
+          "value": "34520 Saint Maurice-Navacelles"
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "text",
+          "value": "04 67 81 50 95"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "text",
+          "value": "aubergedelacascade@orange.fr"
+        },
+        {
+          "id": "facebook",
+          "label": "Lien Facebook",
+          "type": "text",
+          "value": "https://www.facebook.com/AubergeDeLaCascade/"
+        },
+        {
+          "id": "instagram",
+          "label": "Lien Instagram",
+          "type": "text",
+          "value": "https://www.instagram.com/la_cascade_navacelles/"
+        },
+        {
+          "id": "tripadvisor",
+          "label": "Lien Tripadvisor",
+          "type": "text",
+          "value": "https://www.tripadvisor.fr/Restaurant_Review-g3490621-d6742799-Reviews-Auberge_de_la_Cascade-Saint_Maurice_Navacelles_Herault_Occitanie.html"
+        },
+        {
+          "id": "btn_restaurant",
+          "label": "Bouton réservation restaurant",
+          "type": "text",
+          "value": "🍽️ Réserver au restaurant en ligne"
+        },
+        {
+          "id": "carte",
+          "label": "Adresse de la carte Google",
+          "type": "text",
+          "value": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11500.545067018318!2d3.5116667!3d43.8944444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7cbe35cb64f667b4!2sAuberge%20de%20la%20Cascade!5e0!3m2!1sfr!2sfr!4v1620997946108!5m2!1sfr!2sfr"
+        }
+      ]
+    },
+    {
+      "id": "formulaire",
+      "label": "Formulaires — Intitulés",
+      "fields": [
+        {
+          "id": "titre",
+          "label": "Titre de la page",
+          "type": "text",
+          "value": "Pré-Réservation"
+        },
+        {
+          "id": "nom",
+          "label": "Nom et prénom",
+          "type": "text",
+          "value": "Nom et Prénom"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "text",
+          "value": "Email"
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "text",
+          "value": "Numéro de téléphone"
+        },
+        {
+          "id": "arrivee",
+          "label": "Date d'arrivée",
+          "type": "text",
+          "value": "Date d'Arrivée"
+        },
+        {
+          "id": "depart",
+          "label": "Date de départ",
+          "type": "text",
+          "value": "Date de Départ"
+        },
+        {
+          "id": "personnes",
+          "label": "Nombre de personnes",
+          "type": "text",
+          "value": "Nombre de Personne"
+        },
+        {
+          "id": "hebergement",
+          "label": "Type d'hébergement",
+          "type": "text",
+          "value": "Type d'Hébergement"
+        },
+        {
+          "id": "lit",
+          "label": "Type de lit",
+          "type": "text",
+          "value": "Type de Lit"
+        },
+        {
+          "id": "message",
+          "label": "Votre message",
+          "type": "text",
+          "value": "Votre Message"
+        },
+        {
+          "id": "message_aide",
+          "label": "Aide sous le message",
+          "type": "text",
+          "value": "Votre Message (En précisant si vous avez des régimes alimentaires (allergies, végétarien, végan...) à nous faire savoir.)"
+        },
+        {
+          "id": "envoyer",
+          "label": "Bouton d'envoi",
+          "type": "text",
+          "value": "Envoyer la demande"
+        },
+        {
+          "id": "merci_titre",
+          "label": "Page de confirmation — Titre",
+          "type": "text",
+          "value": "Merci !"
+        },
+        {
+          "id": "merci_texte",
+          "label": "Page de confirmation — Texte",
+          "type": "text",
+          "value": "Votre demande a bien été envoyée. Nous vous répondrons dans les meilleurs délais."
+        },
+        {
+          "id": "hebergements",
+          "label": "Choix d'hébergement",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Demi-pension",
+              "valeur": ""
+            },
+            {
+              "label": "Chambre seule + petit-déjeuner",
+              "valeur": ""
+            },
+            {
+              "label": "Chambre seule",
+              "valeur": ""
+            },
+            {
+              "label": "Vente au lit",
+              "valeur": ""
+            }
+          ]
+        },
+        {
+          "id": "lits",
+          "label": "Choix de lit",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Grand lit",
+              "valeur": ""
+            },
+            {
+              "label": "Lits jumeaux",
+              "valeur": ""
+            },
+            {
+              "label": "Grand lit + petit lit",
+              "valeur": ""
+            },
+            {
+              "label": "Grand lit + lit superposé",
+              "valeur": ""
+            },
+            {
+              "label": "Groupe",
+              "valeur": ""
+            },
+            {
+              "label": "Vente au lit",
+              "valeur": ""
+            }
+          ]
+        },
+        {
+          "id": "avertissement",
+          "label": "Avertissement en rouge",
+          "type": "text",
+          "value": "L'auberge se situe au hameau de Navacelles dans le cirque de Navacelles (non pas à St Maurice-Navacelles, mais sur sa commune)"
+        },
+        {
+          "id": "mention",
+          "label": "Mention sous le titre",
+          "type": "text",
+          "value": "Ceci est un formulaire de PRÉ-RÉSERVATION — réponse sous 48h"
+        },
+        {
+          "id": "secours",
+          "label": "Lien de secours",
+          "type": "text",
+          "value": "En cas de problème lors de l'envoi du formulaire, cliquez ici"
+        },
+        {
+          "id": "choisir",
+          "label": "Texte des listes déroulantes",
+          "type": "text",
+          "value": "-- Choisissez une option --"
+        },
+        {
+          "id": "date_aide",
+          "label": "Format de date attendu",
+          "type": "text",
+          "value": "jj/mm/aaaa"
+        }
+      ]
+    },
+    {
+      "id": "reservation",
+      "label": "Page Pré-Réservation",
+      "fields": [
+        {
+          "id": "titre",
+          "label": "Titre de la page",
+          "type": "text",
+          "value": "Pré-Réservation"
+        },
+        {
+          "id": "btn_restaurant",
+          "label": "Bouton restaurant",
+          "type": "text",
+          "value": "🍽️ Réserver au restaurant en ligne"
+        },
+        {
+          "id": "lien_restaurant",
+          "label": "Lien du restaurant",
+          "type": "text",
+          "value": "https://auberge-de-la-cascade.bookatable.fr"
+        },
+        {
+          "id": "btn_hotel",
+          "label": "Bouton hébergement",
+          "type": "text",
+          "value": "🏨 Réserver pour l'hébergement"
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "label": "Pied de page",
+      "fields": [
+        {
+          "id": "horaires_titre",
+          "label": "Titre horaires",
+          "type": "text",
+          "value": "Horaires"
+        },
+        {
+          "id": "ouverture1",
+          "label": "Ouverture — ligne 1",
           "type": "text",
           "value": "L'Auberge est ouverte tous les jours de la semaine en Haute Saison (14 Juillet / 31 Août)"
         },
         {
-          "id": "openFooter2",
-          "label": "Ouverture basse saison",
+          "id": "ouverture2",
+          "label": "Ouverture — ligne 2",
           "type": "text",
           "value": "Fermée un jour par semaine en basse saison, contactez nous pour plus de précision."
+        },
+        {
+          "id": "horaires",
+          "label": "Horaires détaillés",
+          "type": "liste",
+          "value": [
+            {
+              "label": "Restaurant",
+              "valeur": "12h00 - 14h00"
+            },
+            {
+              "label": "Bar",
+              "valeur": "14h00 - 18h30"
+            },
+            {
+              "label": "Accueil hébergement",
+              "valeur": "16h00 - 19h00"
+            }
+          ]
+        },
+        {
+          "id": "adresse_titre",
+          "label": "Titre adresse",
+          "type": "text",
+          "value": "Nous situer"
         }
       ]
     }
