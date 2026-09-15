@@ -23,7 +23,7 @@
       barre.classList.remove("ouvert")
     })
   })
-})()
+})();
 
 // ---------- LIEN DE LA PAGE COURANTE ----------
 (function () {
@@ -31,7 +31,7 @@
   document.querySelectorAll(".nav_topbar").forEach(function (lien) {
     if (lien.getAttribute("href") === page) lien.classList.add("actif")
   })
-})()
+})();
 
 // ---------- POP-UP D'ANNONCE ----------
 document.addEventListener("cms:ready", function () {
