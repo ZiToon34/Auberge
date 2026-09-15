@@ -8,7 +8,7 @@
           "id": "titre",
           "label": "Titre sur la photo",
           "type": "text",
-          "value": "Auberge de la Cascade Hameau de Navacelles"
+          "value": "Auberge de la Cascade / Hameau de Navacelles"
         },
         {
           "id": "photo1",
