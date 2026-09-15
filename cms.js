@@ -244,4 +244,19 @@ async function chargerCMS() {
   }
 }
 
+/**
+ * Remplace le contenu affiche sans passer par le reseau.
+ *
+ * Mon CMS s'en sert pour montrer une modification immediatement dans
+ * son apercu, sans attendre que le fichier soit publie puis diffuse
+ * par le cache de GitHub — ce qui prend plusieurs minutes.
+ */
+window.CMS_APPLIQUER = function (donnees) {
+  if (!donnees || !Array.isArray(donnees.sections)) return
+  CMS = donnees
+  window.CMS_DATA = donnees
+  appliquerContenu()
+  document.dispatchEvent(new Event("cms:ready"))
+}
+
 chargerCMS()
