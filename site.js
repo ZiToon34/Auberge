@@ -89,3 +89,31 @@ document.addEventListener("cms:ready", function () {
   if (p1) bloc.style.setProperty("--photo1", "url('images/" + p1 + "')")
   if (p2) bloc.style.setProperty("--photo2", "url('images/" + p2 + "')")
 })
+
+// ---------- TITRE D'ACCUEIL SUR DEUX LIGNES ----------
+// Le titre saisi dans Mon CMS ressemble a "Auberge de la Cascade | Hameau de Navacelles".
+// Cette fonction coupe le texte au niveau du "|" : la premiere partie devient
+// le nom (grand), la seconde le lieu (plus petit, en ocre). Sans "|", rien ne change.
+function decouperTitreAccueil() {
+  var titre = document.querySelector(".welcome .auberge")
+  if (!titre || titre.querySelector(".auberge-nom")) return
+
+  var morceaux = titre.textContent.split("|")
+  if (morceaux.length < 2) return
+
+  var nom = document.createElement("span")
+  nom.className = "auberge-nom"
+  nom.textContent = morceaux[0].trim()
+
+  var lieu = document.createElement("span")
+  lieu.className = "auberge-lieu"
+  lieu.textContent = morceaux.slice(1).join("|").trim()
+
+  titre.textContent = ""
+  titre.appendChild(nom)
+  titre.appendChild(lieu)
+}
+
+// Au chargement de la page (texte d'origine) puis apres le CMS (texte a jour)
+document.addEventListener("DOMContentLoaded", decouperTitreAccueil)
+document.addEventListener("cms:ready", decouperTitreAccueil)

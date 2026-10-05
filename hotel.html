@@ -22,28 +22,35 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#af8842">
+<meta name="theme-color" content="#1f4e48">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Franklin:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Franklin:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
 <!-- ================= NAVIGATION ================= -->
-<button class="burger" id="burger" aria-label="Ouvrir le menu">
-  <span></span><span></span><span></span>
-</button>
+<header class="entete">
+  <a class="marque" href="index.html">
+    <span class="marque-nom">Auberge de la Cascade</span>
+    <span class="marque-lieu">Cirque de Navacelles</span>
+  </a>
 
-<nav class="topbar" id="topbar">
-  <a class="nav_topbar" href="hotel.html" data-cms-text="nav.hotel">Hôtel</a>
-  <a class="nav_topbar" href="restaurant.html" data-cms-text="nav.restaurant">Restaurant</a>
-  <a class="nav_topbar" href="alentours.html" data-cms-text="nav.alentours">Navacelles et alentours</a>
-  <a class="nav_topbar" href="contact.html" data-cms-text="nav.contact">Contact</a>
-  <a class="nav_topbar reservation" href="reservation.html" data-cms-text="nav.reservation">Pré-Réservation</a>
-</nav>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="topbar" id="topbar">
+    <a class="nav_topbar" href="hotel.html" data-cms-text="nav.hotel">Hôtel</a>
+    <a class="nav_topbar" href="restaurant.html" data-cms-text="nav.restaurant">Restaurant</a>
+    <a class="nav_topbar" href="alentours.html" data-cms-text="nav.alentours">Navacelles et alentours</a>
+    <a class="nav_topbar" href="contact.html" data-cms-text="nav.contact">Contact</a>
+    <a class="nav_topbar reservation" href="reservation.html" data-cms-text="nav.reservation">Pré-Réservation</a>
+  </nav>
+</header>
 
 <main>
   <div id="container-nava" style="background-image:url('images/navacelles1.jpg')">
