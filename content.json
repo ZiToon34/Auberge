@@ -157,16 +157,7 @@
           "id": "formules",
           "label": "Formules",
           "type": "liste",
-          "value": [
-            {
-              "label": "Entrée + Plat (ou Plat + Dessert)",
-              "valeur": "22"
-            },
-            {
-              "label": "Entrée + Plat + Dessert",
-              "valeur": "26€"
-            }
-          ]
+          "value": []
         },
         {
           "id": "carte_titre",
