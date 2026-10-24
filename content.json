@@ -145,13 +145,13 @@
           "id": "menu_titre",
           "label": "Titre du menu",
           "type": "text",
-          "value": ""
+          "value": " "
         },
         {
           "id": "menu_intro",
           "label": "Description du menu",
           "type": "text",
-          "value": ""
+          "value": " "
         },
         {
           "id": "formules",
