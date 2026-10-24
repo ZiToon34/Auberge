@@ -145,7 +145,7 @@
           "id": "menu_titre",
           "label": "Titre du menu",
           "type": "text",
-          "value": "a la carte"
+          "value": ""
         },
         {
           "id": "menu_intro",
