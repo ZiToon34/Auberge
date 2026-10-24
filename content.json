@@ -145,13 +145,13 @@
           "id": "menu_titre",
           "label": "Titre du menu",
           "type": "text",
-          "value": "Le Menu"
+          "value": ""
         },
         {
           "id": "menu_intro",
           "label": "Description du menu",
           "type": "text",
-          "value": "3 Choix d'entrées, de plats et desserts (au moins)"
+          "value": ""
         },
         {
           "id": "formules",
