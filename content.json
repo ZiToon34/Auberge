@@ -308,7 +308,7 @@
           "id": "titre",
           "label": "Titre du tableau",
           "type": "text",
-          "value": "Tarifs 2026:"
+          "value": "Tarifs 2027:"
         },
         {
           "id": "pension",
@@ -317,11 +317,11 @@
           "value": [
             {
               "label": "Demi-pension (Personne seule)",
-              "valeur": "82€"
+              "valeur": "90€"
             },
             {
               "label": "Demi-pension (à partir de 2)",
-              "valeur": "64€ / personne"
+              "valeur": "69€ / personne"
             },
             {
               "label": "Demi-pension (-12 ans)",
