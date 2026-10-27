@@ -30,7 +30,8 @@
   status = 404
 
 # --- Securite ---
-# frame-ancestors autorise l'apercu de Mon CMS, et lui seul.
+# frame-ancestors autorise l'apercu des editeurs du site, et eux seuls :
+# Booking A Table (« Mon site » sur www.bookatable.fr) et Mon CMS (pendant la transition).
 [[headers]]
   for = "/*"
   [headers.values]
@@ -38,7 +39,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "frame-ancestors 'self' https://mon-cms-mnrd.vercel.app"
+    Content-Security-Policy = "frame-ancestors 'self' https://www.bookatable.fr https://bookatable.fr https://mon-cms-mnrd.vercel.app"
 
 # --- HTML : toujours a jour ---
 [[headers]]

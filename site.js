@@ -68,7 +68,7 @@ document.addEventListener("cms:ready", function () {
 })
 
 // ---------- FONDU DES PHOTOS D'ACCUEIL ----------
-// Les deux photos sont choisies dans Mon CMS : on les injecte
+// Les deux photos sont choisies dans l'editeur du site : on les injecte
 // dans les variables CSS utilisees par l'animation.
 document.addEventListener("cms:ready", function () {
   var bloc = document.querySelector(".welcome")
@@ -84,10 +84,15 @@ document.addEventListener("cms:ready", function () {
     }
   }
 
+  // Adresse d'une photo : complete (phototheque Booking A Table) ou nom de fichier du dossier images/
+  function adresse(valeur) {
+    return /^https?:\/\//i.test(String(valeur)) ? String(valeur) : "images/" + valeur
+  }
+
   var p1 = photo("photo1")
   var p2 = photo("photo2")
-  if (p1) bloc.style.setProperty("--photo1", "url('images/" + p1 + "')")
-  if (p2) bloc.style.setProperty("--photo2", "url('images/" + p2 + "')")
+  if (p1) bloc.style.setProperty("--photo1", "url('" + adresse(p1) + "')")
+  if (p2) bloc.style.setProperty("--photo2", "url('" + adresse(p2) + "')")
 })
 
 // ---------- TITRE D'ACCUEIL SUR DEUX LIGNES ----------

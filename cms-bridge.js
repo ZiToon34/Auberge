@@ -1,5 +1,6 @@
 /* =========================================================
-   cms-bridge.js — Pont entre le site et Mon CMS
+   cms-bridge.js — Pont entre le site et son editeur
+   (Mon CMS, ou « Mon site » de Booking A Table : memes messages)
    ---------------------------------------------------------
    Ne s'active QUE si la page est affichee dans le cadre
    d'apercu de Mon CMS. Pour un visiteur normal, ce fichier
@@ -25,8 +26,8 @@
   /*
    * Le pont ne s'active que dans l'un de ces deux cas :
    *
-   *   - la page est affichee dans le cadre d'apercu de Mon CMS (web) ;
-   *   - la page est affichee dans l'application mobile Mon CMS.
+   *   - la page est affichee dans le cadre d'apercu de l'editeur (web) ;
+   *   - la page est affichee dans l'application mobile (Mon CMS ou Booking A Table).
    *
    * Pour un visiteur ordinaire, ni l'un ni l'autre : on ne fait rien.
    */
@@ -459,8 +460,23 @@
   // CHARGEMENT DES NOMS DE RUBRIQUES ET DE CHAMPS
   // =======================================================
 
-  fetch("content.json?t=" + Date.now())
-    .then(function (r) { return r.json() })
+  /*
+   * Meme source que le site : cms.js a deja lance le chargement (API Booking A Table,
+   * puis content.json en secours) et le rend disponible dans window.CMS_CHARGEMENT.
+   * Sans lui (ancien cms.js), ou s'il n'a rien trouve, on lit le content.json du site.
+   */
+  function lireContenu() {
+    var chargement = window.CMS_CHARGEMENT
+    var depuisCms = chargement && typeof chargement.then === "function"
+      ? chargement
+      : Promise.resolve(null)
+    return depuisCms.then(function (data) {
+      if (data && Array.isArray(data.sections)) return data
+      return fetch("content.json?t=" + Date.now()).then(function (r) { return r.json() })
+    })
+  }
+
+  lireContenu()
     .then(function (data) {
       rubriques = data.sections.map(function (s) {
         libelles[s.id] = s.label

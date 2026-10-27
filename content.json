@@ -1017,7 +1017,7 @@
           "id": "lien_restaurant",
           "label": "Lien du restaurant",
           "type": "text",
-          "value": "https://auberge-de-la-cascade.bookatable.fr"
+          "value": "https://reserver.bookatable.fr/auberge-de-la-cascade"
         },
         {
           "id": "btn_hotel",

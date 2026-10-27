@@ -32,23 +32,43 @@
    ========================================================= */
 
 /*
- * Le depot est indique sur la balise qui charge ce fichier :
+ * La source du contenu est indiquee sur la balise qui charge ce fichier.
+ *
+ * Site Mon CMS (contenu dans un depot GitHub) :
  *   <script defer src="cms.js" data-cms-repo="ZiToon34/geysse"></script>
  *
+ * Site sur mesure de Booking A Table (contenu dans l'API Booking A Table) :
+ *   <script defer src="cms.js"
+ *           data-cms-api="https://resacodex-api.onrender.com"
+ *           data-cms-slug="auberge-de-la-cascade"
+ *           data-cms-repo="ZiToon34/Auberge"></script>
+ *   Le contenu est lu dans l'API ; si elle ne repond pas, le content.json
+ *   (du depot, ou du site lui-meme sans data-cms-repo) sert de secours.
+ *
  * Le meme cms.js sert ainsi a tous les sites, sans modification.
- * Sans cet attribut, les fichiers sont lus depuis le site lui-meme.
+ * Sans aucun attribut, les fichiers sont lus depuis le site lui-meme.
  */
-const BALISE = document.querySelector("script[data-cms-repo]")
-const DEPOT = BALISE ? BALISE.dataset.cmsRepo : null
+const BALISE = document.querySelector("script[data-cms-repo], script[data-cms-api]")
+const DEPOT = BALISE && BALISE.dataset.cmsRepo ? BALISE.dataset.cmsRepo : null
 const BRANCHE = (BALISE && BALISE.dataset.cmsBranch) || "main"
+const API = BALISE && BALISE.dataset.cmsApi ? BALISE.dataset.cmsApi.replace(/\/+$/, "") : null
+const SLUG = BALISE && BALISE.dataset.cmsSlug ? BALISE.dataset.cmsSlug : null
+
+// Delai au-dela duquel l'API est jugee injoignable (le secours prend le relais).
+const DELAI_API = 5000
 
 const RAW = (chemin) =>
   DEPOT
     ? `https://raw.githubusercontent.com/${DEPOT}/${BRANCHE}/${chemin}?t=${Date.now()}`
     : `${chemin}?t=${Date.now()}`
 
-/** Adresse publique d'une photo du dossier images/ */
+/**
+ * Adresse publique d'une photo :
+ * - adresse complete (photo de la phototheque Booking A Table) : telle quelle ;
+ * - nom de fichier : photo du dossier images/.
+ */
 function img(fichier) {
+  if (/^https?:\/\//i.test(String(fichier))) return String(fichier)
   return RAW(`images/${fichier}`)
 }
 
@@ -461,30 +481,75 @@ function appliquerContenu() {
 // CHARGEMENT
 // ---------------------------------------------------------
 
-async function chargerCMS() {
+/**
+ * Contenu du site dans l'API Booking A Table (site sur mesure).
+ * Renvoie null si l'API ne repond pas, trop lentement, ou ne connait pas ce site.
+ */
+async function lireDepuisAPI() {
+  if (!API || !SLUG) return null
+  const controle = typeof AbortController === "function" ? new AbortController() : null
+  const minuterie = controle ? setTimeout(() => controle.abort(), DELAI_API) : null
+  try {
+    const reponse = await fetch(
+      `${API}/api/public/sites/custom?slug=${encodeURIComponent(SLUG)}`,
+      { cache: "no-store", signal: controle ? controle.signal : undefined }
+    )
+    if (!reponse.ok) return null
+    const donnees = await reponse.json()
+    const sections = donnees && donnees.site && donnees.site.sections
+    return Array.isArray(sections) ? { sections } : null
+  } catch (err) {
+    console.warn("API Booking A Table injoignable, contenu de secours utilise", err)
+    return null
+  } finally {
+    if (minuterie) clearTimeout(minuterie)
+  }
+}
+
+/** Contenu du fichier content.json (depot GitHub, ou site lui-meme). null en cas d'echec. */
+async function lireContentJson() {
   try {
     const reponse = await fetch(RAW("content.json"))
-    CMS = await reponse.json()
-
-    // Accessible depuis la page pour les cas particuliers
-    window.CMS_DATA = CMS
-
-    appliquerContenu()
+    if (!reponse.ok) return null
+    const donnees = await reponse.json()
+    return donnees && Array.isArray(donnees.sections) ? donnees : null
   } catch (err) {
-    // Le site garde alors les textes ecrits dans le HTML
-    console.warn("Contenu non charge", err)
+    console.warn("content.json non charge", err)
+    return null
+  }
+}
+
+/**
+ * Charge le contenu : l'API Booking A Table d'abord (si indiquee),
+ * puis le content.json en secours, et sinon les textes ecrits dans le HTML.
+ * Renvoie le contenu applique (ou null).
+ */
+async function chargerCMS() {
+  try {
+    CMS = (await lireDepuisAPI()) || (await lireContentJson())
+    if (CMS) {
+      // Accessible depuis la page pour les cas particuliers
+      window.CMS_DATA = CMS
+      appliquerContenu()
+    } else {
+      // Le site garde alors les textes ecrits dans le HTML
+      console.warn("Contenu non charge : textes du HTML conserves")
+    }
+  } catch (err) {
+    console.warn("Contenu non applique", err)
   } finally {
     // Signal conserve pour la compatibilite avec les scripts existants
     document.dispatchEvent(new Event("cms:ready"))
   }
+  return CMS
 }
 
 /**
  * Remplace le contenu affiche sans passer par le reseau.
  *
- * Mon CMS s'en sert pour montrer une modification immediatement dans
- * son apercu, sans attendre que le fichier soit publie puis diffuse
- * par le cache de GitHub — ce qui prend plusieurs minutes.
+ * L'editeur (Mon CMS ou Booking A Table) s'en sert pour montrer une
+ * modification immediatement dans son apercu, sans attendre qu'elle
+ * soit enregistree puis publiee.
  */
 window.CMS_APPLIQUER = function (donnees) {
   if (!donnees || !Array.isArray(donnees.sections)) return
@@ -494,4 +559,8 @@ window.CMS_APPLIQUER = function (donnees) {
   document.dispatchEvent(new Event("cms:ready"))
 }
 
-chargerCMS()
+/*
+ * Promesse du chargement, reprise par cms-bridge.js (apercu de l'editeur) :
+ * il lit ainsi les noms des rubriques dans la meme source que le site.
+ */
+window.CMS_CHARGEMENT = chargerCMS()
