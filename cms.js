@@ -69,6 +69,8 @@ const RAW = (chemin) =>
  */
 function img(fichier) {
   if (/^https?:\/\//i.test(String(fichier))) return String(fichier)
+  // Photo du site lui-meme : sans « ?t= », pour profiter du cache du navigateur.
+  if (!DEPOT) return `images/${fichier}`
   return RAW(`images/${fichier}`)
 }
 
