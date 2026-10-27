@@ -54,7 +54,10 @@
     Cache-Control = "no-cache, no-store, must-revalidate"
 
 # --- Images : cache long ---
+# Access-Control-Allow-Origin : l'export « Mes textes et mes photos » de Booking A Table
+# telecharge les photos depuis le navigateur (lecture seule, photos deja publiques).
 [[headers]]
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+    Access-Control-Allow-Origin = "*"
